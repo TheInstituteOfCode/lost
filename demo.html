@@ -1,0 +1,31 @@
+---
+layout: default
+page_blocks:
+  - _id: banner-2
+    background_image: /images/laptop.jpg
+    line-1: this
+    line-2: is
+    line-3: really cool
+    link-text: Click Me
+    link_url: /about
+  - _id: banner-1
+    background_image: /images/adventure.jpg
+    heading: Test 123
+    sub-heading: Hello
+  - _id: banner-split
+    background_image: /images/cocktail.jpg
+    content_html: <h2>Oh hey there</h2><p>We create epic websites for cool humans.&nbsp;</p>
+  - _id: text-block
+    content_html: >-
+      <h2>ljfd rd hdf gfd <strong>gfd</strong> gfds gds</h2><p>My name is rachel
+      and I love coding.&nbsp;</p><ul><li>dot
+      points&nbsp;</li><li>hello&nbsp;</li></ul>
+  - _id: banner-1
+    background_image: /images/adventure.jpg
+    heading: Rachel is the best
+    sub-heading: 'No, seriously.'
+---
+
+{% for block in page.page_blocks %}
+      {% include blocks/{{block._id}}.html block=block %}
+{% endfor %}
