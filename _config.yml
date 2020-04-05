@@ -115,11 +115,6 @@ _array_structures:
         heading:
         vimeo_id:
         content:
-        button:
-          value:
-            text:
-            class:
-            link_url:
     - label: Banner A
       icon: ballot
       value:
