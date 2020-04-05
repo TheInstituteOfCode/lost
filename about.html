@@ -10,15 +10,15 @@ featured-image_path:
   <div class="col-6">
     <h3>{{include.sub_heading}}</h3>
     {% if forloop.index == 1 %}
-    <h1>{{include.heading}}</h1>
+      <h1>{{include.heading}}</h1>
     {% else %}
-    <h2>{{include.heading}}</h2>
+      <h2>{{include.heading}}</h2>
     {% endif %}
     <div class="">
       {{include.content}}
     </div>
     {% for button in include.button %}
-    <a class="button {{button.class}}" href="{{button.link_url}}">{{button.text}}</a>
+      <a class="button {{button.class}}" href="{{button.link_url}}">{{button.text}}</a>
     {% endfor %}
   </div>
   <div class="col-6">
