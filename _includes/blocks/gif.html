@@ -1,0 +1,8 @@
+<section class="padded center">
+  {% if forloop.index == 1 %}
+    <h1>{{block.heading}}</h1>
+  {% else %}
+    <h2>{{block.heading}}</h2>
+  {% endif %}
+  <img src="{{icon.img_path}}" alt="{{icon.img_alt}}">
+</section>

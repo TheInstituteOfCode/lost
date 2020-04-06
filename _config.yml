@@ -132,6 +132,13 @@ _array_structures:
           img_alt:
           heading:
           text:
+    - label: gif section
+      icon: video
+      value:
+        _id: gif
+        heading:
+        img_path:
+        img_alt:
     - label: Banner A
       icon: ballot
       value:

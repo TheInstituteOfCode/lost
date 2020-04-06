@@ -3,9 +3,9 @@
   <div class="col-6_md-12">
     <h3>{{block.sub_heading}}</h3>
     {% if forloop.index == 1 %}
-      <h1>{{include.heading}}</h1>
+      <h1>{{block.heading}}</h1>
     {% else %}
-      <h2>{{include.heading}}</h2>
+      <h2>{{block.heading}}</h2>
     {% endif %}
     <div class="">
       {{block.content_text}}

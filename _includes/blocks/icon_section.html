@@ -1,25 +1,25 @@
 
 <section class="padded">
-    <h3>{{block.sub_heading}}</h3>
-    {% if forloop.index == 1 %}
-      <h1>{{include.heading}}</h1>
-    {% else %}
-      <h2>{{include.heading}}</h2>
-    {% endif %}
-    <div class="">
-      {{block.content_text}}
-    </div>
-    <div class="grid-center-middle">
-      {% for icon in block.icon_block %}
-      <div class="col-6 grid-center-middle">
-        <div class="col icon-max padded">
-          <img src="{{icon.img_path}}" alt="icon.img_alt">
-        </div>
+  <h3>{{block.sub_heading}}</h3>
+  {% if forloop.index == 1 %}
+    <h1>{{block.heading}}</h1>
+  {% else %}
+    <h2>{{block.heading}}</h2>
+  {% endif %}
+  <div class="">
+    {{block.content_text}}
+  </div>
+  <div class="grid-center-middle">
+    {% for icon in block.icon_block %}
+    <div class="col-6 grid-center-middle">
+      <div class="col icon-max margin">
+        <img src="{{icon.img_path}}" alt="icon.img_alt">
       </div>
       <div class="col padded">
         <h4>{{icon.heading}}</h4>
         <p>{{icon.text}}</p>
       </div>
-      {% endfor %}
     </div>
+    {% endfor %}
+  </div>
 </section>
