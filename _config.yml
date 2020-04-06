@@ -108,13 +108,6 @@ autopages:
 page_blocks: []
 _array_structures:
   page_blocks:
-    - label: Vimeo section
-      icon: video
-      value:
-        sub_heading:
-        heading:
-        vimeo_id:
-        content:
     - label: Banner A
       icon: ballot
       value:
