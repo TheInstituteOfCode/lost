@@ -115,7 +115,7 @@ _array_structures:
         sub_heading:
         heading:
         vimeo_id:
-        content:
+        content_text:
         button:
         - class:
           link_url:
