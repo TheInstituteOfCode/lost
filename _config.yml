@@ -126,7 +126,6 @@ _array_structures:
         _id: icon_section
         sub_heading:
         heading:
-        vimeo_id:
         content_text:
         icon_block:
         - img_path:
