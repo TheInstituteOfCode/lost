@@ -734,3 +734,16 @@
 @media(max-width:576px) {
 
 } /* end media query */
+
+
+/* custom CSS */
+
+/* vimeo section */
+
+/* icon grid section */
+
+
+.icon-max{
+  max-width:50px;
+  /* sets the max size of icons in the grid */
+}

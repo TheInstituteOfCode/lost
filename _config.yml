@@ -120,6 +120,19 @@ _array_structures:
         - class:
           link_url:
           text:
+    - label: Icon section
+      icon: video
+      value:
+        _id: icon_section
+        sub_heading:
+        heading:
+        vimeo_id:
+        content_text:
+        icon_block:
+        - img_path:
+          img_alt:
+          heading:
+          text:
     - label: Banner A
       icon: ballot
       value:
