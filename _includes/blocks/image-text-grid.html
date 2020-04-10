@@ -8,7 +8,13 @@
     <div class="col-6_sm-12 bg-image" style="background-image:url('{{layer.image_path}}')">
     </div>
     <div class="col-6_sm-12-middle padded">
-      <h3> {{layer.heading}} </h3>
+      <h3>{{layer.sub_heading}}</h3>
+      {% if forloop.index == 1 %}
+        <h1>{{layer.heading}}</h1>
+      {% else %}
+        <h2>{{layer.heading}}</h2>
+      {% endif %}
+      <hr>
       <p> {{layer.text}} </p>
       <a class="arrow" href="link_url"> > </a>
     </div>

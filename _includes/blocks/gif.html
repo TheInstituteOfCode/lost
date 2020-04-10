@@ -4,8 +4,11 @@
   {% else %}
     <h2>{{block.heading}}</h2>
   {% endif %}
-  <div class="">
-    {{block.text}}
-  </div>
+  {% if block.pre_img_text %}
+    <p>{{block.pre_img_text}}</p>
+  {% endif %}
   <img class="max-gif" src="{{icon.img_path}}" alt="{{icon.img_alt}}">
+  {% if block.post_img_text %}
+    <p>{{block.post_img_text}}</p>
+  {% endif %}
 </section>

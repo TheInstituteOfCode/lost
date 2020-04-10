@@ -132,14 +132,16 @@ _array_structures:
           img_alt:
           heading:
           text:
-    - label: gif section
-      icon: video
+    - label: Large image section
+      icon: img
       text:
       value:
         _id: gif
         heading:
+        pre_img_text:
         img_path:
         img_alt:
+        post_img_text:
     - label: gif section
       icon: video
       text:
@@ -161,5 +163,18 @@ _array_structures:
         layer:
           - image_path:
             heading:
+            sub_heading:
             text:
             link_url:
+    - label: Acordian Section
+      icon: ballot
+      value:
+        _id: faq
+        heading:
+        text:
+        has_links:
+        dropdown:
+          - heading:
+            list_item:
+              - text:
+                duration:

@@ -665,42 +665,6 @@
   height: 100%;
 }
 
-/* Accordian slides */
-
-.accordion dt a {
-  padding: 0.25rem;
-  margin: 0.25rem 0;
-  display:block;
-  color: #e67e22;
-  position: relative;
-  text-decoration: none;
-}
-.accordion dd {
-  padding: 0.5rem;
-}
-
-/* Accordian Icon */
-.accordion dt a::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: block;
-  width: 1rem;
-  height: 1rem;
-  line-height: 1;
-  text-align: center;
-  -webkit-transition: all .35s;
-  -o-transition: all .35s;
-  transition: all .35s;
-}
-
-/* NEED DANIELs HELP to stop auto popping back open, and make the thing twist */
-.accordion dt a::after {
-  content: "+";
-}
-.open::after {
-  transform: rotateZ(45deg);
-}
 
 /* This media query kicks into action at the gridlex sm breakpoint */
 @media(max-width:768px) {
@@ -751,4 +715,70 @@
 /* gif section */
 .gif-max{
   max-width:700px;
+}
+
+
+.accordion{
+	margin:0;
+	margin-bottom: 0.5rem;
+}
+
+.accordion h3 {
+	margin:0;
+	font-size: 1.3rem;
+    padding: 0 0.5rem;
+}
+
+.accordion dt {
+    background-color: #DFF0F0;
+}
+
+.accordion dt a {
+  padding: 0.75rem;
+  margin: 0.25rem 0;
+  display:block;
+  position: relative;
+  text-decoration: none;
+}
+
+.accordion dd a {
+	padding: 0.45rem 0.35rem 0.35rem 0.35rem;
+    line-height: 1;
+    border: 1px solid;
+    border-radius: 3px;
+    text-decoration: none;
+    flex-grow: 0;
+}
+
+
+.accordion dd {
+    background-color: #eef7f7;
+	padding: 1rem;
+	margin: 0;
+    margin-bottom:  0.5rem;
+}
+
+
+.accordion dt a::after {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  line-height: 2;
+  text-align: center;
+  transition: all .35s;
+}
+
+.accordion dt a::after {
+  content: "+";
+  line-height:1;
+}
+ .accordion dt a.open::after {
+  content: "-";
+}
+.accordion li{
+	display:flex;
+    justify-content: space-between;
 }
