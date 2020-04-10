@@ -747,3 +747,8 @@
   max-width:50px;
   /* sets the max size of icons in the grid */
 }
+
+/* gif section */
+.gif-max{
+  max-width:700px;
+}
