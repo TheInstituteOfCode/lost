@@ -134,20 +134,34 @@ _array_structures:
           text:
     - label: gif section
       icon: video
-      text:
       value:
         _id: gif
         heading:
         img_path:
         img_alt:
-    - label: gif section
-      icon: video
-      text:
+    - label: Banner A
+      icon: ballot
       value:
-        _id: alt_img_section
+        _id: banner-a
+        background_image:
         heading:
-        img_path:
-        img_alt:
+        sub-heading:
+    - label: Banner B
+      icon: format_quote
+      value:
+        _id: banner-b
+        background_image:
+        line-1:
+        line-2:
+        line-3:
+        link-text:
+        link_url:
+    - label: Split Banner
+      icon: ballot
+      value:
+        _id: banner-split
+        background_image:
+        content_html:
     - label: Text Block
       icon: ballot
       value:
@@ -159,7 +173,6 @@ _array_structures:
         _id: image-text-grid
         first-pic-right: false
         layer:
-          - image_path:
+          - picture_image:
             heading:
             text:
-            link_url:
