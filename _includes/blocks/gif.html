@@ -4,5 +4,8 @@
   {% else %}
     <h2>{{block.heading}}</h2>
   {% endif %}
-  <img src="{{icon.img_path}}" alt="{{icon.img_alt}}">
+  <div class="">
+    {{block.text}}
+  </div>
+  <img class="max-gif" src="{{icon.img_path}}" alt="{{icon.img_alt}}">
 </section>
