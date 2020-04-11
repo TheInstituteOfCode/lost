@@ -1,4 +1,7 @@
 <section class="light-bg">
+  {% if forloop.index == 1 %}
+    {% assign first == true %}
+  {% endif %}
   {% if block.first-pic-right == true %}
   <div class="">
   </div>
@@ -9,8 +12,9 @@
     </div>
     <div class="col-6_sm-12-middle padded">
       <h3>{{layer.sub_heading}}</h3>
-      {% if forloop.index == 1 %}
+      {% if first == true %}
         <h1>{{layer.heading}}</h1>
+        {% assign first == false %}
       {% else %}
         <h2>{{layer.heading}}</h2>
       {% endif %}
