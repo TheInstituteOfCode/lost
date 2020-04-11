@@ -166,7 +166,7 @@ _array_structures:
           - image_path:
             heading:
             sub_heading:
-            _text:
+            rich_text:
             link_url:
     - label: Acordian Section
       icon: ballot
