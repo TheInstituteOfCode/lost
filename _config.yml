@@ -7,9 +7,6 @@ collections:
 _options:
   content:
     styles: /assets/editor.css
-  _text:
-    styles: /assets/editor.css
-    format: p h1 h2 h3 ul ol li
 plugins:
   - jekyll-paginate-v2
 
@@ -166,7 +163,7 @@ _array_structures:
           - image_path:
             heading:
             sub_heading:
-            rich_text:
+            content:
             link_url:
     - label: Acordian Section
       icon: ballot
