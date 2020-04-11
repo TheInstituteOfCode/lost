@@ -7,8 +7,9 @@ collections:
 _options:
   content:
     styles: /assets/editor.css
-  text:
+  _text:
     styles: /assets/editor.css
+    format: p h1 h2 h3 ul ol li
 plugins:
   - jekyll-paginate-v2
 
