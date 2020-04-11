@@ -8,15 +8,18 @@
 {% for dropdown in block.dropdown %}
 <dl class="accordion">
   <dt><a href="" class="cc-active"><h3>{{dropdown.heading}}</h3></a></dt>
-  {% for li in dropdown.list_item %}
     <dd style="display: none;">
-      <li>
-        <span>{{li.text}}</span>
-        {% if block.has_link %}
-        <a href="https://shop.lostleblanc.com/products/lost-creator-academy">Unlock now</a>
-        {% endif %}
-      </li>
+      {% for li in dropdown.list_item %}
+      <ul>
+        <li>
+          <span>{{li.text}}</span>
+          {% if block.has_link %}
+          <a href="https://shop.lostleblanc.com/products/lost-creator-academy">Unlock now</a>
+          {% endif %}
+        </li>
+      </ul>
+
+      {% endfor %}
   </dd>
-  {% endfor %}
 </dl>
 {% endfor %}
