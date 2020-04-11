@@ -43,8 +43,35 @@ $(document).ready(function() {
 
 	    return false;
 		});
+		// end accordian
 
+		//------------ shopify
+
+		// client details
+		var client = ShopifyBuy.buildClient({
+		  domain: 'my-shop.myshopify.com',
+		  storefrontAccessToken: 'your-storefront-access-token', // previously apiKey, now deprecated
+		});
+
+
+		var ui = ShopifyBuy.UI.init(client);
+
+
+		// product details
+
+		ui.createComponent('product', {
+			id: 1234567,
+			node: document.getElementById('my-product'),
+			options: {
+		    product: {
+		      buttonDestination: 'modal'
+		    },
+		    cart: {
+		      startOpen: true
+		    }
+		  }
+		});
+
+// end section
 
 });
-
-// end accordian
