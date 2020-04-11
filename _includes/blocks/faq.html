@@ -1,11 +1,11 @@
-<section class="padded-temp max-width-1500 {% if section.settings.bg-light %}  homepage--light {% endif %}">
+<section class="padded-temp max-width-1500">
   {% if forloop.index == 1 %}
     <h1>{{block.heading}}</h1>
   {% else %}
     <h2>{{block.heading}}</h2>
   {% endif %}
   <p class="center">{{block.text}}</p>
-{% for dropdown in block.dropdown}
+{% for dropdown in block.dropdown %}
 <dl class="accordion">
   <dt><a href="" class="cc-active"><h3>{{dropdown.heading}}</h3></a></dt>
     <dd style="display: none;">
@@ -17,3 +17,4 @@
       </li>
   </dd>
 </dl>
+{% endfor %}
