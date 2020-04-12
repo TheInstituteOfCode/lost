@@ -158,7 +158,7 @@ _array_structures:
       icon: ballot
       value:
         _id: image-text-grid
-        first-pic-right: false
+        first-pic-left: false
         layer:
           - image_path:
             heading:
