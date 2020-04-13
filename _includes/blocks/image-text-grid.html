@@ -1,10 +1,7 @@
 <section class="light-bg">
-  {% if forloop.index == 1 %}
-    {% assign first == true %}
-  {% endif %}
+  {% assign order = forloop.index %}
   {% if block.first-pic-left == true %}
-  <div class="">
-  </div>
+    <div class=""></div>
   {% endif %}
   {% for layer in block.layer %}
   <div class="grid flex-flip">
@@ -12,9 +9,9 @@
     </div>
     <div class="col-6_sm-12-middle padded">
       <h3>{{layer.sub_heading}}</h3>
-      {% if first == true %}
+      {% if order == 1 %}
         <h1>{{layer.heading}}</h1>
-        {% assign first == false %}
+        {% assign order = order | plus:1 %}
       {% else %}
         <h2>{{layer.heading}}</h2>
       {% endif %}
