@@ -49,8 +49,8 @@ $(document).ready(function() {
 
 		// client details
 		var client = ShopifyBuy.buildClient({
-		  domain: 'my-shop.myshopify.com',
-		  storefrontAccessToken: 'your-storefront-access-token', // previously apiKey, now deprecated
+		  domain: 'swinkels-test-1.myshopify.com',
+		  storefrontAccessToken: '0c87504f50f66b6f7c68f1a68e803912', // previously apiKey, now deprecated
 		});
 
 
@@ -60,17 +60,49 @@ $(document).ready(function() {
 		// product details
 
 		ui.createComponent('product', {
-			id: 1234567,
-			node: document.getElementById('my-product'),
+			id: 4531514441800,
+			node: document.getelementsbyclassname('my-product'),
 			options: {
-		    product: {
-		      buttonDestination: 'modal'
-		    },
-		    cart: {
-		      startOpen: true
-		    }
-		  }
+				product: {
+					buttonDestination: 'cart',
+					contents: {
+						img: false,
+						imgWithCarousel: false,
+						title: false,
+						variantTitle: false,
+						price: false,
+						unitPrice: false,
+						options: false,
+						quantity: false,
+						quantityIncrement: false,
+						quantityDecrement: false,
+						quantityInput: false,
+						button: true,
+						buttonWithQuantity: false,
+						description: false,
+					},
+				},
+				cart: {
+					iframe: false,
+					startOpen: false,
+					contents: {
+						title: true,
+						lineItems: true,
+						footer: false,
+						note: false,
+						discounts: false,
+					},
+					templates:{
+						lineItems: "<div class='grid'><div class='col-6'>text</div><div class='col-6'>other text</div></div>",
+						close: "X",
+					}
+				}
+
+			}
+
 		});
+
+
 
 // end section
 
