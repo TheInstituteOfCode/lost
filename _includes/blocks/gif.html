@@ -1,14 +1,14 @@
-<section class="padded center">
+<section class="padded centered">
   {% if forloop.index == 1 %}
     <h1>{{block.heading}}</h1>
   {% else %}
     <h2>{{block.heading}}</h2>
   {% endif %}
-  {% if block.pre_img_text %}
+  {% if block.pre_img_text_html %}
     <p>{{block.pre_img_text}}</p>
   {% endif %}
   <img class="max-gif" src="{{block.img_path}}" alt="{{block.img_alt}}">
-  {% if block.post_img_text %}
-    <p>{{block.post_img_text}}</p>
+  {% if block.post_img_text_html %}
+    <p>{{block.post_img_text_html}}</p>
   {% endif %}
 </section>

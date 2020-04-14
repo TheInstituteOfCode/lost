@@ -7,7 +7,7 @@
     <h2>{{block.heading}}</h2>
   {% endif %}
   <div class="">
-    {{block.content_text}}
+    {{block.text_html}}
   </div>
   <div class="grid-center-middle">
     {% for icon in block.icon_block %}
@@ -17,7 +17,7 @@
       </div>
       <div class="col padded">
         <h4>{{icon.heading}}</h4>
-        <p>{{icon.text}}</p>
+        <p>{{icon.text_html}}</p>
       </div>
     </div>
     {% endfor %}
