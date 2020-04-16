@@ -132,6 +132,7 @@ _array_structures:
       icon: video
       value:
         _id: vimeo
+        bg-class:
         sub_heading:
         heading:
         vimeo_id:
@@ -144,6 +145,7 @@ _array_structures:
       icon: video
       value:
         _id: icon_section
+        bg-class:
         sub_heading:
         heading:
         text_html:
@@ -157,6 +159,7 @@ _array_structures:
       text:
       value:
         _id: gif
+        bg-class:
         heading:
         pre_img_text_html:
         img_path:
@@ -165,12 +168,14 @@ _array_structures:
     - label: Text Block
       icon: ballot
       value:
+        bg-class:
         _id: text-block
         text_html:
     - label: Image and text grid
       icon: ballot
       value:
         _id: image-text-grid
+        bg-class:
         first-pic-left: false
         has_links: false
         layer:
@@ -182,6 +187,7 @@ _array_structures:
       icon: ballot
       value:
         _id: faq
+        bg-class:
         heading:
         text:
         has_links: false
