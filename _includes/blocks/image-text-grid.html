@@ -17,7 +17,9 @@
       {% endif %}
       <hr>
       <p> {{layer.text_html}} </p>
+      {% if block.has_links == true %}
       <a class="arrow" href="link_url"> > </a>
+      {% endif %}
     </div>
   </div>
   {% endfor %}
