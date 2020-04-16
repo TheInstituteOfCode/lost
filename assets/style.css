@@ -832,3 +832,9 @@ right:4px;
     position: absolute;
     width: 1px;
 }
+/* partner */
+
+.partner-logo{
+  filter: grayscale(1);
+  width: 100px;
+}
