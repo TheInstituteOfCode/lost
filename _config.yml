@@ -12,8 +12,20 @@ _options:
     styles: /assets/editor.css
     bold: true
     numberedlist: true
-    code: false
-    table: true
+    right: right
+    center: center
+  pre_img_text_html:
+    format: h2 h3 p a
+    styles: /assets/editor.css
+    bold: true
+    numberedlist: true
+    right: right
+    center: center
+  post_img_text_html:
+    format: h2 h3 p a
+    styles: /assets/editor.css
+    bold: true
+    numberedlist: true
     right: right
     center: center
 plugins:
