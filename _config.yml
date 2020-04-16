@@ -8,10 +8,11 @@ _options:
   content:
     styles: /assets/editor.css
   text_html:
+    format: h2 h3 p a
     styles: /assets/editor.css
     bold: true
     numberedlist: true
-    code: true
+    code: false
     table: true
     right: right
     center: center
