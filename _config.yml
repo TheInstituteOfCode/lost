@@ -195,3 +195,13 @@ _array_structures:
           - heading:
             list_item:
               - text:
+    - label: Acordian Section
+      icon: ballot
+      value:
+        _id: partners
+        bg-class:
+        heading:
+        logo:
+          - image_path:
+            alt:
+            opacity:
