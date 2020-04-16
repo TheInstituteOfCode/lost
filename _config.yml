@@ -184,9 +184,8 @@ _array_structures:
         _id: faq
         heading:
         text:
-        has_links:
+        has_links: false
         dropdown:
           - heading:
             list_item:
               - text:
-                duration:

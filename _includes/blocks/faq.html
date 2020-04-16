@@ -7,7 +7,7 @@
   <p class="center">{{block.text}}</p>
 {% for dropdown in block.dropdown %}
 <dl class="accordion">
-  <dt><a href="" class="cc-active"><h3>{{dropdown.heading}}</h3></a></dt>
+  <dt><a href="" class="cc-active"><h4>{{dropdown.heading}}</h4></a></dt>
     <dd style="display: none;">
       {% for li in dropdown.list_item %}
       <ul>
@@ -18,7 +18,6 @@
           {% endif %}
         </li>
       </ul>
-
       {% endfor %}
   </dd>
 </dl>
