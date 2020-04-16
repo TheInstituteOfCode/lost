@@ -195,7 +195,7 @@ _array_structures:
           - heading:
             list_item:
               - text:
-    - label: Acordian Section
+    - label: Partners Section
       icon: ballot
       value:
         _id: partners
