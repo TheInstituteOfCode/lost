@@ -9,7 +9,12 @@ _options:
     styles: /assets/editor.css
   text_html:
     styles: /assets/editor.css
-    
+    bold: true
+    numberedlist: true
+    code: true
+    table: true
+    right: right
+    center: center
 plugins:
   - jekyll-paginate-v2
 
