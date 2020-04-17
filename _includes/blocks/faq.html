@@ -1,13 +1,15 @@
 <section class="padded max-width-1500 {{block.bg-class}}">
-  {% if forloop.index == 1 %}
-    <h1 class="center">{{block.heading}}</h1>
-  {% else %}
-    <h2 class="center">{{block.heading}}</h2>
-  {% endif %}
-  <p class="center">{{block.text}}</p>
-{% for dropdown in block.dropdown %}
-<dl class="accordion">
-  <dt><a href="" class="cc-active"><h4>{{dropdown.heading}}</h4></a></dt>
+  <div class="padded">
+    {% if forloop.index == 1 %}
+    <h1 class="centered">{{block.heading}}</h1>
+    {% else %}
+    <h2 class="centered">{{block.heading}}</h2>
+    {% endif %}
+    <p class="center">{{block.text}}</p>
+  </div>
+  {% for dropdown in block.dropdown %}
+  <dl class="accordion">
+    <dt><a href="" class="cc-active"><h4>{{dropdown.heading}}</h4></a></dt>
     <dd style="display: none;">
       {% for li in dropdown.list_item %}
       <ul>
@@ -19,7 +21,7 @@
         </li>
       </ul>
       {% endfor %}
-  </dd>
-</dl>
-{% endfor %}
+    </dd>
+  </dl>
+  {% endfor %}
 </section>
