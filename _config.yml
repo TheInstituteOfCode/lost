@@ -14,8 +14,10 @@ _options:
     numberedlist: true
     right: right
     center: centered
+    link: true
   pre_img_text_html:
     format: h2 h3 p a
+    link: true
     styles: /assets/editor.css
     bold: true
     numberedlist: true
@@ -23,6 +25,7 @@ _options:
     center: center
   post_img_text_html:
     format: h2 h3 p a
+    link: true
     styles: /assets/editor.css
     bold: true
     numberedlist: true
