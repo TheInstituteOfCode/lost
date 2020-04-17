@@ -5,7 +5,7 @@
   {% endif %}
   {% for layer in block.layer %}
   <div class="grid flex-flip">
-    <div class="col-6_sm-12 padded-light img-container">
+    <div class="col-6_sm-12 padded-light {% if layer.img-fill == true %}img-container{% endif %}">
       <img src="{{layer.image_path}}" alt="{{layer.image_path}}">
     </div>
     <div class="col-6_sm-12-middle padded">

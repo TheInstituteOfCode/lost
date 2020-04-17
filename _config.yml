@@ -185,6 +185,7 @@ _array_structures:
         has_links: false
         layer:
           - image_path:
+            img-fill: true
             sub_heading:
             heading:
             text_html:

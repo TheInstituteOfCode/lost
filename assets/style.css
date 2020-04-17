@@ -853,19 +853,19 @@ right:4px;
   margin-bottom: 0.4em;
 }
 
-.img-container{
-  position: relative;
-  min-height: 50vw;
+@media (min-width:768px ) {
+  .img-container{
+    position: relative;
+  }
+  .img-container img{
+    position: absolute;
+    top: 5%;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+    object-fit: cover;
+    width: 90%;
+    height: 90%;
+    object-position: center;
+  }
 }
-.img-container img{
-  position: absolute;
-  top: 5%;
-  bottom: 5%;
-  left: 5%;
-  right: 5%;
-  object-fit: cover;
-  width: 90%;
-  height: 90%;
-  object-position: center;
-}
-@media (max-width: )
