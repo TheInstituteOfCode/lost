@@ -838,3 +838,12 @@ right:4px;
   filter: grayscale(1);
   width: 100px;
 }
+
+
+/* img and text grid */
+.img-text-grid li {
+  font-size: 1.50rem;
+  padding-left: 1rem;
+  list-style-position: outside;
+  margin-bottom: 0.4em;
+}
