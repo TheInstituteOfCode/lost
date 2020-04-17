@@ -1,8 +1,8 @@
 
-/* Typography Styles */ 
+/* Typography Styles */
 
 h2.cursive {
-    font-family: cursive; 
+    font-family: cursive;
     color: pink;
 }
 
@@ -49,7 +49,7 @@ img.small-centered {
 }
 
 
-/* Clear Floats */ 
+/* Clear Floats */
 p.clear-images-paragraph {
   clear: both;
 }
@@ -62,3 +62,6 @@ h3.clear-images-h3 {
   clear: both;
 }
 
+a.button{
+  
+}
