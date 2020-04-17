@@ -1,6 +1,6 @@
 
 <section class="grid-center-middle padded {{block.bg-class}}">
-  <div class="col-6_md-12">
+  <div class="col-6_md-12 padded">
     <h3>{{block.sub_heading}}</h3>
     {% if forloop.index == 1 %}
       <h1>{{block.heading}}</h1>
@@ -10,8 +10,12 @@
     <div class="">
       {{block.text_html}}
     </div>
+    {% if block.buy_button == true %}
+    <div id="my-product-1">
+    </div>
+    {% endif %}
     {% for button in block.button %}
-      <a class="button {{button.class}}" href="{{button.link_url}}">{{button.text}}</a>
+      <a class="button centered {{button.class}}" href="{{button.link_url}}">{{button.text}}</a>
     {% endfor %}
   </div>
   <div class="col-6_md-12">

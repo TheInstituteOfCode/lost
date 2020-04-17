@@ -58,12 +58,13 @@ $(document).ready(function() {
 
 
 		// product details
-
 		ui.createComponent('product', {
 			id: 4531514441800,
-			node: document.getelementsbyclassname('my-product'),
+			node: document.getElementById('my-product-1'),
 			options: {
 				product: {
+					iframe: false,
+					text: { button: 'Enroll Now'},
 					buttonDestination: 'cart',
 					contents: {
 						img: false,
@@ -81,6 +82,9 @@ $(document).ready(function() {
 						buttonWithQuantity: false,
 						description: false,
 					},
+					templates:{
+						button: '<button class="button center" data-element="product.button">Enroll Now</button>'
+					}
 				},
 				cart: {
 					iframe: false,

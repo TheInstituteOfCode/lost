@@ -140,10 +140,12 @@ _array_structures:
         bg-class:
         vimeo_id:
         text_html:
+        buy_button: true
         button:
         - class:
           link_url:
           text:
+          id:
     - label: Icon section
       icon: video
       value:

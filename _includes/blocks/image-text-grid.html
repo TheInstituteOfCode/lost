@@ -5,7 +5,8 @@
   {% endif %}
   {% for layer in block.layer %}
   <div class="grid flex-flip">
-    <div class="col-6_sm-12 bg-image" style="background-image:url('{{layer.image_path}}')">
+    <div class="col-6_sm-12 padded-light img-container">
+      <img src="{{layer.image_path}}" alt="{{layer.image_path}}">
     </div>
     <div class="col-6_sm-12-middle padded">
 

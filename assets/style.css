@@ -32,9 +32,10 @@
   .centered {  text-align: center;   }
 
   .padded   {  padding: 5%;    }
+  .padded-light{padding:2%;}
   .padded-1 {  padding: 1rem;  }
   .padded-2 {  padding: 2rem;  }
-  .padded-top{ padding: 5%  ;  }
+  .padded-top{ padding-top: 5%  ;  }
 
   .capped-width { width: 80%; margin: auto;}
 
@@ -140,6 +141,10 @@
     text-transform: uppercase;
     font-size: 0.9rem;
     font-weight: 500;
+    width: 100%;
+    max-width: 50vw;
+    display: block;
+    margin: .5rem auto .5rem;
   }
 
   .button:hover {
@@ -847,3 +852,20 @@ right:4px;
   list-style-position: outside;
   margin-bottom: 0.4em;
 }
+
+.img-container{
+  position: relative;
+  min-height: 50vw;
+}
+.img-container img{
+  position: absolute;
+  top: 5%;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+  object-fit: cover;
+  width: 90%;
+  height: 90%;
+  object-position: center;
+}
+@media (max-width: )

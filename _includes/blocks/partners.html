@@ -1,6 +1,6 @@
 <section class="light-bg {{block.bg-class}} mobile-hide">
-  <h4 class="center">{{block.heading}}</h4>
-  <div class="grid-center-spaceAround">
+  <h4 class="centered padded">{{block.heading}}</h4>
+  <div class="grid-middle-spaceAround padded-light">
     {% for icon in block.logo %}
       <div class="col centered">
         <img class="partner-logo" src="{{icon.image_path}}" alt="{{img_alt}}" {% if icon.opacity %} style="opacity:{{icon.opacity}}"{% endif %}>
