@@ -15,7 +15,9 @@
       {% else %}
         <h2>{{layer.heading}}</h2>
       {% endif %}
+      {% if layer.heading != ""}
       <hr>
+      {% endif %}
       <p> {{layer.text_html}} </p>
       {% if block.has_links == true %}
       <a class="arrow" href="link_url"> > </a>
