@@ -194,7 +194,7 @@ _array_structures:
         dropdown:
           - heading:
             list_item:
-              - text:
+              - text_html:
     - label: Partners Section
       icon: ballot
       value:
