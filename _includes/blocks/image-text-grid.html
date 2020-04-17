@@ -8,15 +8,18 @@
     <div class="col-6_sm-12 bg-image" style="background-image:url('{{layer.image_path}}')">
     </div>
     <div class="col-6_sm-12-middle padded">
-      <h3>{{layer.sub_heading}}</h3>
-      {% if order == 1 %}
-        <h1>{{layer.heading}}</h1>
-        {% assign order = order | plus:1 %}
-      {% else %}
-        <h2>{{layer.heading}}</h2>
+
+      {% if layer.sub_heading != nul %}
+        <h3>{{layer.sub_heading}}</h3>
       {% endif %}
-      {% if layer.heading != "" %}
-      <hr>
+      {% if layer.heading != nul %}
+        {% if order == 1 %}
+          <h1>{{layer.heading}}</h1>
+          {% assign order = order | plus:1 %}
+        {% else %}
+          <h2>{{layer.heading}}</h2>
+        {% endif %}
+        <hr>
       {% endif %}
       <p> {{layer.text_html}} </p>
       {% if block.has_links == true %}
