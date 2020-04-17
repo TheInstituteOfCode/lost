@@ -135,9 +135,9 @@ _array_structures:
       icon: video
       value:
         _id: vimeo
-        bg-class:
-        sub_heading:
         heading:
+        sub_heading:
+        bg-class:
         vimeo_id:
         text_html:
         button:
@@ -148,9 +148,9 @@ _array_structures:
       icon: video
       value:
         _id: icon_section
+        heading:
         bg-class:
         sub_heading:
-        heading:
         text_html:
         icon_block:
         - img_path:
@@ -162,8 +162,8 @@ _array_structures:
       text:
       value:
         _id: gif
-        bg-class:
         heading:
+        bg-class:
         pre_img_text_html:
         img_path:
         img_alt:
@@ -190,8 +190,8 @@ _array_structures:
       icon: ballot
       value:
         _id: faq
-        bg-class:
         heading:
+        bg-class:
         text:
         has_links: false
         dropdown:
@@ -202,8 +202,8 @@ _array_structures:
       icon: ballot
       value:
         _id: partners
-        bg-class:
         heading:
+        bg-class:
         logo:
           - image_path:
             alt:
