@@ -1,8 +1,8 @@
 <section class="padded max-width-1500 {{block.bg-class}}">
   {% if forloop.index == 1 %}
-    <h1>{{block.heading}}</h1>
+    <h1 class="center">{{block.heading}}</h1>
   {% else %}
-    <h2>{{block.heading}}</h2>
+    <h2 class="center">{{block.heading}}</h2>
   {% endif %}
   <p class="center">{{block.text}}</p>
 {% for dropdown in block.dropdown %}
