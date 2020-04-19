@@ -7,21 +7,37 @@ p,h2,h3,h4{
 .padded-left{padding-left:5%;}
   .right{text-align:right}
   .bold{font-weight:900}
+
+  .col-img{
+    borderradius:100%;
+  }
+
 .shopify-buy__cart-scroll{
   position:relative;
   height:auto;
   width:auto;}
 .shopify-buy__cart{
   background-color: #f0f3f4;
+  overflow-x: scroll;
+}
+.shopify-buy__quantity-decrement,.shopify-buy__quantity-increment,.shopify-buy__quantity{display:none;}
+
+.shopify-buy__cart-items{height:auto;}
+
+.shopify-buy__cart-bottom{
+  position:relative;
 }
 .bg-white{background-color:#fff}
 @media (min-width:650px){
   .grid{display:flex;
     align-items:flex-start;}
-    .col{max-width:50%;}
+    .col{
+      flex:1;
+      max-width:50%;
+      margin:1rem;
+    }
     .col-img{
       max-width:100px;
-      borderradius:100%
     }
   }
 
