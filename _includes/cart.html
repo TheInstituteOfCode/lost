@@ -1,0 +1,55 @@
+{% raw %}
+<style>
+p,h2,h3,h4{
+  margin-bottom:1rem;
+}
+.padded{padding:5%;}
+.padded-left{padding-left:5%;}
+.grid{display:flex;
+  align-items:flex-start;}
+.col{max-width:50%;}
+.col-img{
+  max-width:100px;
+  borderradius:100%      }
+  .right{text-align:right}
+  .bold{font-weight:900}
+.shopify-buy__cart-scroll{
+  position:relative;
+  height:auto;
+  width:auto;}
+.shopify-buy__cart{
+  background-color:
+}
+</style>
+<div class="grid padded">
+  <div class="col">
+    <h3>Order Summmary</h3>
+    <div class="">
+      <div class="{{data.classes.cart.cartScroll}}{{#data.contents.note}} {{data.classes.cart.cartScrollWithCartNote}}{{/data.contents.note}}{{#data.discounts}} {{data.classes.cart.cartScrollWithDiscounts}}{{/data.discounts}}" data-element="cart.cartScroll">
+        {{#data.isEmpty}}
+          <p class="{{data.classes.cart.empty}} {{data.classes.cart.emptyCart}}" data-element="cart.empty">{{data.text.empty}}</p>
+        {{/data.isEmpty}}
+        <div class="{{data.classes.cart.lineItems}}" data-element="cart.lineItems">{{{data.lineItemsHtml}}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="col paddded-left">
+    <h3> See what some of our members are saying</h3>
+    <div class="grid">
+      <img class="col-img" src="http://127.0.0.1:4000/images/person.png" alt="/member">
+      <div class="col-p padded-left">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h4 class="right blod">- quote authour</h4>
+      </div>
+    </div>
+    <div class="">
+      <h2>lifetime membership includes </h2>
+      <ul>
+        <li>300hr of content</li>
+        <li>exclusive facebook group</li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+{% endraw %}

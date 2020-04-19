@@ -31,11 +31,13 @@
   .right    {  text-align: right;    }
   .centered {  text-align: center;   }
 
-  .padded   {  padding: 5%;    }
-  .padded-light{padding:2%;}
-  .padded-1 {  padding: 1rem;  }
-  .padded-2 {  padding: 2rem;  }
-  .padded-top{ padding-top: 5%  ;  }
+  .padded   {     padding: 5%;    }
+  .padded-light{  padding:2%;}
+  .padded-1 {     padding: 1rem;  }
+  .padded-2 {     padding: 2rem;  }
+  .padded-top{    padding-top: 5%;}
+  .padded-top-0{  padding-top: 0; }
+
 
   .capped-width { width: 80%; margin: auto;}
 
@@ -68,6 +70,8 @@
   p, ul {
      margin-bottom: 0.8rem;
   }
+
+  a{color: inherit;}
 
   /* this makes sure that the last element in any container doesn't have margin-bottom */
   h2:last-child,
@@ -733,7 +737,7 @@
 	margin-bottom: 0.5rem;
 }
 
-.accordion h3 {
+.accordion h4 {
 	margin:0;
 	font-size: 1.3rem;
     padding: 0 0.5rem;
@@ -868,4 +872,9 @@ right:4px;
     height: 90%;
     object-position: center;
   }
+}
+/* index page */
+.banner-bg-index-last{
+  background-image: url("/images/index-banner-last.jpg");
+  color: white;
 }

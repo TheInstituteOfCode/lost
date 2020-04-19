@@ -1,5 +1,5 @@
-
-
+---
+---
 $(document).ready(function() {
 	//make sure the page is ready befor running the scripts
 	// This is the hamburger menu
@@ -46,7 +46,12 @@ $(document).ready(function() {
 		// end accordian
 
 		//------------ shopify
-
+		/*
+			{% assign cart = "" %}
+		 {% capture cart %}
+			 {% include cart.html %}
+		 {% endcapture %}
+		*/
 		// client details
 		var client = ShopifyBuy.buildClient({
 		  domain: 'swinkels-test-1.myshopify.com',
@@ -87,17 +92,17 @@ $(document).ready(function() {
 					}
 				},
 				cart: {
-					iframe: false,
+					iframe: true,
 					startOpen: false,
 					contents: {
 						title: true,
 						lineItems: true,
-						footer: false,
+						footer: true,
 						note: false,
 						discounts: false,
 					},
 					templates:{
-						lineItems: "<div class='grid'><div class='col-6'>text</div><div class='col-6'>other text</div></div>",
+						lineItems: '{{ cart | strip_newlines }}',
 						close: "X",
 					}
 				}
