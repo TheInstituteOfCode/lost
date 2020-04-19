@@ -88,7 +88,7 @@ $(document).ready(function() {
 						description: false,
 					},
 					templates:{
-						button: '<button class="button center" data-element="product.button">Enroll Now</button>'
+						button: '{% raw %}<div class="{{data.classes.product.buttonWrapper}}" data-element="product.buttonWrapper"><button {{#data.buttonDisabled}}disabled{{/data.buttonDisabled}} class="button {{data.classes.product.button}} {{data.buttonClass}}" data-element="product.button">{{data.buttonText}}</button></div>{% endraw %}'
 					}
 				},
 				cart: {
