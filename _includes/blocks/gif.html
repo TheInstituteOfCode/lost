@@ -1,8 +1,8 @@
-<section class="padded centered {{block.bg-class}}">
+<section class="capped-width padded {{block.bg-class}}">
   {% if forloop.index == 1 %}
-    <h1>{{block.heading}}</h1>
+    <h1 class="centered">{{block.heading}}</h1>
   {% else %}
-    <h2>{{block.heading}}</h2>
+    <h2 class="centered">{{block.heading}}</h2>
   {% endif %}
   {% if block.pre_img_text_html %}
     <p>{{block.pre_img_text_html}}</p>

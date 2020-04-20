@@ -1,23 +1,26 @@
 
-<section class="padded {{block.bg-class}}">
-  <h3 class="center">{{block.sub_heading}}</h3>
+<section class="padded {{block.bg-class}} centered">
+  <h3>{{block.sub_heading}}</h3>
   {% if forloop.index == 1 %}
-    <h1 class="center">{{block.heading}}</h1>
+    <h1 >{{block.heading}}</h1>
   {% else %}
-    <h2 class="center">{{block.heading}}</h2>
+    <h2 >{{block.heading}}</h2>
   {% endif %}
-  <div class="">
+  <div >
     {{block.text_html}}
   </div>
-  <div class="grid-center-middle">
+  <hr>
+  <div class="grid-center left">
     {% for icon in block.icon_block %}
-    <div class="col-6 grid">
-      <div class="col icon-max margin padded-top">
-        <img src="{{icon.img_path}}" alt="icon.img_alt">
-      </div>
-      <div class="col padded">
-        <h4>{{icon.heading}}</h4>
-        <p>{{icon.text_html}}</p>
+    <div class="col-4_lg-6_sm-12 padded-2">
+      <div class="grid">
+        <div class="col icon-max margin padded-t-2">
+          <img src="{{icon.img_path}}" alt="icon.img_alt">
+        </div>
+        <div class="col padded-2">
+          <h4>{{icon.heading}}</h4>
+          <p>{{icon.text_html}}</p>
+        </div>
       </div>
     </div>
     {% endfor %}
