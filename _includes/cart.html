@@ -1,83 +1,147 @@
 {% raw %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
 <style>
   p,h2,h3,h4{
     margin-bottom:1rem;
   }
+  h3{
+    font-size:1.7rem;
+  }
+  p{
+    font-size:1.3rem;
+  }
   .padded{padding:5%;}
-  .padded-left{padding-left:5%;}
+
+  .padded-light{padding:2%;}
+  .padded-left{
+    padding-left:5%;
+  }
   .right{text-align:right}
   .bold{font-weight:900}
 
-  li {
-    list-style-image: url(https://robust-kouprey.cloudvent.net/images/icons8-tick-box-40.png);
-    /* <a target="_blank" href="https://icons8.com/icons/set/checked-2">Tick Box icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */
-    list-style-position: inside;
-  }
+
+  .col{margin:1rem;}
 
   .col-img{
     border-radius:100%;
+    margin:1rem;
+  }
+
+  .li{
+    display:flex;
+    justify-contet:center;
+    align-items:center;
+  }
+
+  .fas{
+    color:#89dada;
   }
 
   .shopify-buy__cart-scroll{
     position:relative;
     height:auto;
     width:auto;
+    padding-bottom:5%;
   }
   .shopify-buy__cart{
     background-color: #f0f3f4;
     overflow-x: scroll;
   }
-  .shopify-buy__quantity-decrement,.shopify-buy__quantity-increment,.shopify-buy__quantity{display:none;}
+  .shopify-buy__quantity-decrement,.shopify-buy__quantity-increment,.shopify-buy__quantity,.shopify-buy__cart-item__variant-title,.shopify-buy__quantity-container.clearfix{
+    display:none;
+  }
+  .shopify-buy__quantity-container{margin-right:0;}
 
-  .shopify-buy__cart-items{height:auto;}
-
+  .shopify-buy__cart-items{
+    height:auto;
+  }
+  .shopify-buy__cart-item{
+    display:flex;
+    flex-flow: wrap;
+    align-items: center;
+  }
+  .shopify-buy__cart-item__title{
+    flex-grow:1;
+    margin-left:5%;
+    font-size: 1.6rem;
+    color:lightgrey;
+  }
+  .shopify-buy__cart-item__image{
+    position:relative
+  }
   .shopify-buy__cart-bottom{
     position:relative;
   }
+
   .bg-white{background-color:#fff}
   @media (min-width:650px){
-    .grid{display:flex;
-      align-items:flex-start;}
-      .col{
-        flex:1;
-        max-width:50%;
-        margin:1rem;
-      }
-      .col-img{
-        max-width:100px;
-      }
+    .grid{
+      display:flex;
+      align-items:flex-start;
+    }
+    .col{
+      flex:1;
+      max-width:50%;
+    }
+    .col-img{
+      max-width:100px;
     }
 
-  </style>
-  <div class="grid padded">
-    <div class="col">
-      <h3>Order Summmary</h3>
-      <div class="bg-white">
-        <div class="{{data.classes.cart.cartScroll}}{{#data.contents.note}} {{data.classes.cart.cartScrollWithCartNote}}{{/data.contents.note}}{{#data.discounts}} {{data.classes.cart.cartScrollWithDiscounts}}{{/data.discounts}}" data-element="cart.cartScroll">
-          {{#data.isEmpty}}
-          <p class="{{data.classes.cart.empty}} {{data.classes.cart.emptyCart}}" data-element="cart.empty">{{data.text.empty}}</p>
-          {{/data.isEmpty}}
-          <div class="{{data.classes.cart.lineItems}}" data-element="cart.lineItems">{{{data.lineItemsHtml}}}</div>
-        </div>
-      </div>
-    </div>
-    <div class="col paddded-left">
-      <h3> See what some of our members are saying</h3>
-      <div class="grid">
-        <img class="col-img" src="https://lavish-lily.cloudvent.net/images/person.png" alt="/member">
-        <div class="col-p padded-left">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <h4 class="right blod">- quote authour</h4>
-        </div>
-      </div>
-      <div class="">
-        <h2>lifetime membership includes </h2>
-        <ul>
-          <li>300hr of content</li>
-          <li>exclusive facebook group</li>
-        </ul>
+    .shopify-buy__cart-bottom{
+      position:absolute;
+    }
+  }
+</style>
 
+<div class="grid padded">
+  <div class="col">
+    <h3>Order Summmary</h3>
+    <div class="bg-white">
+      <div class="{{data.classes.cart.cartScroll}}{{#data.contents.note}} {{data.classes.cart.cartScrollWithCartNote}}{{/data.contents.note}}{{#data.discounts}} {{data.classes.cart.cartScrollWithDiscounts}}{{/data.discounts}}" data-element="cart.cartScroll">
+        {{#data.isEmpty}}
+        <p class="{{data.classes.cart.empty}} {{data.classes.cart.emptyCart}}" data-element="cart.empty">{{data.text.empty}}</p>
+        {{/data.isEmpty}}
+        <div class="{{data.classes.cart.lineItems}}" data-element="cart.lineItems">{{{data.lineItemsHtml}}}</div>
       </div>
     </div>
   </div>
-  {% endraw %}
+  <div class="col paddded-left">
+    <h3> See what some of our members are saying</h3>
+    <div class="grid">
+      <img class="col-img" src="https://lavish-lily.cloudvent.net/images/person.png" alt="/member">
+      <div class="col-p padded-left">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h4 class="right blod">- quote authour</h4>
+      </div>
+    </div>
+    <hr>
+    <div class="">
+      <h2>lifetime membership includes </h2>
+      <div>
+        <div class="li">
+          <i class="fas fa-check-circle"></i>
+          <span class="padded-light">300hr of content</span>
+        </div>
+        <div class="li">
+          <i class="fas fa-check-circle"></i>
+          <span class="padded-light">exclusive facebook group</span>
+        </div>
+        <div class="li">
+          <i class="fas fa-check-circle"></i>
+          <span class="padded-light">Bi-Annual Video Contest/Feedback Fridays</span>
+        </div>
+        <div class="li">
+          <i class="fas fa-check-circle"></i>
+          <span class="padded-light">exclusive facebook group</span>
+        </div>
+        <div class="li">
+          <i class="fas fa-check-circle"></i>
+          <span class="padded-light">exclusive facebook group</span>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+{% endraw %}
