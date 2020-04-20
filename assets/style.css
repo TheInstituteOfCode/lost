@@ -1,3 +1,12 @@
+/*
+
+featured blue - #99d0d0
+light blue - #dff0f0
+light grey - rgb(150,150,155)
+
+*/
+
+
 /*-----  CSS RESET  ------*/
 
   * {
@@ -16,8 +25,8 @@
   }
 
   body {
-    font-family: 'Noto Sans HK', sans-serif;
-    color: rgb(60,60,65);
+    font-family: 'Catamaran', sans-serif;
+    color: rgb(75,75,80);
   }
 
    /* this overrides the default padding and margin on gridlex elements */
@@ -31,15 +40,24 @@
   .right    {  text-align: right;    }
   .centered {  text-align: center;   }
 
-  .padded   {     padding: 5%;    }
-  .padded-light{  padding:2%;}
-  .padded-1 {     padding: 1rem;  }
-  .padded-2 {     padding: 2rem;  }
-  .padded-top{    padding-top: 5%;}
-  .padded-top-0{  padding-top: 0; }
+  .padded       {  padding: 5vw;    }
+  .padded-light {  padding: 2vw;}
+  .padded-1     {  padding: 1rem;  }
+  .padded-2     {  padding: 2rem;  }
+  .padded-r     {  padding-right: 5vw;  }
+  .padded-r-1   {  padding-right: 1rem;  }
+  .padded-r-2   {  padding-right: 2rem;  }
+  .padded-l-2   {  padding-left: 2rem;  }
+  .padded-b-1   {  padding-bottom: 1rem;  }
+  .padded-t-1   {  padding-top: 1rem;}
+  .padded-t-2   {  padding-top: 2rem;}
+  .padded-top   {  padding-top: 5vw;}
+  .padded-top-0 {  padding-top: 0; }
 
 
-  .capped-width { width: 80%; margin: auto;}
+  /* Fixing gridlex bugs  */
+  [class*=grid].padded    {  padding: 5%;  }
+  [class*=grid].padded-2 {  padding: 2rem;  }
 
   .tall-50  {  min-height: 50vh;   }
   .tall-100 {  min-height: 100vh;  }
@@ -53,22 +71,25 @@
 
   /* General typography */
 
-  h2, h3, h4, h5, h6 {
+  h1, h2, h3, h4, h5, h6 {
     line-height: 1;
     margin-bottom: 0.8rem;
   }
 
   h2,h1 { font-size: 2.2rem;  }
+
+  /* Subtitles  */
   h3  {
-    font-size: 1.8rem;
-    color: lightgrey;
-    font-weight: 100;
+    font-size: 1.3rem;
+    color: rgb(150,150,155);
+    font-weight: 200;
+    letter-spacing: 1px;
   }
-  h4  { font-size: 1.57143rem;  }
-  p   { font-size: 14.7px;  }
+  h4  { font-size: 1.5rem;  }
+  p   { font-size: 1rem;    }
 
   p, ul {
-     margin-bottom: 0.8rem;
+     margin-bottom: 0.5rem;
   }
 
   a{color: inherit;}
@@ -85,9 +106,13 @@
 
   hr { /* this is a line element */
     border: none;
-    border-bottom: 3px solid;
-    width: 4rem;
-    margin-bottom: 1rem;
+    border-bottom: 2px solid rgb(220,220,230);
+    width: 3rem;
+    margin: 1rem 0;
+  }
+
+  .centered hr {
+    margin: 1rem auto;
   }
 
   /* ------- unique typography styles - adjust to suit your styles  --------- */
@@ -132,27 +157,31 @@
 
   /* ---------------  Button Styles  --------- */
   /* We have created lots of different button styles, you probably don't need to have quite this many styles depending on your site */
-
   .button,
-  .button-solid,
+  .button-subtle,
   .button-inverted {
-    text-decoration: none;
-    color: #e67e22;
-    border: 2px solid;
-    padding: 0.6rem 2rem;
-    margin-top: 1rem;
     display: inline-block;
+    text-decoration: none;
     text-transform: uppercase;
-    font-size: 0.9rem;
-    font-weight: 500;
-    width: 100%;
-    max-width: 50vw;
-    display: block;
-    margin: .5rem auto .5rem;
+    color: rgb(75,75,80);
+    background-color: #99d0d0;
+    font-weight: bold;
+    border: none;
+    padding: 1rem 2rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    margin: 0.5rem auto;
+    letter-spacing: 1px;
+    font-size: 1rem;
   }
 
-  .button:hover {
-    color: rgb(60, 60, 60);
+  .button-subtle {
+    background-color: #dff0f0;
+  }
+
+  .button:hover,
+   .buutton-subtle:hover {
+    box-shadow: 0 14px 20px rgba(0,0,0,0.15), 0 10px 10px rgba(0,0,0,0.15);
   }
 
   .button.inverted {   /* this is for a button on a dark background */
@@ -161,46 +190,21 @@
   }
 
   .button.inverted:hover {
-    color: #e67e22;
-    border-color: #e67e22;
+    color: #99d0d0;
+    border-color: #99d0d0;
   }
 
-  .button-solid {
-    background-color: #e67e22;
-    border-color: #e67e22;
-    color: white;
+  .full-width-buttons .button,
+  .full-width-buttons .button-subtle {
+    width: 100%;
   }
 
-  .button-solid:hover {
-    background-color: rgb(60, 60, 60);
-    border-color: rgb(60, 60, 60);
-  }
-
-  .arrow { /* this is the arrow button */
-    font-size: 1.5rem;
-    display: inline-block;
-    text-align: center;
-    font-weight: 300;
-    line-height: 1.5rem;
-    min-width: 2.5rem;
-    border: 1px solid #e67e22;
-    padding: 0.5rem;
-    border-radius: 100%;
-    text-decoration: none;
-    color: #e67e22;
-    margin-top: 0.5rem;
-  }
-
-    .arrow:hover {
-      color: rgb(60, 60, 60);
-      border-color: rgb(60, 60, 60);
-    }
 
 
   /* Headers and footers */
 
   header {
-    padding: 2% 5%;
+    padding: 1% 5%;
   }
 
   header a,
@@ -214,17 +218,19 @@
   .inline a {
     display: inline-block;
     padding: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
   }
   nav a:hover {
-    color: #e67e22;
+    color: #99d0d0;
   }
 
   header nav a.emphasis {
     /* padding: 0.5rem 2rem; */
     margin: 0 0.5rem;
-    border: 1px solid #e67e22;
+    border: 1px solid #99d0d0;
     border-radius: 2px;
-    color: #e67e22;
+    color: #99d0d0;
   }
 
   header nav a.emphasis:hover {
@@ -680,6 +686,14 @@
 }
 
 
+
+/* This media query kicks into action at the gridlex sm breakpoint */
+@media(max-width:1024px) {
+  .vimeo .padded-r {
+    padding-right: 0;
+  }
+}
+
 /* This media query kicks into action at the gridlex sm breakpoint */
 @media(max-width:768px) {
 
@@ -704,6 +718,15 @@
   .flex-flip{
     flex-direction: row;
   }
+
+  .mob-center {
+    text-align: center;
+  }
+
+  .padded-r     {  padding-right: 0;  }
+  .padded-r-1   {  padding-right: 0;  }
+  .padded-r-2   {  padding-right: 0;  }
+  .padded-l-2   {  padding-left: 0;  }
 
 } /* end media query */
 
@@ -872,7 +895,17 @@ right:4px;
     height: 90%;
     object-position: center;
   }
+
 }
+
+
+@media (min-width:1600px ) {
+  section.capped-width {
+    padding-left: calc(50% - 700px);
+    padding-right: calc(50% - 700px);
+  }
+}
+
 /* index page */
 .banner-bg-index-last{
   background-image: url("/images/index-banner-last.jpg");
