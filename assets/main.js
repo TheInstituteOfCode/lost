@@ -94,6 +94,7 @@ $(document).ready(function() {
 				cart: {
 					iframe: true,
 					startOpen: false,
+					popup: false,
 					contents: {
 						title: true,
 						lineItems: true,
