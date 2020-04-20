@@ -8,7 +8,7 @@ _options:
   content:
     styles: /assets/editor.css
   text_html:
-    format: h2 h3 p a
+    format: h2 h3 p a img
     styles: /assets/editor.css
     bold: true
     numberedlist: true
