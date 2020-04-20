@@ -1,9 +1,12 @@
 {% raw %}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 <style>
   p,h2,h3,h4{
     margin-bottom:1rem;
+    font-family: "Catamaran", sans-serif;
   }
+  h2{text-transform: uppercase;}
   h3{
     font-size:1.7rem;
   }
@@ -19,6 +22,10 @@
   .right{text-align:right}
   .bold{font-weight:900}
 
+  hr {
+    border-bottom: 2px solid rgb(220,220,230);
+
+  }
 
   .col{margin:1rem;}
 
@@ -34,7 +41,7 @@
   }
 
   .tick,.fas,.featured-text{
-    color:#99d0d0;
+    color:grey;
     font-wight:bold;
   }
 
@@ -95,7 +102,7 @@
   }
 </style>
 
-<div class="grid padded">
+<div class="grid padded-light">
   <div class="col">
     <h3>Order Summmary</h3>
     <div class="bg-white">
@@ -106,6 +113,7 @@
         <div class="{{data.classes.cart.lineItems}}" data-element="cart.lineItems">{{{data.lineItemsHtml}}}</div>
       </div>
     </div>
+
   </div>
   <div class="col paddded-left">
     <h3> See what some of our members are saying</h3>
