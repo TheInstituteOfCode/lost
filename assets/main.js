@@ -97,7 +97,7 @@ $(document).ready(function() {
 					contents: {
 						title: true,
 						lineItems: true,
-						footer: true,
+						footer: false,
 						note: false,
 						discounts: false,
 					},
