@@ -207,6 +207,10 @@ light grey - rgb(150,150,155)
     padding: 1% 5%;
   }
 
+  header .logo {
+    max-height: 3rem;
+  }
+
   header a,
   footer a,
   nav a {
