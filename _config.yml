@@ -16,7 +16,7 @@ _options:
     numberedlist: true
     right: right
     center: centered
-    left: 
+    left:
     link: true
   pre_img_text_html:
     format: h2 h3 p a
@@ -149,6 +149,15 @@ _array_structures:
           link_url:
           text:
           id:
+    - label: Module section
+      icon: video
+      value:
+        _id: modual_demo
+        heading:
+        sub_heading:
+        bg-class:
+        vimeo_id:
+        text_html:
     - label: Icon section
       icon: video
       value:
