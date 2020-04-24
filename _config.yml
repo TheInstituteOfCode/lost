@@ -3,6 +3,8 @@ permalink: /:year/:title
 collections:
   archives:
     output: true
+  page:
+    output: true
 
 _options:
   content:
