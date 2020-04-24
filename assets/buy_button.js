@@ -1,5 +1,14 @@
 ---
 ---
+
+//------------ shopify
+/*
+  {% assign cart = "" %}
+ {% capture cart %}
+   {% include cart.html %}
+ {% endcapture %}
+*/
+// client details
 $(document).ready(function() {
 
 
@@ -11,11 +20,11 @@ $(document).ready(function() {
 
   var ui = ShopifyBuy.UI.init(client);
 
-  
+
   // product details
   ui.createComponent('product', {
     id: 4531514441800,
-    node: document.getElementById('my-product-1'),
+    node: document.getElementById('my-product'),
     options: {
       product: {
         iframe: false,

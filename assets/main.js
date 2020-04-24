@@ -45,14 +45,7 @@ $(document).ready(function() {
 		});
 		// end accordian
 
-		//------------ shopify
-		/*
-			{% assign cart = "" %}
-		 {% capture cart %}
-			 {% include cart.html %}
-		 {% endcapture %}
-		*/
-		// client details
+
 
 
 // end section

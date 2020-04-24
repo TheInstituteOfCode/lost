@@ -13,13 +13,10 @@
     {% if block.buy_button_text != "" %}
     <div class="center">
 
-      <button onclick="updateQuantity(4531514441800,1)" class="button centered {{button.class}}" >
+      <button onclick="product.addVariantToCart(4531514441800,1)" class="button centered {{button.class}}" >
         {{block.buy_button_text}}
       </button>
 
-      <script defer>
-        {% include button-buy.html %}
-      </script>
     </div>
     {% endif %}
     {% for button in block.button %}
