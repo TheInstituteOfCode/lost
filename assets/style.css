@@ -812,7 +812,7 @@ light grey - rgb(150,150,155)
 
 .accordion dt a::after {
   position: absolute;
-  top: 1.25rem;
+  top: 0.8rem;
   right: 1.25rem;
   display: block;
   width: 1rem;
