@@ -11,11 +11,9 @@
 // client details
 
 
-
-
   var client = ShopifyBuy.buildClient({
-    domain: 'https://lostleblanc.myshopify.com/',
-    storefrontAccessToken: '7e83041cdccf15dc77c69532bc4edbb3', // previously apiKey, now deprecated
+    domain: 'lostleblanc.myshopify.com/',
+    storefrontAccessToken: '7e83041cdccf15dc77c69532bc4edbb3',
   });
 
 
@@ -25,7 +23,7 @@
   // product details
   ui.createComponent('product', {
     id: 4521345024057,
-    node: document.getElementById('button-1'),
+    node: document.getElementById('button-2'),
     options: {
       product: {
         iframe: false,

@@ -919,6 +919,8 @@ right:4px;
   }
 }
 
+
+#my-product{display:none;}
 /* index page */
 .banner-bg-index-last{
   background-image: url("/images/index-banner-last.jpg");
