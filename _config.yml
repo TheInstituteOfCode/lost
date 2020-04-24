@@ -142,7 +142,7 @@ _array_structures:
         bg-class:
         vimeo_id:
         text_html:
-        buy_button: true
+        buy_button_text: enroll now
         button:
         - class:
           link_url:
@@ -178,6 +178,7 @@ _array_structures:
         bg-class:
         _id: text-block
         text_html:
+        buy_button_text:
     - label: Image and text grid
       icon: ballot
       value:

@@ -1,21 +1,17 @@
----
----
-$(document).ready(function() {
-
-
+{% if first_js_cart == false %}
   var client = ShopifyBuy.buildClient({
     domain: 'swinkels-test-1.myshopify.com',
     storefrontAccessToken: '0c87504f50f66b6f7c68f1a68e803912', // previously apiKey, now deprecated
+
   });
 
-
   var ui = ShopifyBuy.UI.init(client);
-
-  
+{% assign first_js_cart == false %}
+{% endif %}
   // product details
   ui.createComponent('product', {
     id: 4531514441800,
-    node: document.getElementById('my-product-1'),
+    node: document.getElementById('my-product-{{ forloop.index }}'),
     options: {
       product: {
         iframe: false,
@@ -38,7 +34,7 @@ $(document).ready(function() {
           description: false,
         },
         templates:{
-          button: '{% raw %}<div class="{{data.classes.product.buttonWrapper}}" data-element="product.buttonWrapper"><button {{#data.buttonDisabled}}disabled{{/data.buttonDisabled}} class="button {{data.classes.product.button}} {{data.buttonClass}}" data-element="product.button">{{data.buttonText}}</button></div>{% endraw %}'
+          button: '{% raw %}<div class="{{data.classes.product.buttonWrapper}}" data-element="product.buttonWrapper"><button {{#data.buttonDisabled}}disabled{{/data.buttonDisabled}} class="button {{data.classes.product.button}} {{data.buttonClass}}" data-element="product.button">{%endraw %}{{block.buy_button_text}}{% raw %}</button></div>{% endraw %}'
         }
       },
       cart: {
@@ -61,6 +57,3 @@ $(document).ready(function() {
     }
 
   });
-
-
-});
