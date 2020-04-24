@@ -10,12 +10,20 @@
     <div class="padded-b-1">
       {{block.text_html}}
     </div>
-    {% if block.buy_button == true %}
-    <div id="my-product-1">
+    {% if block.buy_button_text != "" %}
+    <div class="center">
+
+      <button onclick="updateQuantity(4531514441800,1)" class="button centered {{button.class}}" >
+        {{block.buy_button_text}}
+      </button>
+
+      <script defer>
+        {% include button-buy.html %}
+      </script>
     </div>
     {% endif %}
     {% for button in block.button %}
-      {% assign buy == true %}
+
       <a class="button centered {{button.class}}" href="{{button.link_url}}">{{button.text}}</a>
     {% endfor %}
   </div>
