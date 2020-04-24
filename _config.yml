@@ -16,6 +16,7 @@ _options:
     numberedlist: true
     right: right
     center: centered
+    left: 
     link: true
   pre_img_text_html:
     format: h2 h3 p a

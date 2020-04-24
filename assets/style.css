@@ -785,6 +785,7 @@ light grey - rgb(150,150,155)
 
 .accordion dt a {
   padding: 0.75rem;
+  padding-right: 3rem;
   margin: 0.25rem 0;
   display:block;
   position: relative;
