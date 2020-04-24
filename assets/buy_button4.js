@@ -13,7 +13,7 @@
 
 
   var client = ShopifyBuy.buildClient({
-    domain: 'lostleblanc.myshopify.com/',
+    domain: 'lostleblanc.myshopify.com',
     storefrontAccessToken: '7e83041cdccf15dc77c69532bc4edbb3',
   });
 
