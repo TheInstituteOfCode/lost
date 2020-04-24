@@ -2,7 +2,7 @@
   <h4 class="centered padded-b-1">{{block.heading}}</h4>
   <div class="grid-middle-spaceAround">
     {% for icon in block.logo %}
-      <div class="col centered padded-1">
+      <div class="col_md-4_sm-12 centered padded-light">
         <img class="partner-logo" src="{{icon.image_path}}" alt="{{img_alt}}" {% if icon.opacity %} style="opacity:{{icon.opacity}}"{% endif %}>
       </div>
     {% endfor %}
