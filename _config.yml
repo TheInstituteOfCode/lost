@@ -39,13 +39,14 @@ _options:
 page_blocks: []
 _array_structures:
   page_blocks:
-    - label: back gif section
+    - label: banner section
       icon: video
       value:
         _id: back_video
+        bg-class:
         text_html:
-        video_path:
-        video_description:
+        img_path:
+        img_description:
     - label: Vimeo section
       icon: video
       value:
