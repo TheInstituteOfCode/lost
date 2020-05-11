@@ -406,7 +406,7 @@ light grey - rgb(150,150,155)
     left: 0;
     right: 0;
     z-index: -1;
-    background-color: rgba(223, 240, 240, 0.5);
+    background-color: rgba(0,0,0, 0.7);
   }
   /* Hover grid */
 
