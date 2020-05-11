@@ -10,7 +10,7 @@ _options:
   content:
     styles: /assets/editor.css
   text_html:
-    format: h2 h3 p a img
+    format: h1 h2 h3 p a img
     styles: /assets/editor.css
     bold: true
     numberedlist: true
@@ -34,7 +34,7 @@ _options:
     numberedlist: true
     right: right
     center: center
-    
+
 
 page_blocks: []
 _array_structures:
