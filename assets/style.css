@@ -45,8 +45,8 @@ light grey - rgb(150,150,155)
   .centered {  text-align: center;   }
   .flex-center{
     display: flex;
-    justify-content:center;
-    align-content: center;
+    justify-content: center;
+    align-items: center;
   }
 
   .padded       {  padding: 5vw;    }
