@@ -379,12 +379,13 @@ light grey - rgb(150,150,155)
   }
 
   .bg-image {
+    object-fit: cover;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: -2
+    z-index: -2;
   }
   .bg-overlay{
     top: 0;
