@@ -95,6 +95,19 @@ _array_structures:
         img_path:
         img_alt:
         post_img_text_html:
+    - label: map section
+      icon: img
+      text:
+      value:
+        _id: map
+        heading:
+        bg-class:
+        pre_img_text_html:
+        map_path:
+        map_alt:
+        img_path:
+        img_alt:
+        post_img_text_html:
     - label: Text Block
       icon: ballot
       value:

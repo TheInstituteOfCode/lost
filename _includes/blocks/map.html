@@ -1,0 +1,26 @@
+<section class="capped-width padded {{block.bg-class}}">
+  {% if forloop.index == 1 %}
+    <h1 class="centered">{{block.heading}}</h1>
+  {% else %}
+    <h2 class="centered">{{block.heading}}</h2>
+  {% endif %}
+  {% if block.pre_img_text_html %}
+    <div class="">
+      {{block.pre_img_text_html}}
+    </div>
+  {% endif %}
+  <div class="">
+    <div class="centered">
+      <img class="" src="{{block.map_path}}" alt="{{block.map_alt}}">
+    </div>
+    <div class="">
+      <img class="" src="{{block.img_path}}" alt="{{block.img_alt}}">
+    </div>
+  </div>
+  <div class=" class="centered"">
+    {% if block.post_img_text_html %}
+      <div class="">
+        {{block.post_img_text_html}}
+      </div>
+    {% endif %}
+  </section>
