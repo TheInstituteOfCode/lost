@@ -938,10 +938,10 @@ right:4px;
 }
 
 
-@media (min-width:1200px ) {
+@media (min-width:1400px ) {
   section.capped-width {
-    padding-left: calc(55% - 600px);
-    padding-right: calc(55% - 600px);
+    padding-left: calc(55% - 700px);
+    padding-right: calc(55% - 700px);
   }
 }
 
