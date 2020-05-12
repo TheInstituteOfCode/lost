@@ -163,7 +163,8 @@ light grey - rgb(150,150,155)
     margin: 1rem 0;
   }
 
-  .centered hr {
+  .centered hr, 
+  hr.centered {
     margin: 1rem auto;
   }
 
