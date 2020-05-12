@@ -48,6 +48,7 @@ _array_structures:
         img_path:
         overlay_rgba:
         text_rgba:
+        buy_button:
     - label: Vimeo section
       icon: video
       value:
