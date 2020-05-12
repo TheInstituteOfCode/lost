@@ -2,14 +2,14 @@
   <!-- <div class="rel"> -->
 <style media="screen">
 .{{forloop.index}}-color,{{forloop.index}}-color *{
-  color:{{block.text_color}};
+  color:{{block.text_rgba}};
 }
 </style>
     <!-- <img class="bg-image" src="{{block.img_path}}" alt="{{block.img_description}}"> -->
     <div class="bg-overlay" style="background-color:{{block.overlay_color}}">
     </div>
   <!-- </div> -->
-  <div class="{{forloop.index}}-color">
+  <div class="{{forloop.index}}-rgba">
     {{block.text_html}}
   </div>
 </section>
