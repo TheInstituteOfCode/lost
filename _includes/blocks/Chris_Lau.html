@@ -4,12 +4,11 @@
   {% else %}
     <h2 class="centered">{{block.heading}}</h2>
   {% endif %}
-  {% if block.pre_img_text_html %}
-    <p>{{block.pre_img_text_html}}</p>
-  {% endif %}
-  <div class="centered">
-    <img class="max-gif" src="{{block.headshot_path}}" alt="{{block.headshot_alt}}">
-  </div class="centered">
+    <div class="">
+      <img class="max-gif float-Chris" src="{{block.headshot_path}}" alt="{{block.headshot_alt}}">
+      {{block.pre_img_text_html}}
+
+    </div>
 
   <div class="centered">
     <img class="max-gif" src="{{block.img_path}}" alt="{{block.img_alt}}">

@@ -69,6 +69,14 @@ light grey - rgb(150,150,155)
   .margin       {  margin:5vw       }
   .margin-light {  margin:3vw       }
 
+  .float-Chris{
+    width: 33%;
+    float: left;
+    margin-right:2vw;
+    margin-bottom: 2vw;
+
+  }
+
   /* Fixing gridlex bugs  */
   [class*=grid].padded    {  padding: 5%;  }
   [class*=grid].padded-2 {  padding: 2rem;  }
