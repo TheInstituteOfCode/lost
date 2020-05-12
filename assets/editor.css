@@ -1,11 +1,6 @@
 
 /* Typography Styles */
 
-h2.cursive {
-    font-family: cursive;
-    color: pink;
-}
-
 p.emphasis {
     font-size: 1.4rem;
 }
@@ -54,15 +49,9 @@ img.small-centered {
 
 
 /* Clear Floats */
-p.clear-images-paragraph {
-  clear: both;
-}
-
-
-h2.clear-images-h2 {
-  clear: both;
-}
-h3.clear-images-h3 {
+p.clear-images,
+h2.clear-images,
+h3.clear-images{
   clear: both;
 }
 
