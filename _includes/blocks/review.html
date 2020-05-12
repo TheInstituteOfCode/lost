@@ -1,11 +1,14 @@
-<section class="padded {{block.bg-class}} rel bg-attached" style=" background-image:url('{{block.img_path}}');" >
+<section class="padded light-bg {{block.bg-class}} rel bg-attached" style=" background-image:url('{{block.img_path}}');" >
 
 <div class="centered">
   {{block.text_html}}
 </div>
 
-<iframe src="https://player.vimeo.com/video/{{block.vimeo_id}}" width="100%" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
-
- <div class="loox-rating" data-fetch data-id="4521345024057"></div>
-
+<!-- <iframe src="https://player.vimeo.com/video/{{block.vimeo_id}}" width="100%" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe> -->
+{% raw %}
+<div class="relative" id="looxCarousel" data-show-more="true" data-max-width="1920" data-arrows-color="#99d0d0" data-dots-color="#2e3438" data-button-color="" data-product-ids="" data-mode="img" data-caraousel-loaded="true" style="height: 765px;">
+     <div class="lux-overlay"></div>
+  <iframe id="looxCarouselFrame" src="https://loox.io/widget/4yWH39J8nI/carousel?frame_id=looxCarouselFrame&amp;h=1589244275174&amp;show_more_btn=true&amp;max_width=1920&amp;arrows_color=%2399d0d0&amp;dots_color=%232e3438&amp;mode=img&amp;shopify_editor_preview=true" height="765px" width="100%" scrolling="no" style="display: block; border: 0px; overflow: hidden; height: 765px; width: 100%;"></iframe></div>
+     <div class="lux-overlay"></div>
+{% endraw %}
 </section>
