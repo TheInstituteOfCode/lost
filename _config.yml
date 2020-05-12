@@ -206,9 +206,8 @@ _array_structures:
       icon: ballot
       value:
         _id: columns-3
-        bg-class:
         heading_html:
+        bg-class:
         col-1_html:
         col-2_html:
         col-3_html:
-

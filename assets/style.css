@@ -372,7 +372,17 @@ light grey - rgb(150,150,155)
     text-decoration: none;
   }
 
+/* map */
+.felx-map{
+  display:flex;
+}
+.flex-map-1{
+  flex: 2.24;
+}
 
+.flex-map-2{
+  flex: 1;
+}
   /* -- Footer -- */
 
   footer {
