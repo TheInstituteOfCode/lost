@@ -373,7 +373,7 @@ light grey - rgb(150,150,155)
   }
 
 /* map */
-.felx-map{
+.flex-map{
   display:flex;
 }
 .flex-map-1{
@@ -385,7 +385,7 @@ light grey - rgb(150,150,155)
 }
 
 @media all and (max-width: 600px){
-.felx-map{
+.flex-map{
   flex-direction: column;
 }
 
