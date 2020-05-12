@@ -178,7 +178,7 @@ _array_structures:
     - label: Three Columns
       icon: ballot
       value:
-        _id: columns
+        _id: columns-3
         bg-class:
         heading_html:
         col-1_html:
