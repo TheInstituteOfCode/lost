@@ -6,6 +6,10 @@ h2.cursive {
     color: pink;
 }
 
+p.emphasis {
+    font-size: 1.4rem;
+}
+
 
 /* Image Styles */
 
