@@ -19,7 +19,7 @@ _options:
     left:
     link: true
   pre_img_text_html:
-    format: h2 h3 p a
+    format: h2 h3 p a img
     link: true
     styles: /assets/editor.css
     bold: true

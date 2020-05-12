@@ -19,7 +19,7 @@ light grey - rgb(150,150,155)
     scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
   }
 
-  img {
+  img,video {
     max-width: 100%; /* this ensures images never break their container */
     height: auto;
   }
