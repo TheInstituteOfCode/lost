@@ -43,10 +43,11 @@ _array_structures:
       icon: video
       value:
         _id: back_video
-        bg-class:
         text_html:
+        bg-class:
         img_path:
-        img_description:
+        overlay_color:
+        text_color:
     - label: Vimeo section
       icon: video
       value:
