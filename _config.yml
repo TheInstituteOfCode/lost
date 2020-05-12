@@ -154,6 +154,9 @@ _array_structures:
         _id: partners
         heading:
         bg-class:
+        img_path:
+        overlay_rgba:
+        text_rgba:
         logo:
           - image_path:
             alt:
