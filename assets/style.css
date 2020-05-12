@@ -383,6 +383,18 @@ light grey - rgb(150,150,155)
 .flex-map-2{
   flex: 1;
 }
+
+@media all and (max-width: 600px){
+.felx-map{
+  flex-direction: column;
+}
+
+.flex-map-2{
+display: none;
+}
+
+}
+
   /* -- Footer -- */
 
   footer {
