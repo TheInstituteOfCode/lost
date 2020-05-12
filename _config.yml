@@ -16,7 +16,7 @@ _options:
     numberedlist: true
     right: right
     center: centered
-    left:
+    left: left
     link: true
   col-1_html:
     format: h1 h2 h3 p a img
@@ -25,8 +25,9 @@ _options:
     numberedlist: true
     right: right
     center: centered
-    left:
+    left: left
     link: true
+    image: true
   col-2_html:
     format: h1 h2 h3 p a img
     styles: /assets/editor.css
@@ -34,8 +35,9 @@ _options:
     numberedlist: true
     right: right
     center: centered
-    left:
+    left: left
     link: true
+    image: true
   col-3_html:
     format: h1 h2 h3 p a img
     styles: /assets/editor.css
@@ -43,8 +45,9 @@ _options:
     numberedlist: true
     right: right
     center: centered
-    left:
+    left: left
     link: true
+    image: true
   pre_img_text_html:
     format: h2 h3 p a img
     link: true
