@@ -179,7 +179,7 @@ light grey - rgb(150,150,155)
   }
 
   p.emphasis {   /* typically added to paragraphs to make them a little bigger, could be a different font or color also */
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   /* Icons */
