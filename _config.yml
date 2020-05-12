@@ -175,3 +175,13 @@ _array_structures:
           - image_path:
             alt:
             opacity:
+    - label: Three Columns
+      icon: ballot
+      value:
+        _id: columns
+        bg-class:
+        heading_html:
+        col-1_html:
+        col-2_html:
+        col-3_html:
+
