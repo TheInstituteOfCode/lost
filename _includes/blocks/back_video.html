@@ -1,15 +1,15 @@
 <section class="padded {{block.bg-class}} rel centered bg-attached" style=" background-image:url('{{block.img_path}}');" >
   <!-- <div class="rel"> -->
 <style media="screen">
-.{{forloop.index}}-color,{{forloop.index}}-color *{
-  color:{{block.text_rgba}};
-}
+  .color-{{forloop.index}},.color-{{forloop.index}} *{
+    color:{{block.text_rgba}};
+  }
 </style>
     <!-- <img class="bg-image" src="{{block.img_path}}" alt="{{block.img_description}}"> -->
     <div class="bg-overlay" style="background-color:{{block.overlay_rgba}}">
     </div>
   <!-- </div> -->
-  <div class="{{forloop.index}}-color rel">
+  <div class="color-{{forloop.index}} rel">
     {{block.text_html}}
   </div>
 </section>
