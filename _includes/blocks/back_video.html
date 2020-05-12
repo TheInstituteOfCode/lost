@@ -1,4 +1,4 @@
-<section class="padded {{block.bg-class}} rel centered bg-attached" style=" background-image:url('{{block.img_path}}');" >
+<section class="padded {{block.bg-class}} centered rel flex-center parallax-window tall-50" data-parallax="scroll" data-image-src="{{block.img_path}}">
   <!-- <div class="rel"> -->
 <style media="screen">
   .color-{{forloop.index}},.color-{{forloop.index}} *{
@@ -9,30 +9,33 @@
     <div class="bg-overlay" style="background-color:{{block.overlay_rgba}}">
     </div>
   <!-- </div> -->
-  <div class="color-{{forloop.index}} rel">
-    {{block.text_html}}
-  </div>
+  <div class="">
 
-  {% if block.buy_button == true %}
-  <div class="center rel">
-
-    <div id="button-{{buttons_used}}">
+    <div class="color-{{forloop.index}} rel">
+      {{block.text_html}}
     </div>
-    {% if buttons_used == 1 %}
 
-    <script src="/assets/buy.js" defer></script>
-    <script src="/assets/buy_button.js"defer></script>
-    {% endif %}
-    {% if buttons_used == 2 %}
-    <script src="/assets/buy_button2.js" defer></script>
-    {% endif %}
-    {% if buttons_used == 3 %}
-    <script src="/assets/buy_button3.js" defer></script>
-    {% endif %}
-    {% if buttons_used == 4 %}
-    <script src="/assets/buy_button4.js" defer></script>
-    {% endif %}
+    {% if block.buy_button == true %}
+    <div class="center rel">
+
+      <div id="button-{{buttons_used}}">
+      </div>
+      {% if buttons_used == 1 %}
+
+      <script src="/assets/buy.js" defer></script>
+      <script src="/assets/buy_button.js"defer></script>
+      {% endif %}
+      {% if buttons_used == 2 %}
+      <script src="/assets/buy_button2.js" defer></script>
+      {% endif %}
+      {% if buttons_used == 3 %}
+      <script src="/assets/buy_button3.js" defer></script>
+      {% endif %}
+      {% if buttons_used == 4 %}
+      <script src="/assets/buy_button4.js" defer></script>
+      {% endif %}
     </div>
     {% assign buttons_used = buttons_used | plus: 1 %}
-  {% endif %}
+    {% endif %}
+  </div>
 </section>
