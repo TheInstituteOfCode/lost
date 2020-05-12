@@ -201,7 +201,7 @@ _array_structures:
     - label: Mixed Columns
       icon: ballot
       value:
-        _id: mixed-columns
+        _id: columns-mixed
         bg-class:
         col-1_html:
         col-2_html:
