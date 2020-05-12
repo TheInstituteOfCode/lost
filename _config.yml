@@ -46,8 +46,8 @@ _array_structures:
         text_html:
         bg-class:
         img_path:
-        overlay_color:
-        text_color:
+        overlay_rgba:
+        text_rgba:
     - label: Vimeo section
       icon: video
       value:
