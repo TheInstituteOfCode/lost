@@ -3,6 +3,10 @@ layout: default
 ---
 
 {% for block in page.page_blocks %}
+    <a href="cloudcannon:#page_blocks[{{ forloop.index0 }}]" class="editor-link" data-cms-editor-link-style="modal">
+      Edit Section
+    </a>
+    
   {% include blocks/{{block._id}}.html block=block %}
 {% endfor %}
 
