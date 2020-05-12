@@ -39,6 +39,8 @@ light grey - rgb(150,150,155)
   .rel{
     position: relative;
   }
+  .overflow-hidden{overflow:
+  }
 
   .left     {  text-align: left;     }
   .right    {  text-align: right;    }
@@ -80,6 +82,36 @@ light grey - rgb(150,150,155)
 
   .light-text   { color: white; }
   .flex-flip:nth-child(2n){  flex-direction: row-reverse; }
+    /* paralex */
+  .para{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    perspective: 8px;
+    perspective-origin: 0%;
+    display: flex;
+  }
+  .para-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateZ(0px);
+  }
+  .para-bg img{
+    width: 100%;
+    height: 120vh;
+    object-fit: cover;
+  }
+  .para-front{
+    margin-top: auto;
+    margin-bottom: 50px;
+    transform: translateZ(3px) scale(0.625);
+    transform-origin: 0;
+  }
 
   /* General typography */
 
@@ -381,6 +413,11 @@ light grey - rgb(150,150,155)
     right: 0;
     margin: 0;
     background: none;
+  }
+
+  [class*="bg"]{
+    background-size: cover;
+    background-position: center;
   }
 
   .bg-pencils {
@@ -920,6 +957,9 @@ right:4px;
 }
 
 @media (min-width:768px ) {
+    .bg-attached{
+      background-attachment: fixed;
+    }
   .img-container{
     position: relative;
   }

@@ -108,6 +108,16 @@ _array_structures:
         img_path:
         img_alt:
         post_img_text_html:
+    - label: Reveiw section
+      icon: video
+      value:
+        _id: vimeo
+        heading:
+        sub_heading:
+        bg-class:
+        vimeo_id:
+        text_html:
+        buy_button_text: enroll now
     - label: Text Block
       icon: ballot
       value:
