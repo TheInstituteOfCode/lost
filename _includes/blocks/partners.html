@@ -1,13 +1,4 @@
-<section class="{{block.bg-class}} mobile-hide padded rel centered bg-attached" style=" background-image:url('{{block.img_path}}');" >
-    <!-- <div class="rel"> -->
-  <style media="screen">
-  .{{forloop.index}}-color,{{forloop.index}}-color *{
-    color:{{block.text_rgba}};
-  }
-  </style>
-      <!-- <img class="bg-image" src="{{block.img_path}}" alt="{{block.img_description}}"> -->
-  <div class="bg-overlay" style="background-color:{{block.overlay_rgba}}">
-  </div>
+<section class="{{block.bg-class}} mobile-hide padded">
   <h4 class="centered padded-b-1">{{block.heading}}</h4>
   <div class="grid-middle-spaceAround">
     {% for icon in block.logo %}
