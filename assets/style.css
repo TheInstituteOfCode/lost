@@ -988,8 +988,8 @@ right:4px;
 
 @media (min-width:1400px ) {
   section.capped-width {
-    padding-left: calc(55% - 700px);
-    padding-right: calc(55% - 700px);
+    padding-left: calc(55% - 650px);
+    padding-right: calc(55% - 650px);
   }
 }
 
