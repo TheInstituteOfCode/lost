@@ -1,29 +1,16 @@
-<section class="padded {{block.bg-class}}">
+<section class="padded {{block.bg-class}} grid">
+    
+    <div class="col-12 padded-1">
+        {{block.heading_html}}
+    </div>
+    <div class="col-4_sm-12 padded-1">
+        {{block.col-1_html}}
+    </div> 
+        <div class="col-4_sm-12 padded-1">
+        {{block.col-2_html}}
+    </div> 
+    <div class="col-4_sm-12 padded-1">
+        {{block.col-3_html}}
+    </div> 
 
-{{block.text_html}}
-
-
-{% if block.buy_button == "true" %}
-<div class="center rel">
-  {% assign buttons_used == buttons_used | plus: 1 %}
-
-  <div id="button-{{buttons_used}}">
-
-  </div>
-  {% if buttons_used == 1 %}
-
-  <script src="/assets/buy.js" defer></script>
-  <script src="/assets/buy_button.js"defer></script>
-  {% endif %}
-  {% if buttons_used == 2 %}
-  <script src="/assets/buy_button2.js" defer></script>
-  {% endif %}
-  {% if buttons_used == 3 %}
-  <script src="/assets/buy_button3.js" defer></script>
-  {% endif %}
-  {% if buttons_used == 4 %}
-  <script src="/assets/buy_button4.js" defer></script>
-  {% endif %}
-  </div>
-{% endif %}
 </section>
