@@ -111,13 +111,10 @@ _array_structures:
     - label: Reveiw section
       icon: video
       value:
-        _id: vimeo
-        heading:
-        sub_heading:
+        _id: review
+        text_html:
         bg-class:
         vimeo_id:
-        text_html:
-        buy_button_text: enroll now
     - label: Text Block
       icon: ballot
       value:
