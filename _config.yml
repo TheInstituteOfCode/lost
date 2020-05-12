@@ -96,6 +96,19 @@ _array_structures:
         img_path:
         img_alt:
         post_img_text_html:
+    - label: Chris Lau section
+      icon: img
+      text:
+      value:
+        _id: Chris_Lau
+        heading:
+        bg-class:
+        pre_img_text_html:
+        headshot_path:
+        headshot_alt:
+        img_path:
+        img_alt:
+        post_img_text_html:
     - label: map section
       icon: img
       text:
