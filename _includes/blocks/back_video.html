@@ -1,15 +1,15 @@
-<section class="padded {{block.bg-class}} centered rel flex-center tall-50 {% if block.parrallex == true %} bg-attached" style="background-image:url('{{block.img_path}}'){% endif %}">
+<section class="padded {{block.bg-class}} centered rel flex-center tall-50 bg-attached" style="background-image:url('{{block.img_path}}')">
   <!-- <div class="rel"> -->
 <style media="screen">
   .color-{{forloop.index}},.color-{{forloop.index}} *{
     color:{{block.text_rgba}};
   }
 </style>
-{% if parralex != true %}
+<!-- {% if parralex != true %}
   <div class="para-img-container">
     <img class="thumbnail" src="{{block.img_path}}" alt="{{block.img_description}}">
   </div>
-  {% endif %}
+  {% endif %} -->
   <div class="bg-overlay" style="background-color:{{block.overlay_rgba}}">
   </div>
   <div class="rel">
