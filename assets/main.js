@@ -49,7 +49,7 @@ $(document).ready(function() {
 		new simpleParallax(images, {
 		    delay: 0.1,
 		    orientation: 'top-down',
-		    scale: 1.5,
+		    scale: 1.1,
 		    overflow: false
 		});
 // end section
