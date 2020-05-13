@@ -10,8 +10,9 @@
     >
 
   </div>
-
-  <div class="">
+  <div class="bg-overlay" style="background-color:{{block.overlay_rgba}}">
+  </div>
+  <div class="rel">
 
     <div class="color-{{forloop.index}} rel">
       {{block.text_html}}
@@ -40,6 +41,5 @@
     {% assign buttons_used = buttons_used | plus: 1 %}
     {% endif %}
   </div>
-  <div class="bg-overlay" style="background-color:{{block.overlay_rgba}}">
-  </div>
+
 </section>

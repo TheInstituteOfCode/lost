@@ -45,8 +45,13 @@ $(document).ready(function() {
 		});
 		// end accordian
 		// para
-		const image = document.getElementsByClassName('thumbnail');
-		new simpleParallax(image);
+		var images = document.querySelectorAll('.thumbnail');
+		new simpleParallax(images, {
+		    delay: 0,
+		    orientation: 'down',
+		    scale: 1.3,
+		    overflow: "flase"
+		});
 // end section
 
 });
