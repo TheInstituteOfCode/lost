@@ -45,13 +45,13 @@ $(document).ready(function() {
 		});
 		// end accordian
 		// para
-		var images = document.querySelectorAll('.thumbnail');
-		new simpleParallax(images, {
-		    delay: 0.1,
-		    orientation: 'top-down',
-		    scale: 1.1,
-		    overflow: false
-		});
+		// var images = document.querySelectorAll('.thumbnail');
+		// new simpleParallax(images, {
+		//     delay: 0.1,
+		//     orientation: 'top-down',
+		//     scale: 1.1,
+		//     overflow: false
+		// });
 // end section
 
 });
