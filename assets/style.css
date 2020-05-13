@@ -415,9 +415,6 @@ display: none;
 
 }
 
-.footer-banner{
-  background-position: 79% 50%;
-}
 
   /* -- Footer -- */
 
@@ -474,6 +471,9 @@ display: none;
     background-position: center;
   }
 
+  .footer-banner{
+    background-position: 79% 50%;
+  }
   .bg-pencils {
     background-image: url('/images/pencils.jpg');
     background-position: left;
