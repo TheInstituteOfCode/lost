@@ -397,6 +397,7 @@ light grey - rgb(150,150,155)
     right: 6vw;
     width: 20vw;
     transform: rotate(8deg);
+    font-weight: bold;
 }
 .map-text *{
   font-size: 3vw;
