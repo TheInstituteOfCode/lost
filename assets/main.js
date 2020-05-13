@@ -47,10 +47,10 @@ $(document).ready(function() {
 		// para
 		var images = document.querySelectorAll('.thumbnail');
 		new simpleParallax(images, {
-		    delay: 0,
-		    orientation: 'down',
-		    scale: 1.3,
-		    overflow: "flase"
+		    delay: 0.1,
+		    orientation: 'top-down',
+		    scale: 1.5,
+		    overflow: false
 		});
 // end section
 
