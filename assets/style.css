@@ -44,6 +44,7 @@ light grey - rgb(150,150,155)
       border: 1px solid;
       border-radius: 50px;
       text-deocration: none;
+      z-index: 5;
     }
 
     .cms-editor-active .editor-link {
@@ -120,7 +121,7 @@ light grey - rgb(150,150,155)
   width:100%;
   height:100%;
   object-fit: cover;
-  object-position: center 
+  object-position: center
 }
 
   /* General typography */
