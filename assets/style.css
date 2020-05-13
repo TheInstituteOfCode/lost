@@ -825,7 +825,7 @@ display: none;
     width: 100%;
   }
   .flex-flip{
-    flex-direction: row;
+    flex-direction: column-reverse;
   }
 
   .mob-center {
