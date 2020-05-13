@@ -389,6 +389,7 @@ light grey - rgb(150,150,155)
   flex: 1;
 }
 
+
 @media all and (max-width: 600px){
 .flex-map{
   flex-direction: column;

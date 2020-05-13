@@ -1,21 +1,24 @@
-<section class="padded rel {{block.bg-class}}">
-  {% if forloop.index == 1 %}
+<section class=" rel {{block.bg-class}}">
+  <div class="padded">
+
+    {% if forloop.index == 1 %}
     <h1 class="centered">{{block.heading}}</h1>
-  {% else %}
+    {% else %}
     <h2 class="centered">{{block.heading}}</h2>
-  {% endif %}
-  {% if block.pre_img_text_html %}
+    {% endif %}
+    {% if block.pre_img_text_html %}
     <div class="">
       {{block.pre_img_text_html}}
     </div>
-  {% endif %}
+    {% endif %}
+  </div>
   <div>
   <!-- class="flex-map" -->
   <!-- <div class="centered flex-map-1 padded-light">
       <img class="" src="{{block.map_path}}" alt="{{block.map_alt}}">
     </div> -->
     <div class="flex-map-2">
-      <video muted loop autoplay>
+      <video muted loop autoplay width="100%" height="auto">
         <!-- <source src="/uploads/face_vid.mp4" type="video/mp4"> -->
         <source src="/assets/LCA%20Faces%20720.mp4" type="video/mp4">
         <source src="/assets/LCA%20Faces.mp4" type="video/mp4">

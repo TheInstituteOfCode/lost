@@ -1,20 +1,16 @@
-<section class="padded {{block.bg-class}} centered rel flex-center tall-50 {% if block.parrallex == true %} bg-attached" style="background-image:url('{{block.img_path}}'){% endif %}">
+<section class="padded {{block.bg-class}} centered rel flex-center tall-50 bg-attached" style="background-image:url('{{block.img_path}}')">
   <!-- <div class="rel"> -->
 <style media="screen">
   .color-{{forloop.index}},.color-{{forloop.index}} *{
     color:{{block.text_rgba}};
   }
 </style>
-{% if parralex != true %}
-  <div class="para-img-container">
-    <img class="thumbnail" src="{{block.img_path}}" alt="{{block.img_description}}">
-  </div>
-  {% endif %}
+
   <div class="bg-overlay" style="background-color:{{block.overlay_rgba}}">
   </div>
   <div class="grid">
     <div class="col-6 flex-center">
-      <img src="{{block.col-2-image_path}}" alt="{{block.col-2-image_description}}">
+      <img src="{{block.col_2_image_path}}" alt="{{block.col_2_image_description}}">
     </div>
 
     <div class="rel col-6">
