@@ -161,6 +161,8 @@ _array_structures:
         _id: review
         text_html:
         bg-class:
+        img_path:
+        overlay_rgba:
         vimeo_id:
     - label: Text Block
       icon: ballot
