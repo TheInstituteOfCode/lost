@@ -44,9 +44,14 @@ $(document).ready(function() {
 	    return false;
 		});
 		// end accordian
+		$( window ).load(function() {
+			// Run code
+			$(".parallax-window").delay(5).addClass("tall-50").alert("bob");
 
-
-
+		});
+	// $(".parallax-window").each(function () {
+	// 	$("this").addClass("tall-50");
+	// })
 
 // end section
 

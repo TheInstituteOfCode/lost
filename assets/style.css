@@ -45,7 +45,7 @@ light grey - rgb(150,150,155)
       border-radius: 50px;
       text-deocration: none;
     }
-    
+
     .cms-editor-active .editor-link {
       display: block;
     }
@@ -107,6 +107,10 @@ light grey - rgb(150,150,155)
   .light-text   { color: white; }
   .flex-flip:nth-child(2n){  flex-direction: row-reverse; }
     /* paralex */
+    .parallax-window {
+      transition: 1s;
+    }
+
   .para{
     position: relative;
     width: 100%;
@@ -179,7 +183,7 @@ light grey - rgb(150,150,155)
     margin: 1rem 0;
   }
 
-  .centered hr, 
+  .centered hr,
   hr.centered {
     margin: 1rem auto;
   }
