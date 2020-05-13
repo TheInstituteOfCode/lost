@@ -1,0 +1,51 @@
+<section class="padded {{block.bg-class}} centered rel flex-center tall-50 {% if block.parrallex == true %} bg-attached" style="background-image:url('{{block.img_path}}'){% endif %}">
+  <!-- <div class="rel"> -->
+<style media="screen">
+  .color-{{forloop.index}},.color-{{forloop.index}} *{
+    color:{{block.text_rgba}};
+  }
+</style>
+{% if parralex != true %}
+  <div class="para-img-container">
+    <img class="thumbnail" src="{{block.img_path}}" alt="{{block.img_description}}">
+  </div>
+  {% endif %}
+  <div class="bg-overlay" style="background-color:{{block.overlay_rgba}}">
+  </div>
+  <div class="grid">
+
+    <div class="rel col-6">
+
+      <div class="color-{{forloop.index}} rel">
+        {{block.text_html}}
+      </div>
+
+      {% if block.buy_button == true %}
+      <div class="center rel">
+
+        <div id="button-{{buttons_used}}">
+        </div>
+        {% if buttons_used == 1 %}
+
+        <script src="/assets/buy.js" defer></script>
+        <script src="/assets/buy_button.js"defer></script>
+        {% endif %}
+        {% if buttons_used == 2 %}
+        <script src="/assets/buy_button2.js" defer></script>
+        {% endif %}
+        {% if buttons_used == 3 %}
+        <script src="/assets/buy_button3.js" defer></script>
+        {% endif %}
+        {% if buttons_used == 4 %}
+        <script src="/assets/buy_button4.js" defer></script>
+        {% endif %}
+      </div>
+      {% assign buttons_used = buttons_used | plus: 1 %}
+      {% endif %}
+    </div>
+    <div class="col-6 flex-center">
+      <img src="{{block.col-2-image_path}}" alt="{{block.col-2-image_description}}">
+    </div>
+
+  </div>
+</section>
