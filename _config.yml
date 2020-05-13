@@ -16,7 +16,7 @@ _options:
     numberedlist: true
     right: right
     center: centered
-    left:
+    left: left
     link: true
   col-1_html:
     format: h1 h2 h3 p a img
@@ -25,8 +25,9 @@ _options:
     numberedlist: true
     right: right
     center: centered
-    left:
+    left: left
     link: true
+    image: true
   col-2_html:
     format: h1 h2 h3 p a img
     styles: /assets/editor.css
@@ -34,8 +35,9 @@ _options:
     numberedlist: true
     right: right
     center: centered
-    left:
+    left: left
     link: true
+    image: true
   col-3_html:
     format: h1 h2 h3 p a img
     styles: /assets/editor.css
@@ -43,8 +45,9 @@ _options:
     numberedlist: true
     right: right
     center: centered
-    left:
+    left: left
     link: true
+    image: true
   pre_img_text_html:
     format: h2 h3 p a img
     link: true
@@ -124,19 +127,6 @@ _array_structures:
         img_path:
         img_alt:
         post_img_text_html:
-    - label: Chris Lau section
-      icon: img
-      text:
-      value:
-        _id: Chris_Lau
-        heading:
-        bg-class:
-        pre_img_text_html:
-        headshot_path:
-        headshot_alt:
-        img_path:
-        img_alt:
-        post_img_text_html:
     - label: map section
       icon: img
       text:
@@ -207,6 +197,14 @@ _array_structures:
       value:
         _id: columns-3
         heading_html:
+        bg-class:
+        col-1_html:
+        col-2_html:
+        col-3_html:
+    - label: Mixed Columns
+      icon: ballot
+      value:
+        _id: columns-mixed
         bg-class:
         col-1_html:
         col-2_html:

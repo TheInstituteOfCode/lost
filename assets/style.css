@@ -34,6 +34,22 @@ light grey - rgb(150,150,155)
   [class*=col]  {   padding: 0; }
 
 
+    .editor-link {
+      display: none;
+      position: absolute;
+      right: 1rem;
+      margin-top: 1rem;
+      color: teal;
+      padding: 0.2rem 1rem;
+      border: 1px solid;
+      border-radius: 50px;
+      text-deocration: none;
+    }
+    
+    .cms-editor-active .editor-link {
+      display: block;
+    }
+
   /* ------------- Utility Classes --------------  */
 
   .rel{
@@ -179,7 +195,7 @@ light grey - rgb(150,150,155)
   }
 
   p.emphasis {   /* typically added to paragraphs to make them a little bigger, could be a different font or color also */
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   /* Icons */
@@ -1010,8 +1026,8 @@ right:4px;
 
 @media (min-width:1400px ) {
   section.capped-width {
-    padding-left: calc(55% - 700px);
-    padding-right: calc(55% - 700px);
+    padding-left: calc(55% - 650px);
+    padding-right: calc(55% - 650px);
   }
 }
 
