@@ -861,6 +861,7 @@ display: none;
   .padded-r-1   {  padding-right: 0;  }
   .padded-r-2   {  padding-right: 0;  }
   .padded-l-2   {  padding-left: 0;  }
+  .mobile-padded-top-5{ padding-top:5%}
 
 } /* end media query */
 
