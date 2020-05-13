@@ -12,23 +12,23 @@ $(document).ready(function() {
 	// end hamburger menu
 
 	// This is the pop-up gallery
-	$('.popup-gallery').magnificPopup({
-		delegate: 'a',
-		type: 'image',
-		tLoading: 'Loading image #%curr%...',
-		mainClass: 'mfp-img-mobile',
-		gallery: {
-			enabled: true,
-			navigateByImgClick: true,
-			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-		},
-		image: {
-			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-			titleSrc: function(item) {
-				return item.el.attr('title');
-			}
-		}
-	});
+	// $('.popup-gallery').magnificPopup({
+	// 	delegate: 'a',
+	// 	type: 'image',
+	// 	tLoading: 'Loading image #%curr%...',
+	// 	mainClass: 'mfp-img-mobile',
+	// 	gallery: {
+	// 		enabled: true,
+	// 		navigateByImgClick: true,
+	// 		preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+	// 	},
+	// 	image: {
+	// 		tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+	// 		titleSrc: function(item) {
+	// 			return item.el.attr('title');
+	// 		}
+	// 	}
+	// });
 
 	var allPanels = $('.accordion > dd').hide();
 
@@ -44,15 +44,9 @@ $(document).ready(function() {
 	    return false;
 		});
 		// end accordian
-		$( window ).load(function() {
-			// Run code
-			$(".parallax-window").delay(5).addClass("tall-50").alert("bob");
-
-		});
-	// $(".parallax-window").each(function () {
-	// 	$("this").addClass("tall-50");
-	// })
-
+		// para
+		const image = document.getElementsByClassName('thumbnail');
+		new simpleParallax(image);
 // end section
 
 });

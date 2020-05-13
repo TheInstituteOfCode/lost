@@ -1,14 +1,16 @@
-<section class="padded {{block.bg-class}} centered rel flex-center parallax-window tall-50" data-parallax="scroll" data-image-src="{{block.img_path}}">
+<section class="padded {{block.bg-class}} centered rel flex-center tall-50">
   <!-- <div class="rel"> -->
 <style media="screen">
   .color-{{forloop.index}},.color-{{forloop.index}} *{
     color:{{block.text_rgba}};
   }
 </style>
-    <!-- <img class="bg-image" src="{{block.img_path}}" alt="{{block.img_description}}"> -->
-    <div class="bg-overlay" style="background-color:{{block.overlay_rgba}}">
-    </div>
-  <!-- </div> -->
+  <div class="para-img-container">
+    <img class="thumbnail" src="{{block.img_path}}" alt="{{block.img_description}}"
+    >
+
+  </div>
+
   <div class="">
 
     <div class="color-{{forloop.index}} rel">
@@ -37,5 +39,7 @@
     </div>
     {% assign buttons_used = buttons_used | plus: 1 %}
     {% endif %}
+  </div>
+  <div class="bg-overlay" style="background-color:{{block.overlay_rgba}}">
   </div>
 </section>

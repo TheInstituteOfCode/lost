@@ -73,6 +73,7 @@ _array_structures:
         text_html:
         bg-class:
         img_path:
+        img_description:
         overlay_rgba:
         text_rgba:
         buy_button:
