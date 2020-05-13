@@ -212,3 +212,11 @@ _array_structures:
         col-1_html:
         col-2_html:
         col-3_html:
+    - label: Mixed Columns
+      icon: ballot
+      value:
+        _id: columns-mixed
+        bg-class:
+        col-1_html:
+        col-2_html:
+        col-3_html:
