@@ -70,9 +70,7 @@
   .shopify-buy__cart-toggle{
     background-color: #dff0f0;
   }
-  .shopify-buy__quantity-decrement,.shopify-buy__quantity-increment,.shopify-buy__quantity,.shopify-buy__cart-item__variant-title,.shopify-buy__quantity-container.clearfix{
-    display:none;
-  }
+
   .shopify-buy__quantity-container{margin-right:0;}
 
   .shopify-buy__cart-items{
@@ -82,13 +80,17 @@
     display:flex;
     flex-flow: wrap;
     align-items: center;
+    overflow:initial;
   }
+
   .shopify-buy__cart-item__title{
     flex-grow:1;
     margin-left:5%;
     font-size: 1.6rem;
     color:lightgrey;
   }
+
+
   .shopify-buy__cart-item__image{
     position:relative
   }
@@ -97,7 +99,7 @@
     }
 
   .bg-white{background-color:#fff}
-  @media (min-width:650px){
+  @media (min-width:1100px){
     .grid{
       display:flex;
       align-items:flex-start;
