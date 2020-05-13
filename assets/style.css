@@ -62,6 +62,7 @@ light grey - rgb(150,150,155)
   .left     {  text-align: left;     }
   .right    {  text-align: right;    }
   .centered {  text-align: center;   }
+  .centered li{list-style: none}
   .flex-center{
     display: flex;
     justify-content: center;

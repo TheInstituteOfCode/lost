@@ -27,7 +27,7 @@ $(document).ready(function() {
     options: {
       product: {
         iframe: false,
-        text: { button: 'Enroll Now $799'},
+        text: { button: 'Enroll Now'},
         buttonDestination: 'cart',
         contents: {
           img: false,
