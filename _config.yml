@@ -239,3 +239,14 @@ _array_structures:
         buy_button:
         col_2_image_path:
         col_2_image_description:
+
+    - label: banner-video-section
+      icon: video
+      value:
+        _id: banner-video
+        text_html:
+        bg-class:
+        bg-img_path:
+        bg_video:
+        overlay_rgba:
+        text_rgba:
