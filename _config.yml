@@ -247,6 +247,6 @@ _array_structures:
         text_html:
         bg-class:
         bg-img_path:
-        bg_video:
+        bg_video_path:
         overlay_rgba:
         text_rgba:
