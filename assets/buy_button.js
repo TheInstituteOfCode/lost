@@ -67,7 +67,18 @@ $(document).ready(function() {
           lineItems: '{{ cart | strip_newlines }}',
           close: "X",
         }
-      }
+      },
+      toggle: {
+        iframe: true,
+        contents: {
+          count: true,
+          icon: true,
+          title: true,
+        },
+        templates:{
+          title: '<style media="screen">.is-sticky.shopify-buy__cart-toggle{background-color: #99d0d0}</style>',
+        }
+      },
 
     }
 
