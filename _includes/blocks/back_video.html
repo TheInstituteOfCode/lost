@@ -5,12 +5,11 @@
     color:{{block.text_rgba}};
   }
 </style>
-{% if parralex != true %}{% endif %}
+{% if parralex != true %}
   <div class="para-img-container">
-    <img class="thumbnail" src="{{block.img_path}}" alt="{{block.img_description}}"
-    >
-
+    <img class="thumbnail" src="{{block.img_path}}" alt="{{block.img_description}}">
   </div>
+  {% endif %}
   <div class="bg-overlay" style="background-color:{{block.overlay_rgba}}">
   </div>
   <div class="rel">
