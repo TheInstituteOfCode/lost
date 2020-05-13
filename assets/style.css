@@ -389,6 +389,18 @@ light grey - rgb(150,150,155)
   flex: 1;
 }
 
+.map-text{
+  position: absolute;
+    z-index: 5;
+    top: 17vw;
+    right: 6vw;
+    width: 20vw;
+    transform: rotate(8deg);
+}
+.map-text *{
+  font-size: 3vw;
+    color: #fff;
+}
 
 @media all and (max-width: 600px){
 .flex-map{

@@ -164,6 +164,7 @@ _array_structures:
         img_path:
         overlay_rgba:
         vimeo_id:
+        next_section_heading:
     - label: Text Block
       icon: ballot
       value:
