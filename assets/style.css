@@ -199,7 +199,7 @@ light grey - rgb(150,150,155)
   }
 
   p.emphasis {   /* typically added to paragraphs to make them a little bigger, could be a different font or color also */
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   /* Icons */
@@ -1030,8 +1030,8 @@ right:4px;
 
 @media (min-width:1400px ) {
   section.capped-width {
-    padding-left: calc(55% - 650px);
-    padding-right: calc(55% - 650px);
+    padding-left: calc(55% - 700px);
+    padding-right: calc(55% - 700px);
   }
 }
 
