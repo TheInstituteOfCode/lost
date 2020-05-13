@@ -1,0 +1,21 @@
+<section class="padded {{block.bg-class}} centered rel flex-center tall-50 ">
+  <!-- <div class="rel"> -->
+<style media="screen">
+  .color-{{forloop.index}},.color-{{forloop.index}} *{
+    color:{{block.text_rgba}};
+  }
+</style>
+<video class="bg-video" autoplay muted loop playsinline poster="{{block.bg-img_path}}">
+  <source src="{{block.bg_video}}" type="video/mp4" />
+</video>
+  <div class="bg-overlay" style="background-color:{{block.overlay_rgba}}">
+  </div>
+  <div class="rel">
+
+    <div class="color-{{forloop.index}} rel">
+      {{block.text_html}}
+    </div>
+
+  </div>
+
+</section>
