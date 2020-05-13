@@ -254,9 +254,9 @@ _array_structures:
     - label: slider section
       icon: ballot
       value:
-        bg-class:
-        _id: text-block
         text_html:
+        bg-class:
+        _id: img-slider
         img_pre_filter_path:
         img_pre_filter_alt:
         img_post_filter_path:
