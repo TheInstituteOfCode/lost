@@ -10,7 +10,9 @@
   </div>
   <div class="grid">
     <div class="col-6 flex-center">
+      {% if block.col_2_image_description != "" %}
       <img src="{{block.col_2_image_path}}" alt="{{block.col_2_image_description}}">
+      {% endif %}
     </div>
 
     <div class="rel col-6-middle">
