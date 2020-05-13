@@ -251,3 +251,13 @@ _array_structures:
         bg_video_path:
         overlay_rgba:
         text_rgba:
+    - label: slider section
+      icon: ballot
+      value:
+        bg-class:
+        _id: text-block
+        text_html:
+        img_pre_filter_path:
+        img_pre_filter_alt:
+        img_post_filter_path:
+        img_pre_filter_alt:
