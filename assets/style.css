@@ -836,6 +836,10 @@ display: none;
 /* This media query kicks into action at the gridlex sm breakpoint */
 @media(max-width:768px) {
 
+  .vimeo_mobile{
+    height:48vw;
+  }
+
   .mob-hide {
     display: none;
   }
