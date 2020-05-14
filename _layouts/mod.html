@@ -2,12 +2,15 @@
 layout: default
 ---
 
-<div class="hidden content"> 
-    
+<div class="hidden content">
+
    {{content}}
 
 </div>
 
+<!-- needed for button if loops -->
+{% assign buttons_used = 1 %}
+<!-- end needed for button for loops -->
 
 {% for block in page.page_blocks %}
 
@@ -15,9 +18,8 @@ layout: default
         <a href="cloudcannon:#page_blocks[{{ forloop.index0 }}]" class="editor-link" data-cms-editor-link-style="modal">
           Edit Section
         </a>
-    
+
      {% include blocks/{{block._id}}.html block=block %}
-  
+
   </div>
 {% endfor %}
-
