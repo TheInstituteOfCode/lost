@@ -10,10 +10,12 @@
 {% endcomment %}
 
   {% assign buttons_used = " 0 " %}
-  {% include body-scripts.html %}
+  {% include body-scripts-top.html %}
   {{content}}
 
   {% include site-footer.html %}
+  
+  {% include body-scripts.html %}
 
 </body>
 </html>
