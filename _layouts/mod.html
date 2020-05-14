@@ -2,6 +2,13 @@
 layout: default
 ---
 
+<div class="hidden content"> 
+    
+   {{content}}
+
+</div>
+
+
 {% for block in page.page_blocks %}
 
     <div class="rel">
@@ -14,8 +21,3 @@ layout: default
   </div>
 {% endfor %}
 
-<div class="hidden content"> 
-    
-   {{content}}
-
-</div>
