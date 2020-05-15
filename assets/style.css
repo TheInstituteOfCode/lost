@@ -1034,6 +1034,20 @@ right:4px;
 }
 
 
+.alert-banner h2 {
+    margin-bottom: 0;
+    font-size: 1.8rem;
+}
+
+.alert-banner .countdown {
+    font-size: 1.4rem;
+}
+
+.alert-banner .button {
+    padding: 0.5rem 2rem;
+}
+
+
 /* slider section  */
 
 
