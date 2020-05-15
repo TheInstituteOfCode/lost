@@ -261,3 +261,9 @@ _array_structures:
         img_pre_filter_alt:
         img_post_filter_path:
         img_pre_filter_alt:
+    - label: form section
+      icon: form
+      value:
+        _id: form
+        heading:
+        bg-class:
