@@ -656,7 +656,7 @@ display: none;
   input:focus,
   textarea:focus {
     outline: none;
-    border: 2px solid #e67e22;
+    border: 2px solid #99d0d0;
     /* featured color */
   }
 

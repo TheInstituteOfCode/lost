@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+<div class="hidden content">
+
+   {{content}}
+
+</div>
+
+<!-- needed for button if loops -->
+{% assign buttons_used = 1 %}
+<!-- end needed for button for loops -->
+
+{% for block in page.page_blocks %}
+
+    <div class="rel">
+        <a href="cloudcannon:#page_blocks[{{ forloop.index0 }}]" class="editor-link" data-cms-editor-link-style="modal">
+          Edit Section
+        </a>
+
+     {% include blocks/{{block._id}}.html block=block %}
+
+  </div>
+{% endfor %}
+<div class="fixed-banner grid-spaceBetween">
+<div class="timer" id="ten-countdown">
+</div>
+</div>
+
+<script type="text/javascript">
+
+  function countdown( elementName, minutes, seconds )
+  {
+      var element, endTime, hours, mins, msLeft, time;
+
+      function twoDigits( n )
+      {
+          return (n <= 9 ? "0" + n : n);
+      }
+
+      function updateTimer()
+      {
+          msLeft = endTime - (+new Date);
+          if ( msLeft < 1000 ) {
+              element.innerHTML = "Time is up!";
+          } else {
+              time = new Date( msLeft );
+              hours = time.getUTCHours();
+              mins = time.getUTCMinutes();
+              element.innerHTML = (hours ? hours + ':' + twoDigits( mins ) : mins) + ':' + twoDigits( time.getUTCSeconds() );
+              setTimeout( updateTimer, time.getUTCMilliseconds() + 500 );
+          }
+      }
+
+      element = document.getElementById( elementName );
+      endTime = (+new Date) + 1000 * (60*minutes + seconds) + 500;
+      updateTimer();
+  }
+
+  countdown( "ten-countdown", 10, 0 );
+</script>
