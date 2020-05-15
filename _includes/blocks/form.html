@@ -1,18 +1,31 @@
 <section class="padded {{block.bg-class}}">
 
-<h2 class="centered">{{block.heading}}</h2>
+  <h2 class="centered padded-light">{{block.heading}}</h2>
 
-<form class="grid-spaceBetween" action="https://formspree.io/business@lostleblanc.com" method="post">
+  <form class="grid-spaceBetween" action="https://formspree.io/business@lostleblanc.com" method="post">
 
-<input class="col-5" name="name" type="text" value="name" placeholder="name">
+    <div class="col-6 padded-light">
+      <input class="col-6" name="name" type="text" placeholder="Name">
+    </div>
 
-<input class="col-5" name="email" type="email" value="email" placeholder="name">
+    <div class="col-6 padded-light">
+      <input class="col-6" name="_replyto" type="email" placeholder="Email">
+    </div>
 
-<textarea class="col-12" name="message" rows="8" cols="80"></textarea>
+    <div class="col-12 padded-light">
+      <textarea class="col-12" name="message" rows="8" cols="80" placeholder="Your Message"></textarea>
+    </div>
 
-<input class="col-12 button" type="submit" value="Send" class="button">
+    <div class="col-12 padded-light">
+      <input class="col-12 button" type="submit" value="Send" class="button">
+    </div>
 
-</form>
+    <div class="col-12 padded-light">
+      <input type="hidden" name="_to" value="business@lostleblanc.com">
+      <input type="text" name="_gotcha" style="display: none;">
+      <input type="submit" value="Send Message">
+    </div>
+  </form>
 
 
 </section>
