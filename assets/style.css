@@ -652,6 +652,10 @@ display: none;
     font-size: 1rem;
     vertical-align: top;
   }
+  
+  ::placeholder {
+  font-family: inherit;
+}
 
   input:focus,
   textarea:focus {
