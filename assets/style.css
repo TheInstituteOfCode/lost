@@ -653,7 +653,8 @@ display: none;
     vertical-align: top;
   }
   
-  ::placeholder {
+  input::placeholder, 
+  textarea::placeholder {
   font-family: inherit;
 }
 
