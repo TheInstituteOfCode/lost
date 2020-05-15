@@ -1034,6 +1034,10 @@ right:4px;
 }
 
 
+.alert-banner.fixed-banner {
+    padding:2%;
+}
+
 .alert-banner h2 {
     margin-bottom: 0;
     font-size: 1.8rem;
