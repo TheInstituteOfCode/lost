@@ -84,9 +84,9 @@ light grey - rgb(150,150,155)
   .padded-top   {  padding-top: 5vw;}
   .padded-t-0   {  padding-top: 0; }
   .margin-a     {  margin:auto;}
-  .margin       {  margin:5vw       }
-  .margin-light {  margin:3vw       }
-
+  .margin       {  margin:5vw;       }
+  .margin-light {  margin:3vw;       }
+  .hidden       {  display:none;    }
   .float-Chris{
     width: 33%;
     float: left;
@@ -652,8 +652,8 @@ display: none;
     font-size: 1rem;
     vertical-align: top;
   }
-  
-  input::placeholder, 
+
+  input::placeholder,
   textarea::placeholder {
   font-family: inherit;
 }
@@ -677,8 +677,8 @@ display: none;
   form [class*=col-] {
     padding: 5px;
   }
-  
-  
+
+
 
   .email-signup input {
     width: 30%;
