@@ -704,6 +704,9 @@ display: none;
      input,textarea{
        padding: 0.6rem;
      }
+     input.button{
+       margin: 0;
+     }
 
      .email-signup input {
        width: 100%;
