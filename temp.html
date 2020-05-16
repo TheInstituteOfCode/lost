@@ -2,7 +2,7 @@
 layout: default
 title: Free 1 Hour Training
 vimeo_id: 417408268
-time_in_seconds_for_popup: 30
+time_in_seconds_for_popup: 3
 ---
 {% include site-header.html %}
 
@@ -19,37 +19,36 @@ time_in_seconds_for_popup: 30
   </div> -->
 
   <div class="padded">
-    <iframe src="https://player.vimeo.com/video/{{page.vimeo_id}}" width="100%" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+    <iframe id="player1" src="https://player.vimeo.com/video/{{page.vimeo_id}}?api=1&player_id=player1" width="100%" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
   </div>
 <div class="flex-center hidden timed-show">
 <a href="#" class="button"></a>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js" integrity="sha256-spTpc4lvj4dOkKjrGokIrHkJgNA0xMS98Pw9N7ir9oI=" crossorigin="anonymous"></script>
-<script type="text/javascript">
-  $(function() {
-var iframe = $('#player1')[0];
-var player = $f(iframe);
-var status = $('.status');
-var playButton = document.getElementById("play-button");
-playButton.addEventListener("click", function() {
-  player.api("play");
+
+
+  <button id="play-button">Play</button>
+  <button id="pause-button">Pause</button>
+
+
+  <script src="https://player.vimeo.com/api/player.js"></script>
+
+  <script>
+    var iframe = document.querySelector('iframe');
+    var player = new Vimeo.Player(iframe);
+
+    player.on('timeupdate', function(data) {
+      player.getCurrentTime().then(function(seconds) {
+        // alert(seconds)
+        if ( seconds >= {{page.time_in_seconds_for_popup}} ) {
+          $('.timed-show').removeClass("hidden");
+        }
+
+        // seconds = the current playback position
+      }).catch(function(error) {
+        // an error occurred
+      });
 });
 
-var pauseButton = document.getElementById("pause-button");
-pauseButton.addEventListener("click", function() {
-  player.api("pause");
-});
-setTimeout(function () {
-player.addEvent('ready', function() {
-player.addEvent('playProgress', onPlayProgress);
-});
-});
-function onPlayProgress(data, id) {
-var Time = data.seconds;
-    if (Time >= '{{page.time_in_seconds_for_popup}}') {
-    $('.timed-show').show();
-	}
-}
-});
 </script>
+
 </section>
