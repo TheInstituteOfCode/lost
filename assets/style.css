@@ -1047,6 +1047,7 @@ right:4px;
 .shrunk{
   opacity: 0;
   height: 0;
+  display: none;
   /* overflow: hidden; */
 }
 
