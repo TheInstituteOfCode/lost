@@ -1040,7 +1040,7 @@ right:4px;
 .traning-text{
   opacity: 1;
   height: auto;
-  overflow: scroll;
+  overflow: inherit;
 }
 
 .shrunk{
