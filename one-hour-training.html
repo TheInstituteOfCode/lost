@@ -1,56 +1,18 @@
 ---
 layout: default
 title: Free 1 Hour Training
-vimeo_id: 417408268
+video_embed_code: <script src="https://fast.wistia.com/embed/medias/0fhi70cz9j.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_0fhi70cz9j videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/0fhi70cz9j/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
 ---
 <!-- time_in_seconds_for_popup: 3000 -->
 {% include site-header.html %}
 
 <section class="padded light-bg capped-width centered">
 
-<div class="padded-1 editable">
-  <h2>Free One Hour Training </h2>
-  <p class="emphasis">Become a Professional Content Creator and Make Money from Anywhere</p>
-</div>
-
-<!-- <div class="padded-1" data-cms-options='{"embed": true}'>
-    <iframe src="//fast.wistia.net/embed/iframe/avk9twrrbn" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="100%" height="549"></iframe>
-    <script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
-  </div> -->
-
-  <div class="padded">
-    <iframe src="https://player.vimeo.com/video/{{page.vimeo_id}}" width="100%" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+  <div class="padded-1 editable">
+    <h2>Free One Hour Training </h2>
+    <p class="emphasis">Become a Professional Content Creator and Make Money from Anywhere</p>
   </div>
-<!-- <div class="flex-center timed-show">
-<a href="#" class="button"></a>
-</div> -->
 
-<script type="text/javascript">
-  ${$('.timed-show').hide();}
-  $(function() {
-var iframe = $('#player1')[0];
-var player = $f(iframe);
-var status = $('.status');
-var playButton = document.getElementById("play-button");
-playButton.addEventListener("click", function() {
-  player.api("play");
-});
+  {{page.video_embed_code}}
 
-var pauseButton = document.getElementById("pause-button");
-pauseButton.addEventListener("click", function() {
-  player.api("pause");
-});
-setTimeout(function () {
-player.addEvent('ready', function() {
-player.addEvent('playProgress', onPlayProgress);
-});
-});
-function onPlayProgress(data, id) {
-var Time = data.seconds;
-    if (Time >= '{{page.time_in_seconds_for_popup}}') {
-    $('.timed-show').show();
-	}
-}
-});
-</script>
 </section>
