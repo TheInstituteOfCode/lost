@@ -89,7 +89,8 @@ page_blocks:
     col_2_image_description:
 ---
 
-<!-- time_in_seconds_for_popup: 3000 -->
+
+
 {% include site-header.html %}
 
 <section class="padded light-bg capped-width centered">
@@ -100,6 +101,9 @@ page_blocks:
   </div>
 
   {{page.video_embed_code}}
+  <!-- needed for button if loops -->
+  {% assign buttons_used = 1 %}
+  <!-- end needed for button for loops -->
 
 </section>
 
@@ -107,8 +111,12 @@ page_blocks:
 
   <div class="center rel">
 
-        <div id="button-{{buttons_used}}">
-        </div>
+    <div class="centered light-bg padded">
+      <div id="button-{{buttons_used}}">
+      </div>
+    </div>
+
+
         {% if buttons_used == 1 %}
 
         <script src="/assets/buy.js" defer></script>
@@ -126,9 +134,9 @@ page_blocks:
     </div>
       {% assign buttons_used = buttons_used | plus: 1 %}
 
-  
- 
-  
+
+
+
   <!-- end needed for button for loops -->
   {% for block in page.page_blocks %}
 
