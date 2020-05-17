@@ -237,10 +237,9 @@ _array_structures:
         img_description:
         overlay_rgba:
         text_rgba:
-        buy_button:
+        buy_button: true
         col_2_image_path:
         col_2_image_description:
-
     - label: banner-video-section
       icon: video
       value:

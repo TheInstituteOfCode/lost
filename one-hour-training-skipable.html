@@ -21,7 +21,9 @@ page_blocks:
 </section>
 <div class="shrunk traning-text" id="shown-text">
   {% for block in page.page_blocks %}
-
+  <!-- needed for button if loops -->
+  {% assign buttons_used = 1 %}
+  <!-- end needed for button for loops -->
       <div class="rel">
           <a href="cloudcannon:#page_blocks[{{ forloop.index0 }}]" class="editor-link" data-cms-editor-link-style="modal">
             Edit Section

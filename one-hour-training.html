@@ -20,12 +20,12 @@ video_time_triger: 10
 page_blocks:
   - _id: banner-two-col
     text_html: <h2>LAST CHANCE SAVE $234</h2>
-    bg-class:
+    bg-class:  footer-banner
     img_path: /uploads/gradient-version.jpg
     img_description: Lost Creator Academy
     overlay_rgba:
     text_rgba:
-    buy_button:
+    buy_button: true
     col_2_image_path:
     col_2_image_description:
   - _id: icon_section
@@ -95,7 +95,12 @@ page_blocks:
   {{page.video_embed_code}}
 
 </section>
+
 <div class="shrunk traning-text" id="shown-text">
+
+  <!-- needed for button if loops -->
+  {% assign buttons_used = 1 %}
+  <!-- end needed for button for loops -->
   {% for block in page.page_blocks %}
 
       <div class="rel">
