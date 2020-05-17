@@ -1040,14 +1040,14 @@ right:4px;
 .traning-text{
   opacity: 1;
   height: auto;
-  overflow: inherit;
+  /* overflow: inherit; */
   transform: 3s;
 }
 
 .shrunk{
   opacity: 0;
   height: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* img and text grid */
