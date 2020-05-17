@@ -2,8 +2,11 @@
   <div class="rel">
     <div class="centered padded">
       {{block.text_html}}
+      {% if block.vimeo_id != none %}
       <iframe src="https://player.vimeo.com/video/{{block.vimeo_id}}" width="100%" height="480px" class="vimeo_mobile"frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">
       </iframe>
+      {% endif %}
+
     </div>
   </section>
   <section class="padded light-bg light-text {{block.bg-class}} rel bg-attached" style=" background-image:url('{{block.img_path}}');" >
