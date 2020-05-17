@@ -1109,6 +1109,9 @@ right:4px;
   .mob-padded-light-top {
     padding-top:2vh;
   }
+  .mobile-flex-top{
+    align-items: flex-start;
+  }
   .alert-banner .padded-light {
     padding: 1%;
   }
