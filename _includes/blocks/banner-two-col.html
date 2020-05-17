@@ -1,4 +1,4 @@
-<section class="padded {{block.bg-class}} centered rel tall-50 bg-attached" style="background-image:url('{{block.img_path}}')">
+<section class="padded {{block.bg-class}} centered rel tall-50 bg-attached grid" style="background-image:url('{{block.img_path}}')">
   <!-- <div class="rel"> -->
 <style media="screen">
   .color-{{forloop.index}},.color-{{forloop.index}} *{
@@ -8,7 +8,7 @@
 
   <div class="bg-overlay" style="background-color:{{block.overlay_rgba}}">
   </div>
-  <div class="grid">
+
     <div class="col-6 flex-center">
       {% if block.col_2_image_description != "" %}
       <img src="{{block.col_2_image_path}}" alt="{{block.col_2_image_description}}">
@@ -45,5 +45,4 @@
       {% endif %}
     </div>
 
-  </div>
 </section>
