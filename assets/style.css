@@ -71,6 +71,7 @@ light grey - rgb(150,150,155)
 
   .padded       {  padding: 5vw;    }
   .padded-light {  padding: 2vw;}
+  .padded-extra-light{padding:1vw;}
   .padded-1     {  padding: 1rem;  }
   .padded-2     {  padding: 2rem;  }
   .padded-r     {  padding-right: 5vw;  }
@@ -105,7 +106,7 @@ light grey - rgb(150,150,155)
 
   .dark-bg      {  background-color: rgb(60, 60, 65);     }
   .light-bg     {  background-color: #f0f3f4;  }
-  .featured-bg  {  background-color: #dff0f0;             }
+  .featured-bg  {  background-color: #d7e9e9;             }
 
   .light-text   { color: white; }
   .flex-flip:nth-child(2n){  flex-direction: row-reverse; }
