@@ -1037,6 +1037,18 @@ right:4px;
 }
 
 
+.traning-text{
+  opacity: 1;
+  height: auto;
+  overflow: scroll;
+}
+
+.shrunk{
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
 /* img and text grid */
 .img-text-grid li {
   font-size: 1.50rem;
@@ -1073,6 +1085,10 @@ right:4px;
 
 
 /* slider section  */
+
+
+
+
 
 
 @media (min-width:768px ) {
