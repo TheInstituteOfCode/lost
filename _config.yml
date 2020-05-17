@@ -163,7 +163,7 @@ _array_structures:
         bg-class:
         img_path:
         overlay_rgba:
-        vimeo_id:
+        vimeo_id: none
         next_section_heading:
     - label: Text Block
       icon: ballot
