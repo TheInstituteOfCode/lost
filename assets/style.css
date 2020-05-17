@@ -1095,14 +1095,30 @@ right:4px;
 
 }
 
+@media(max-width: 576px) {
 
+}
 @media(max-width: 768px) {
-    .alert-banner .padded-light {
+  .mobile-show{
+    display:block;
+  }
+  .mobile-show-inline{
+    display:inline;
+  }
+  .mob-padded-light-top {
+    padding-top:2vh;
+  }
+  .alert-banner .padded-light {
     padding: 1%;
-    }
+  }
+  .alert-banner h2 {
+    font-size: 6.5vw;
+  }
 }
 
 @media (min-width:1400px ) {
+
+
   section.capped-width {
     padding-left: calc(55% - 700px);
     padding-right: calc(55% - 700px);
