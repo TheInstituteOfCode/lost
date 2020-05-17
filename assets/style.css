@@ -1041,6 +1041,7 @@ right:4px;
   opacity: 1;
   height: auto;
   overflow: inherit;
+  transform: 3s;
 }
 
 .shrunk{
