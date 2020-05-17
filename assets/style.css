@@ -1098,7 +1098,7 @@ right:4px;
       background-attachment: fixed;
     }
     .not-fixed{
-      background-attachment: static;
+      background-attachment: inherit;
     }
   .img-container{
     position: relative;
