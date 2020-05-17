@@ -1,3 +1,5 @@
+{% unless block.vimeo_id == "none" %}
+
 <section>
   <div class="rel">
     <div class="centered padded">
@@ -9,6 +11,8 @@
 
     </div>
   </section>
+  
+  {% endunless %}
   <section class="padded light-bg light-text {{block.bg-class}} rel bg-attached" style=" background-image:url('{{block.img_path}}');" >
 
 
@@ -16,6 +20,9 @@
     </div>
 
     <div class="rel">
+        {% if block.vimeo_id == "none" %}
+            {{block.text_html}}
+        {% endif %}
 
       <div class="relative" id="looxCarousel" data-show-more="true" data-max-width="1920" data-arrows-color="#99d0d0" data-dots-color="#2e3438" data-button-color="" data-product-ids="" data-mode="img" data-caraousel-loaded="true" style="height: 722px;">
 
