@@ -16,7 +16,7 @@ video_embed_code: >-
   style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt=""
   aria-hidden="true" onload="this.parentNode.style.opacity=1;"
   /></div></div></div></div>
-video_time_triger: 3698
+video_time_triger: 0
 page_blocks:
   - _id: review
     text_html: <h2 class="centered">Reviews from LCA Students</h2>
@@ -116,11 +116,20 @@ page_blocks:
     </div>
 
 
+        {% if buttons_used == 1 %}
 
         <script src="/assets/buy.js" defer></script>
-        <script src="/assets/buy_button-p1.js" defer></script>
-        <script src="/assets/buy_button-p1-b2.js" defer></script>
-]
+        <script src="/assets/buy_button-p6.js" defer></script>
+        <script src="/assets/buy_button-p6-b2.js" defer></script>
+        {% endif %}
+        {% if buttons_used == 2 %}
+        {% endif %}
+        {% if buttons_used == 3 %}
+        <script src="/assets/buy_button3.js" defer></script>
+        {% endif %}
+        {% if buttons_used == 4 %}
+        <script src="/assets/buy_button4.js" defer></script>
+        {% endif %}
     </div>
       {% assign buttons_used = buttons_used | plus: 1 %}
 
