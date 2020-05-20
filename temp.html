@@ -1,0 +1,15 @@
+<script type="text/javascript">
+  try {
+    let redirect_url = 'https://lostcreatoracademy.com/thankyou';
+    let redirect_prod_ids = [5239638720664, 5239637770392,5238372040856,5237599699096,5237598322840,5237595013272,4658229116985];
+
+    let order_line_items = Shopify.checkout.line_items;
+    for( var i=0; i<order_line_items.length; i++ ){
+      if( redirect_prod_ids.includes( order_line_items[i].product_id ) ){
+        window.top.location.href = redirect_url;
+      }
+    }
+  }catch(err){
+    //if errors happen in the above code, do nothing
+  }
+</script>
