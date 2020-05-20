@@ -7,12 +7,11 @@ video_time_triger: none
 page_blocks:
   - bg-class: light-bg padded centered
     _id: text-block
-    buy_button: true
     text_html: >-
       <div><iframe src="https://player.vimeo.com/video/420166926" width="100%"
       height="480" frameborder="0" allow="autoplay; fullscreen"
       allowfullscreen=""></iframe></div><h2>Save 15% off and get bonus preset
-      collection</h2><p>&nbsp;</p>
+      collection</h2><p>&nbsp;</p><div class="button" id="button-1"></div>
   - _id: review
     text_html: >-
       <h2 class="centered">Will this work for me?</h2><h3>Hear it directly from
@@ -75,13 +74,12 @@ page_blocks:
           30 day money back guarantee as long as you haven&rsquo;t watched 50%
           or more of the academy.</p>
   - _id: banner-two-col
-    text_html: <h2>JOIN TODAY<br />&amp; SAVE 15%</h2>
+    text_html: <h2>JOIN TODAY<br />&amp; SAVE 15%</h2><div class="button" id="button-2"></div>
     bg-class: not-fixed light-text
     img_path: /uploads/lca-device-left-sided-wide.jpg
     img_description:
     overlay_rgba:
     text_rgba:
-    buy_button: true
     col_2_image_path:
     col_2_image_description:
 ---
@@ -100,5 +98,8 @@ page_blocks:
 
     </div>
   {% endfor %}
-</div>
 
+    <script src="/assets/buy.js" defer></script>
+    <script src="/assets/buy_button-p7.js" defer></script>
+    <script src="/assets/buy_button-p7-b2.js" defer></script>
+</div>
