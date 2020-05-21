@@ -69,7 +69,8 @@ light grey - rgb(150,150,155)
     align-items: center;
   }
 
-  .padded       {  padding: 5vw;    }
+  .padded               {  padding: 5vw;    }
+  .padded-bottom       {  padding-bottom: 5vw;    }
   .padded-light {  padding: 2vw;}
   .padded-extra-light{padding:1vw;}
   .padded-1     {  padding: 1rem;  }
