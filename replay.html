@@ -106,7 +106,7 @@ page_blocks:
 
 </section>
 
-<div class="shrunk traning-text" id="shown-text">
+<!--<div class="shrunk traning-text" id="shown-text">-->
 
   <div class="center rel">
 
@@ -131,6 +131,7 @@ page_blocks:
         <script src="/assets/buy_button4.js" defer></script>
         {% endif %}
     </div>
+    
       {% assign buttons_used = buttons_used | plus: 1 %}
 
 
@@ -148,7 +149,9 @@ page_blocks:
 
     </div>
   {% endfor %}
-</div>
+<!--</div>-->
+
+
 <script>
   window._wq = window._wq || [];
   _wq.push({ id: "{{page.video_id}}", onReady: function(video) {
