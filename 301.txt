@@ -3,3 +3,4 @@
 /enroll-now/ /enroll-now
 /enrollnow/ /enrollnow
 /enroll-lca/ /enroll-lca
+/thankyou/ /thankyou
