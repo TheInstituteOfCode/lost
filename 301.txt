@@ -1,2 +1,3 @@
 /bonus-preset/ /bonus-preset
 /lca-15/ /lca-15
+/enroll-now/ /enroll-now
