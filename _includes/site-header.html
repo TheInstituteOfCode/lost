@@ -1,5 +1,5 @@
 <!-- This is your site header, you can replace this with whichever header you want to use -->
-
+{% if page.remove_banner != true %}
 <header class="grid">
   <div class="col-4_sm-12-middle">
     <a href="/">
@@ -24,3 +24,4 @@
 <nav class="mobile-menu">
   {% include site-navigation.html %}
 </nav>
+{% endif %}
