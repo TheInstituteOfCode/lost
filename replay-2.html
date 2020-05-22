@@ -47,25 +47,6 @@ page_blocks:
     </div>
 
 
-        {% if buttons_used == 1 %}
-
-        <script src="/assets/buy.js" defer></script>
-        <script src="/assets/buy_button-p5.js" defer></script>
-        <script src="/assets/buy_button-p5-b2.js" defer></script>
-        {% endif %}
-        {% if buttons_used == 2 %}
-        {% endif %}
-        {% if buttons_used == 3 %}
-        <script src="/assets/buy_button3.js" defer></script>
-        {% endif %}
-        {% if buttons_used == 4 %}
-        <script src="/assets/buy_button4.js" defer></script>
-        {% endif %}
-    </div>
-      {% assign buttons_used = buttons_used | plus: 1 %}
-
-
-
 
   <!-- end needed for button for loops -->
   {% for block in page.page_blocks %}
