@@ -473,6 +473,10 @@ display: none;
     background: none;
   }
 
+  .logo-max{
+    max-width: 150px;
+  }
+
   [class*="bg"]{
     background-size: cover;
     background-position: center;
