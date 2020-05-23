@@ -460,6 +460,10 @@ display: none;
     min-height: 100vh;
   }
 
+  .sales-footer-banner{
+    background-position: 50% 95%
+  }
+
   .absolute-header {
     position: absolute;
     top: 0;
