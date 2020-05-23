@@ -88,6 +88,7 @@ light grey - rgb(150,150,155)
   .margin-a     {  margin:auto;}
   .margin       {  margin:5vw;       }
   .margin-light {  margin:3vw;       }
+  .margin-b-1   { margin-bottom: 1rem}
   .hidden       {  display:none;    }
   .float-Chris{
     width: 33%;
