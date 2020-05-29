@@ -5,3 +5,4 @@
 /enroll-lca/ /enroll-lca
 /thankyou/ /thankyou
 /freetraining/ /freetraining
+/1-hour-training/ /1-hour-training
