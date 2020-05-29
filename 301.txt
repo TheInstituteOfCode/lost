@@ -4,3 +4,4 @@
 /enrollnow/ /enrollnow
 /enroll-lca/ /enroll-lca
 /thankyou/ /thankyou
+/freetraining/ /freetraining
