@@ -1,0 +1,29 @@
+---
+layout: default
+title: Thanks
+banner_image: /uploads/Siargao Drone Wide Shot copy.jpg
+overlay_rgba: rgba(7, 8, 8, 0.71)
+text_rgba: 'rgb(255, 255, 255)'
+---
+
+{% include site-header.html %}
+
+<section class="padded light-text rel bg-attached tall-80 grid" style="background-image:url({{page.banner_image}})">
+
+  <style media="screen">
+    .color *{
+      color:{{page.text_rgba}};
+    }
+  </style>
+
+
+<div class="bg-overlay grid centered" style="background-color:{{ page.overlay_rgba}};">
+    <div class="col-12-middle color padded editable">
+      <h2>Thank You,</h2>
+      <p class="emphasis">and Welcome to the Lost Creator Academy Community!</p>
+      <p class="emphasis"> Check your email for the login details </p>
+    </div>
+
+</div>
+
+</section>
