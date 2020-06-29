@@ -50,6 +50,13 @@ light grey - rgb(150,150,155)
     .cms-editor-active .editor-link {
       display: block;
     }
+    
+    
+    .review-item__img,
+    .review-item__img img {
+    max-height: 286px;  
+    }
+
 
   /* ------------- Utility Classes --------------  */
 
