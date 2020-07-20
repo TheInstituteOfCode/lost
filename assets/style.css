@@ -50,11 +50,11 @@ light grey - rgb(150,150,155)
     .cms-editor-active .editor-link {
       display: block;
     }
-    
-    
+
+
     .review-item__img,
     .review-item__img img {
-    max-height: 286px;  
+    max-height: 286px;
     }
 
 
@@ -1106,9 +1106,27 @@ right:4px;
 /* slider section  */
 
 
+/* svg section */
 
+.layered-svg-sec {
+  position: relative;
+}
+.layered-svg-sec img{
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  position: relative;
+}
+.layered-svg-sec svg{
 
+  position:absolute;
+  z-index:-5;
+  bottom:-.1vh;
+  left:-1vw;
+  width:102%;
+  fill:#fff;
 
+}
 
 @media (min-width:768px ) {
     .bg-attached{
