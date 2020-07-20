@@ -1116,11 +1116,12 @@ right:4px;
   display: block;
   max-width: 80%;
   position: relative;
+  z-index: 5;
 }
 .layered-svg-sec svg{
 
   position:absolute;
-  z-index:-5;
+  z-index:2;
   bottom:-.1vh;
   left:-1vw;
   width:102%;
