@@ -95,6 +95,7 @@ light grey - rgb(150,150,155)
   .margin-a     {  margin:auto;}
   .margin       {  margin:5vw;       }
   .margin-light {  margin:3vw;       }
+  .margin-t-1   { margin-top: 1rem}
   .margin-b-1   { margin-bottom: 1rem}
   .hidden       {  display:none;    }
   .float-Chris{
@@ -116,6 +117,7 @@ light grey - rgb(150,150,155)
   .dark-bg      {  background-color: rgb(60, 60, 65);     }
   .light-bg     {  background-color: #f0f3f4;  }
   .featured-bg  {  background-color: #d7e9e9;             }
+  .d-featured-bg  {  background-color: #7298ad;             }
 
   .light-text   { color: white; }
   .flex-flip:nth-child(2n){  flex-direction: row-reverse; }
