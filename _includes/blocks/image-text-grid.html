@@ -30,8 +30,8 @@
       <div class="grid">
         {% for social in block.socials %}
         <div class="col">
-          <img src="{{social.social_path}}" alt="{{social.number}} followers on {{social.name}}">
-          <span>{{social.number}}</span>
+          <img src="{{social.social_path}}" alt="{{social.number-of-followers}} followers on {{social.name}}">
+          <span class="centered">{{social.number-of-followers}}</span>
         </div>
         {% endfor %}
       </div>

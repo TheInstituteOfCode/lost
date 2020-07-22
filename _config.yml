@@ -189,7 +189,7 @@ _array_structures:
             socials:
               - name:
                 social_path:
-                number:
+                number-of-followers:
     - label: Acordian Section
       icon: ballot
       value:
