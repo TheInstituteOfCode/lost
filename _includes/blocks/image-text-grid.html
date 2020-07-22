@@ -28,7 +28,7 @@
       {% endif %}
       {% if block.has_socials == true %}
       <div class="grid">
-        {% for social in block.socials %}
+        {% for social in layer.socials %}
         <div class="col-3 center">
           <img src="{{social.social_path}}" alt="{{social.number-of-followers}} followers on {{social.name}}">
           <span class="centered">{{social.number-of-followers}}</span>
