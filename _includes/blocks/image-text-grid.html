@@ -30,7 +30,7 @@
       <div class="grid">
         {% for social in layer.socials %}
         <div class="col-3 centered">
-          <img src="{{social.social_path}}" alt="{{social.number-of-followers}} followers on {{social.name}}">
+          <img src="{{social.social_path}}" alt="{{social.number-of-followers}} followers on {{social.name}}" class="svg-social-icon">
           <p class="centered emphasis big-bold ">{{social.number-of-followers}}</p>
         </div>
         {% endfor %}
