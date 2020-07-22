@@ -29,9 +29,9 @@
       {% if block.has_socials == true %}
       <div class="grid">
         {% for social in layer.socials %}
-        <div class="col-3 center">
+        <div class="col-3 centered">
           <img src="{{social.social_path}}" alt="{{social.number-of-followers}} followers on {{social.name}}">
-          <span class="centered">{{social.number-of-followers}}</span>
+          <p class="centered emphasis big-bold ">{{social.number-of-followers}}</p>
         </div>
         {% endfor %}
       </div>
