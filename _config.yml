@@ -179,12 +179,17 @@ _array_structures:
         bg-class:
         first-pic-flip: false
         has_links: false
+        has_socials: false
         layer:
           - image_path:
             img-fill: true
             sub_heading:
             heading:
             text_html:
+            socials:
+              - name:
+                social_path:
+                number:
     - label: Acordian Section
       icon: ballot
       value:

@@ -26,6 +26,16 @@
       {% if block.has_links == true %}
       <a class="arrow" href="link_url"> > </a>
       {% endif %}
+      {% if block.has_socials == true %}
+      <div class="grid">
+        {% for social in block.socials %}
+        <div class="col">
+          <img src="{{social.social_path}}" alt="{{social.number}} followers on {{social.name}}">
+          <span>{{social.number}}</span>
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
     </div>
   </div>
   {% endfor %}
