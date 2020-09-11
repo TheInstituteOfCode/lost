@@ -1,12 +1,12 @@
-<section class="padded {{block.bg-class}} centered rel flex-center tall-50 ">
+<section class="padded {{block.bg-class}} centered rel flex-center tall-50" style="background-image:url('{{block.bg-img_path}}')">
   <!-- <div class="rel"> -->
 <style media="screen">
   .color-{{forloop.index}},.color-{{forloop.index}} *{
     color:{{block.text_rgba}};
   }
 </style>
-<video class="bg-video" autoplay muted loop playsinline poster="{{block.bg-img_path}}">
-  <source src="{{block.bg_video_path}}" type="video/mp4" />
+<video class="lazy bg-video" autoplay muted loop playsinline poster="{{block.bg-img_path}}">
+  <source data-src="{{block.bg_video_path}}" type="video/mp4" />
 </video>
   <div class="bg-overlay" style="background-color:{{block.overlay_rgba}}">
   </div>
@@ -19,3 +19,36 @@
   </div>
 
 </section>
+
+
+<script>
+
+  document.addEventListener("DOMContentLoaded", function() {
+  var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));
+
+  if ("IntersectionObserver" in window) {
+    var lazyVideoObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(video) {
+        if (video.isIntersecting) {
+          for (var source in video.target.children) {
+            var videoSource = video.target.children[source];
+            if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+              videoSource.src = videoSource.dataset.src;
+            }
+          }
+
+          video.target.load();
+          video.target.classList.remove("lazy");
+          lazyVideoObserver.unobserve(video.target);
+        }
+      });
+    });
+
+    lazyVideos.forEach(function(lazyVideo) {
+      lazyVideoObserver.observe(lazyVideo);
+    });
+  }
+});
+
+
+</script>
