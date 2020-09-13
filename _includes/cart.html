@@ -57,6 +57,25 @@
     font-size:2rem;
   }
 
+  .button{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(75,75,80);
+    background-color: #99d0d0;
+    font-weight: bold;
+    border: none;
+    padding: 1rem 2rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    margin: 0.5rem auto;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+  }
+
 .shopify-buy__cart__notice,.shopify-buy__cart__subtotal__text,.shopify-buy__cart__subtotal__price{
   display:none;
 }
@@ -158,8 +177,10 @@
               {{/data.contents.note}}
               <p class="{{data.classes.cart.notice}}" data-element="cart.notice">{{data.text.notice}}</p>
               <button class="{{data.classes.cart.button}}" type="button" data-element="cart.button">{{data.text.button}}</button>
+              <a class="button payment-plan-link" href="https://partial.ly/checkout?offer=f85121a8-a76c-4e44-8219-76c338309950&amount=799&returnUrl=https%3A%2F%2Flostleblanc.myshopify.com%2Fcart&meta[source]=shopify&meta[items][0][id]=%7B%7Bproduct.id%7D%7D&meta[items][0][product_id]=%7B%7Bproduct.id%7D%7D&meta[items][0][variant_id]=31458128298041&meta[items][0][name]=Lost%20Creator%20Academy&meta[items][0][quantity]=1&meta[items][0][price]=799&meta[items][0][total]=799&meta[items][0][sku]=&meta[items][0][image]=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F1639%2F2777%2Fproducts%2FLCA_nail_medium.jpg%3Fv%3D1583069885">Payment Plan</a>
             </div>
            {{/data.isEmpty}}
+
   </div>
   <div class="col paddded-left">
     <h3> See what some of our members are saying</h3>
