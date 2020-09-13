@@ -58,3 +58,7 @@ h3.clear-images{
 a.button{
   text-decoration: none
 }
+
+.payment-plan-link {
+  display: block;
+}
