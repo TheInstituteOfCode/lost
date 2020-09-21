@@ -65,27 +65,28 @@ _options:
     numberedlist: true
     right: right
     center: centered
-  vertical_alignment:
-    - desktop-top
-    - desktop-bottom
-    - tablet-top
-    - tablet-bottom
-    - mobile-top
-    - mobile-bottom
-  horizontal_alignment:
-    - desktop-left
-    - desktop-right
-    - tablet-left
-    - tablet-right
-    - mobile-left
-    - mobile-right
-  block_height:
-    - x-small
-    - small
-    - medium
-    - large
-    - full-height
-    - oversize
+
+vertical_alignment:
+  - desktop-top
+  - desktop-bottom
+  - tablet-top
+  - tablet-bottom
+  - mobile-top
+  - mobile-bottom
+horizontal_alignment:
+  - desktop-left
+  - desktop-right
+  - tablet-left
+  - tablet-right
+  - mobile-left
+  - mobile-right
+block_height:
+  - x-small
+  - small
+  - medium
+  - large
+  - full-height
+  - oversize
 
 page_blocks: []
 _array_structures:
