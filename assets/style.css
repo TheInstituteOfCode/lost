@@ -419,6 +419,74 @@ light grey - rgb(150,150,155)
     color: #fff;
 }
 
+/* block alignment section */
+
+.desktop-top{
+  align-items: flex-start;
+}
+.desktop-bottom{
+  align-items: flex-end;
+}
+.desktop-left{
+  justify-content: flex-start;
+}
+.desktop-right{
+  justify-content: flex-end;
+}
+/* 30vh 50vh 70vh 90vh and 100vh */
+.x-small{
+  min-height: 30vh;
+}
+.small{
+  min-height: 50vh;
+}
+.medium{
+  min-height: 70vh;
+}
+.large{
+  min-height: 90vh;
+}
+.full-height{
+  min-height: 100vh;
+}
+.oversize{
+  min-height: 150vh;
+}
+
+@media all and (max-width: 1024px){
+  .tablet-top{
+    align-items: flex-start;
+  }
+  .tablet-bottom{
+    align-items: flex-end;
+  }
+  .tablet-left{
+    justify-content: flex-start;
+  }
+  .tablet-right{
+    justify-content: flex-end;
+  }
+
+}
+
+@media all and (max-width: 768px){
+  .mobile-top{
+    align-items: flex-start;
+  }
+  .mobile-bottom{
+    align-items: flex-end;
+  }
+  .mobile-left{
+    justify-content: flex-start;
+  }
+  .mobile-right{
+    justify-content: flex-end;
+  }
+
+}
+
+
+
 @media all and (max-width: 600px){
 .flex-map{
   flex-direction: column;
