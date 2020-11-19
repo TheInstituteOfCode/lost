@@ -119,6 +119,21 @@ _array_structures:
           link_url:
           text:
           id:
+    - label: Vimeo section new version
+      icon: video
+      value:
+        _id: vimeo2_0
+        text_html:
+        bg-class:
+        vimeo_id:
+        text_html:
+        buy_button_text: enroll now
+        button:
+        - class:
+          postition:
+          link_url:
+          text:
+          id:
     - label: Module section
       icon: video
       value:
