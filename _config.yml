@@ -114,7 +114,6 @@ _array_structures:
         heading:
         sub_heading:
         bg-class:
-        bg_image_path:
         vimeo_id:
         text_html:
         buy_button_text: enroll now
@@ -128,9 +127,10 @@ _array_structures:
       value:
         _id: vimeo2_0
         text_html:
+        text_rgba: #fff
         bg-class:
+        bg_image_path:
         vimeo_id:
-        text_html:
         buy_button_text: enroll now
         button:
         - class:
