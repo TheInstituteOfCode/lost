@@ -87,6 +87,9 @@ block_height:
   - large
   - full-height
   - oversize
+button_postition:
+  - before
+  - after
 
 page_blocks: []
 _array_structures:
@@ -111,6 +114,7 @@ _array_structures:
         heading:
         sub_heading:
         bg-class:
+        bg_image_path:
         vimeo_id:
         text_html:
         buy_button_text: enroll now

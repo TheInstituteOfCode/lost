@@ -3,25 +3,33 @@
   .color-{{forloop.index}},.color-{{forloop.index}} *{
     color:{{block.text_rgba}};
   }
+  .bg-{{forloop.index}}{
+    background-image:url("{{block.bg_image_path}}")
+  }
 </style>
 
 
-<section class="grid-center-middle padded {{block.bg-class}} mob-center vimeo">
-  <div class="col-6_md-12 padded-r full-width-buttons">
+<section class="padded centered {{block.bg-class}} mob-center vimeo">
+  <div class="padded full-width-buttons">
     <div class="color-{{forloop.index}} rel">
       {{block.text_html}}
     </div>
-    {% if block.buy_button.postition == befor_video %}
-      <a class="button centered {{button.class}}" href="{{button.link_url}}">{{button.text}}</a>
+    {% for button in block.button %}
+    {% if button.button_postition == before %}
+      <a class="button centered {{button.class}}" href="{{button.link_url}}">{{block.button.text}}</a>
     {% endif %}
+    {% endfor %}
   </div>
-  <div class="col-6_md-12">
+  <div>
     <iframe src="https://player.vimeo.com/video/{{block.vimeo_id}}" width="100%" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
     <div class="centered">
-      {% if block.buy_button == after_video %}
+
+      {% for button in block.button %}
+      {% if button.buy_button == after %}
 
         <a class="button centered {{button.class}}" href="{{button.link_url}}">{{button.text}}</a>
       {% endif %}
+      {% endfor %}
     </div>
   </div>
 </section>
