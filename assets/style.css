@@ -317,6 +317,10 @@ light grey - rgb(150,150,155)
     color: white;
   }
 
+  #countdown li{
+    display: inline-block;
+  }
+
   /* Dropdown Header */
 
   header li {
