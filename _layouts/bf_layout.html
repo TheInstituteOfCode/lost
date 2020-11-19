@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<div class="alert-banner fixed-banner centered padded featured-bg  mob-padded-light-top">
+  <h2 class="uppercase centered">Masive black friday sale</h2>
+  <h3 class="uppercase centered">Save $250, enter to win a cemera +1 on 1 creator getaway with me and more</h3>
+  countdown timer to add
+</div>
+
+
+<div class="hidden content">
+
+   {{content}}
+
+</div>
+
+<!-- needed for button if loops -->
+{% assign buttons_used = 1 %}
+<!-- end needed for button for loops -->
+
+{% for block in page.page_blocks %}
+
+    <div class="rel">
+        <a href="cloudcannon:#page_blocks[{{ forloop.index0 }}]" class="editor-link" data-cms-editor-link-style="modal">
+          Edit Section
+        </a>
+
+     {% include blocks/{{block._id}}.html block=block %}
+
+  </div>
+{% endfor %}
+
+
+
+<script type="text/javascript">
+
+  
+
+</script>
+
+{{page.body-scripts}}

@@ -72,6 +72,9 @@ light grey - rgb(150,150,155)
   .right    {  text-align: right;    }
   .centered {  text-align: center;   }
   .centered li{list-style: none}
+
+  .uppercase{text-transform: uppercase;}
+  .cap{text-transform: capitalize;}
   .flex-center{
     display: flex;
     justify-content: center;
