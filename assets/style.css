@@ -1192,12 +1192,12 @@ right:4px;
 .bf-banner h2{
     margin-bottom: 0;
     font-size:1.8rem;
-    font-size: Max(1.8rem, 5.5vw) !important ;
+    font-size: Max(1.8rem, 4.5vw) !important ;
 }
 .bf-banner h3{
     margin-bottom: 0;
     font-size:1.6rem;
-    font-size: Max(1.3rem, 2.5vw) !important ;
+    font-size: Max(1.3rem, 2.3vw) !important ;
     color: #000;
 }
 
