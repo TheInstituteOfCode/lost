@@ -1,18 +1,15 @@
 <section class="padded {{block.bg-class}}">
 
-{{block.text_html}}
 
-
-{% if block.buy_button == "true" %}
+{% if block.buy_button == true %}
+  {% assign buttons_used = buttons_used | plus: 1 %}
+  {{buttons_used}}
 <div class="center rel">
-  {% assign buttons_used == buttons_used | plus: 1 %}
-
-  <div id="button-{{buttons_used}}">
-
-  </div>
+  <div id="button-{{buttons_used}}"> </div>
   {% if buttons_used == 1 %}
 
   <script src="/assets/buy.js" defer></script>
+
   <script src="/assets/buy_button.js"defer></script>
   {% endif %}
   {% if buttons_used == 2 %}

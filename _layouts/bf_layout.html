@@ -64,7 +64,7 @@ layout: default
 </div>
 
 <!-- needed for button if loops -->
-{% assign buttons_used = 1 %}
+{% assign buttons_used = bob %}
 <!-- end needed for button for loops -->
 
 {% for block in page.page_blocks %}
@@ -75,6 +75,8 @@ layout: default
         </a>
 
      {% include blocks/{{block._id}}.html block=block %}
+
+
 
   </div>
 {% endfor %}
