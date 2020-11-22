@@ -248,8 +248,8 @@ light grey - rgb(150,150,155)
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
-    color: rgb(75,75,80);
-    background-color: #99d0d0;
+    color: #efecd4;
+    background-color: #839d8f;
     font-weight: bold;
     border: none;
     padding: 1rem 2rem;
@@ -261,7 +261,7 @@ light grey - rgb(150,150,155)
   }
 
   .button-subtle {
-    background-color: #dff0f0;
+    background-color: #aec2b7;
   }
 
   .button:hover,
