@@ -5,6 +5,14 @@ p.emphasis {
     font-size: 1.4rem;
 }
 
+h2.h2-light-text {
+  color: #efecd4;
+}
+
+p.p-light-text {
+  color: #efecd4;
+}
+
 
 /* Image Styles */
 
