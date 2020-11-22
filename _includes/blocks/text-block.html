@@ -4,7 +4,6 @@
 
 {% if block.buy_button == true %}
   {% assign buttons_used = buttons_used | plus: 1 %}
-  {{buttons_used}}
 <div class="center rel">
   <div id="button-{{buttons_used}}"> </div>
   {% if buttons_used == 1 %}
