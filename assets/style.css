@@ -1208,9 +1208,10 @@ right:4px;
     left:0;
     right:0;
     z-index: 5;
+    padding: 2vw 5vw;
 }
-.alert-banner.grid {
-    /* padding: 2%; */
+.alert-banner {
+   padding: 2vw 5vw;
 }
 
 
