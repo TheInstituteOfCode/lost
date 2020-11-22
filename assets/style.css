@@ -4,6 +4,10 @@ featured blue - #99d0d0
 light blue - #dff0f0
 light grey - rgb(150,150,155)
 
+- [ ]  #839d8f dark green
+- [ ]  #aec2b7 green
+- [ ]  #efecd4 yellow
+
 */
 
 
@@ -45,7 +49,7 @@ light grey - rgb(150,150,155)
       padding: 0.2rem 1rem;
       border: 1px solid;
       border-radius: 50px;
-      text-deocration: none;
+      text-decoration: none;
       z-index: 5;
     }
 
@@ -163,6 +167,8 @@ light grey - rgb(150,150,155)
     font-weight: 200;
     letter-spacing: 1px;
   }
+  
+  
   h4  { font-size: 1.5rem;  }
   p   { font-size: 1rem;    }
 
@@ -1218,7 +1224,7 @@ right:4px;
     margin-bottom: 0;
     font-size:1.6rem;
     font-size: Max(1.3rem, 2.3vw) !important ;
-    color: #000;
+    color: #4b4b50;
 }
 
 /* slider section  */
