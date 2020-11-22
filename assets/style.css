@@ -330,7 +330,7 @@ light grey - rgb(150,150,155)
     display: flex;
     justify-content: space-around;
     align-items: center;
-    max-width: 500px;
+    max-width: 450px;
     margin: auto;
     font-size: 4rem;
   }
