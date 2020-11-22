@@ -25,10 +25,8 @@
         <hr>
       {% endif %}
       <p> {{layer.text_html}} </p>
-      {% if block.has_links == true %}
-      <a class="arrow" href="link_url"> > </a>
-      {% endif %}
-      <a href="#videolist{{forloop.index}}" class="button" onclick="
+
+      <a class="button" onclick="
 
       function reveal{{forloop.index}}() {
         var element{{forloop.index}} = document.getElementById('video-list-{{forloop.index}}');
