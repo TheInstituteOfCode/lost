@@ -327,15 +327,15 @@ light grey - rgb(150,150,155)
     color: white;
   }
   
-  .alert-banner {
-    position: fixed;
-    top:0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    background-color: #aec2b7 ;
-    padding: 3vh 5vh;
-  }
+  /*.alert-banner {*/
+  /*  position: fixed;*/
+  /*  top:0;*/
+  /*  left: 0;*/
+  /*  right: 0;*/
+  /*  z-index: 10;*/
+  /*  background-color: #aec2b7 ;*/
+  /*  padding: 3vh 5vh;*/
+  /*}*/
   
   #countdown ul,#countdown-2 ul{
     display: flex;
