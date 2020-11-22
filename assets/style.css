@@ -327,7 +327,7 @@ light grey - rgb(150,150,155)
     color: white;
   }
   
-  #countdown {
+  .alert-banner {
     position: fixed;
     top:0;
     left: 0;
