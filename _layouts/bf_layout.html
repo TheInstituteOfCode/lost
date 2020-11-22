@@ -108,6 +108,32 @@ layout: default
           //seconds
         }, 0)
     }());
+    </script>
+
+    <script>
+    (function () {
+      const second = 1000,
+            minute = second * 60,
+            hour = minute * 60,
+            day = hour * 24;
+
+      let birthday = "Nov 27, 2020 00:00:00",
+          countDown = new Date(birthday).getTime(),
+          x = setInterval(function() {
+
+            let now = new Date().getTime(),
+                distance = countDown - now;
+
+            document.getElementById("days-2").innerText = Math.floor(distance / (day)),
+              document.getElementById("hours-2").innerText = Math.floor((distance % (day)) / (hour)),
+              document.getElementById("minutes-2").innerText = Math.floor((distance % (hour)) / (minute));
+            //do something later when date is reached
+            if (distance < 0) {
+              countdown.style.display = "none";
+            }
+            //seconds
+          }, 0)
+      }());
 </script>
 
 {{page.body-scripts}}

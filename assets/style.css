@@ -126,6 +126,10 @@ light grey - rgb(150,150,155)
 
   .light-text   { color: white; }
   .flex-flip:nth-child(2n){  flex-direction: row-reverse; }
+  .flex-flip:nth-child(2n) .col-12 {
+      order: 0;
+  }
+
     /* paralex */
 
 .para-img-container{
@@ -316,7 +320,7 @@ light grey - rgb(150,150,155)
     background-color: #e67e22;
     color: white;
   }
-  #countdown ul{
+  #countdown ul,#countdown-2 ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -324,7 +328,7 @@ light grey - rgb(150,150,155)
     margin: auto;
     font-size: 4rem;
   }
-  #countdown li{
+  #countdown li, #countdown-2 li{
     display: inline-block;
     width: 5rem;
   }
@@ -986,6 +990,10 @@ display: none;
     flex-direction: column-reverse;
   }
 
+  .mob-order-1 {
+      order: 1;
+  }
+
   .mob-center {
     text-align: center;
   }
@@ -1163,6 +1171,18 @@ right:4px;
   margin-bottom: 0.4em;
 }
 
+.img-text-grid-videolist ul {
+    background-color: #d7e9e9;
+    padding: 5% 5% 5% 8%;
+    width: 100%;
+}
+
+.img-text-grid-videolist li {
+  font-size: 1.50rem;
+  padding-left: 1rem;
+  list-style-position: outside;
+  margin-bottom: 0.4em;
+}
 
 .alert-banner.fixed-banner {
     position: fixed;

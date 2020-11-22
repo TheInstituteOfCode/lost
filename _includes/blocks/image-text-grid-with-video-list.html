@@ -1,0 +1,64 @@
+<section class="padded img-text-grid {{block.bg-class}}">
+  {% assign order = forloop.index %}
+  {% if block.first-pic-flip == true %}
+    <div class=""></div>
+  {% endif %}
+  {% for layer in block.layer %}
+  <div class="grid flex-flip">
+    <div class="col-6_sm-12 padded-light {% if layer.img-fill == true %}img-container {% else %} flex-center{% endif %}">
+      <img src="{{layer.image_path}}" alt="{{layer.image_path}}">
+    </div>
+    <div class="col-6_sm-12-middle padded mob-order-1">
+
+      {% if layer.sub_heading != nul %}
+        <h3>{{layer.sub_heading}}</h3>
+      {% endif %}
+      {% if layer.heading != nul %}
+        {% if order == 1 %}
+          <h1>{{layer.heading}}</h1>
+          {% assign order = order | plus:1 %}
+        {% else %}
+          <h2>{{layer.heading}}</h2>
+        {% endif %}
+        <hr>
+      {% endif %}
+      <p> {{layer.text_html}} </p>
+      {% if block.has_links == true %}
+      <a class="arrow" href="link_url"> > </a>
+      {% endif %}
+      <a href="#videolist{{forloop.index}}" class="button" onclick="
+
+      function reveal{{forloop.index}}() {
+        var element{{forloop.index}} = document.getElementById('video-list-{{forloop.index}}');
+        element{{forloop.index}}.classList.toggle('hidden');
+      };
+        reveal{{forloop.index}}()
+      ">see compleate video list</a>
+    </div>
+    <div class="col-12 hidden video-list img-text-grid-videolist" id="video-list-{{forloop.index}}">
+      {% for dropdown in layer.dropdown %}
+      <ul>
+      {% for li in dropdown.list_item %}
+        <li>
+          <span>{{li.text_html}}</span>
+          {% if block.has_link %}
+          <a href="https://shop.lostleblanc.com/products/lost-creator-academy">Unlock now</a>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
+
+<style>
+    .svg-social-icon {
+        padding: 1rem;
+        padding-bottom:0.5rem;
+    max-width: 4.5rem;
+    }
+
+</style>
