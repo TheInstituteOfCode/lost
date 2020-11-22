@@ -332,6 +332,8 @@ light grey - rgb(150,150,155)
     top:0;
     left: 0;
     right: 0;
+    z-index: 10;
+    background-color: #aec2b7 ;
   }
   
   #countdown ul,#countdown-2 ul{
