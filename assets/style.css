@@ -333,6 +333,7 @@ light grey - rgb(150,150,155)
     max-width: 450px;
     margin: auto;
     font-size: 4rem;
+    line-height: 1.4;
   }
   #countdown li, #countdown-2 li{
     display: inline-block;
