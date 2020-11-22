@@ -163,7 +163,7 @@ light grey - rgb(150,150,155)
   /* Subtitles  */
   h3  {
     font-size: 1.3rem;
-    color: rgb(150,150,155);
+    color: #5f5f63;
     font-weight: 200;
     letter-spacing: 1px;
   }
