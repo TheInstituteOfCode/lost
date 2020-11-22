@@ -1,0 +1,76 @@
+<link rel="stylesheet" href="/assets/lightbox/css/lightbox.css">
+<section class="padded {{block.bg-class}}">
+
+  {{block.text_html}}
+
+  <div class="slideshow-container">
+    {% for slide in block.slideshow %}
+
+    <div class="mySlides fade">
+
+      <a href="{{slide.image_path}}" data-lightbox="slider-1">
+        <img src="{{slide.image_path}}" alt="{{slide.image_alt}}" style="width:100%">
+      </a>
+    </div>
+
+      {% endfor %}
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+
+      {% for slide in block.slideshow %}
+      {% if forloop.index > 3 %}
+        <span class="dot" onclick="currentSlide({{forloop.index}})"></span>
+      {% endif %}
+    {% endfor %}
+
+  </div>
+
+  <div class="">
+
+  </div>
+</section>
+
+<script type="text/javascript" defer>
+    var slideIndex = 2;
+  // make slideIndex = visable slides - 1
+
+  showSlides(slideIndex);
+
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length -1 ) {slideIndex = 3}
+    console.log(slideIndex)
+    if (n < 3) {slideIndex = slides.length -1 }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+    slides[slideIndex].style.display = "block";
+    slides[slideIndex-1].style.display = "block";
+    slides[slideIndex-2].style.display = "block";
+    // dots[slideIndex-4].className += " active";
+  }
+  </script>
+
+  <script type="text/javascript" src="/assets/lightbox/js/lightbox.js"></script>
