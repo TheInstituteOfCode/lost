@@ -326,6 +326,14 @@ light grey - rgb(150,150,155)
     background-color: #e67e22;
     color: white;
   }
+  
+  #countdown {
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+  }
+  
   #countdown ul,#countdown-2 ul{
     display: flex;
     justify-content: space-around;
