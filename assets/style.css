@@ -348,14 +348,22 @@ light grey - rgb(150,150,155)
     display: flex;
     justify-content: space-around;
     align-items: center;
-    max-width: 450px;
+    max-width: 400px;
     margin: auto;
-    font-size: 4rem;
+    font-size: 2rem;
     line-height: 1.4;
+    margin-top: 0.5rem;
   }
   #countdown li, #countdown-2 li{
     display: inline-block;
     width: 5rem;
+  }
+  
+  #countdown h2 {
+      font-size: 1.5rem; 
+  }
+    #countdown p {
+      font-size:0.8rem; 
   }
 
   /* Dropdown Header */
@@ -1238,13 +1246,13 @@ right:4px;
 .bf-banner h2{
     margin-bottom: 0;
     font-size:1.8rem;
-    font-size: Max(1.8rem, 4.5vw) !important ;
 }
 .bf-banner h3{
     margin-bottom: 0;
     font-size:1.6rem;
     font-size: Max(1.3rem, 2.3vw) !important ;
     color: #4b4b50;
+    letter-spacing: 0;
 }
 
 /* slider section  */
