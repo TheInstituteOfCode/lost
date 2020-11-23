@@ -106,6 +106,13 @@ light grey - rgb(150,150,155)
   .margin-light {  margin:3vw;       }
   .margin-t-1   { margin-top: 1rem}
   .margin-b-1   { margin-bottom: 1rem}
+
+  .capped-width-image{
+    max-width: min(100%, 1000px);
+    display: block;
+    margin:auto;
+  }
+
   .hidden       {  display:none;    }
   .float-Chris{
     width: 33%;
@@ -167,8 +174,8 @@ light grey - rgb(150,150,155)
     font-weight: 200;
     letter-spacing: 1px;
   }
-  
-  
+
+
   h4  { font-size: 1.5rem;  }
   p   { font-size: 1rem;    }
 
@@ -326,7 +333,7 @@ light grey - rgb(150,150,155)
     background-color: #e67e22;
     color: white;
   }
-  
+
   /*.alert-banner {*/
   /*  position: fixed;*/
   /*  top:0;*/
@@ -336,7 +343,7 @@ light grey - rgb(150,150,155)
   /*  background-color: #aec2b7 ;*/
   /*  padding: 3vh 5vh;*/
   /*}*/
-  
+
   #countdown ul,#countdown-2 ul{
     display: flex;
     justify-content: space-around;
