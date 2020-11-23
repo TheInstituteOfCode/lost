@@ -135,7 +135,7 @@ light grey - rgb(150,150,155)
   .featured-bg  {  background-color: #aec2b7;             }
   .d-featured-bg  {  background-color: #7298ad;             }
 
-  .light-text   { color: white; }
+  .light-text   { color: #efecd4; }
   .flex-flip:nth-child(2n){  flex-direction: row-reverse; }
   .flex-flip:nth-child(2n) .col-12 {
       order: 0;
@@ -1068,7 +1068,8 @@ display: none;
 }
 
 .accordion dt {
-    background-color: #DFF0F0;
+    background-color: #839d8f;
+    color: #efecd4;
 }
 
 .accordion dt a {
@@ -1091,7 +1092,7 @@ display: none;
 
 
 .accordion dd {
-    background-color: #eef7f7;
+    background-color: #aec2b7;
 	padding: 1rem;
 	margin: 0;
     margin-bottom:  0.5rem;
@@ -1197,13 +1198,13 @@ right:4px;
 }
 
 .img-text-grid-videolist ul {
-    background-color: #d7e9e9;
+    background-color: #aec2b7;
     padding: 5% 5% 5% 8%;
     width: 100%;
 }
 
 .img-text-grid-videolist li {
-  font-size: 1.50rem;
+  font-size: 1.1rem;
   padding-left: 1rem;
   list-style-position: outside;
   margin-bottom: 0.4em;
