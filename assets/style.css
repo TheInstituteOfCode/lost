@@ -122,6 +122,10 @@ light grey - rgb(150,150,155)
 
   }
 
+  .small-img{
+    width:400px;
+  }
+
   /* Fixing gridlex bugs  */
   [class*=grid].padded    {  padding: 5%;  }
   [class*=grid].padded-2 {  padding: 2rem;  }
@@ -358,12 +362,12 @@ light grey - rgb(150,150,155)
     display: inline-block;
     width: 5rem;
   }
-  
+
   #countdown h2 {
-      font-size: 1.5rem; 
+      font-size: 1.5rem;
   }
   #countdown p {
-      font-size:0.8rem; 
+      font-size:0.8rem;
   }
 
   /* Dropdown Header */
