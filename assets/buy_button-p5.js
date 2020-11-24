@@ -76,7 +76,7 @@ $(document).ready(function() {
           title: true,
         },
         templates:{
-          title: '<style media="screen">.is-sticky.shopify-buy__cart-toggle{background-color: #99d0d0}</style>',
+          title: '<style media="screen">.shopify-buy__cart-toggle{background-color: #becec5;}.shopify-buy_cart-item_title {color: #4c4c4c;}.shopify-buy__btn {background-color: #839d8f;color: #efecd4;}.tick {color: #839d8f;}</style>',
         }
       },
 
