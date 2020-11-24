@@ -3,6 +3,8 @@
 {{block.text_html}}
 
 {% if block.buy_button == true %}
+<div class="centered">
+
   {% assign buttons_used = buttons_used | plus: 1 %}
 <div class="center rel">
   <div id="button-{{buttons_used}}"> </div>
@@ -22,5 +24,16 @@
   <script src="/assets/buy_button4.js" defer></script>
   {% endif %}
   </div>
+</div>
 {% endif %}
 </section>
+
+
+
+
+
+
+
+
+
+
