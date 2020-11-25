@@ -76,7 +76,7 @@ $(document).ready(function() {
           title: true,
         },
         templates:{
-          title: '<style media="screen">.shopify-buy__cart-toggle,.shopify-buy__cart-toggle:hover{background-color: #becec5;}.shopify-buy_cart-item_title {color: #4c4c4c;}.shopify-buy__btn {background-color: #839d8f;color: #efecd4;}.tick {color: #839d8f;}</style>',
+          title: '<style media="screen">.shopify-buy__cart {background-color: #becec5;}.shopify-buy__cart-toggle,.shopify-buy__cart-toggle:hover{background-color: #becec5;}.shopify-buy_cart-item_title {color: #4c4c4c;}.shopify-buy__btn {background-color: #839d8f;color: #efecd4;}.tick {color: #839d8f;}</style>',
         }
       },
 
