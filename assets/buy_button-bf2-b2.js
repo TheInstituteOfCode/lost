@@ -22,8 +22,8 @@ $(document).ready(function() {
 
   // product details
   ui.createComponent('product', {
-    id: 5238372040856,
-    node: document.getElementById('button-1'),
+    id: 5239637770392,
+    node: document.getElementById('button-2'),
     options: {
       product: {
         iframe: false,

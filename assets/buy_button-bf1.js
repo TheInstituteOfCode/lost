@@ -22,7 +22,7 @@ $(document).ready(function() {
 
   // product details
   ui.createComponent('product', {
-    id: 5239638720664,
+    id: 5238372040856,
     node: document.getElementById('button-1'),
     options: {
       product: {
