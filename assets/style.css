@@ -237,6 +237,14 @@ light grey - rgb(150,150,155)
     font-size: 1.4rem;
   }
 
+  .bf-banner .padded.full-width-buttons{
+    padding-bottom: 1rem!important;
+  }
+
+  .WHAT-INSIDE-override.padded{
+    padding-top:1rem;
+  }
+
   /* Icons */
 
   .far {        /* default styles for font awesome icons */
@@ -1287,6 +1295,7 @@ right:4px;
 .mySlides {
     display: none;
     width:32%;
+    padding: 1rem;
     position:relative;
 }
 
