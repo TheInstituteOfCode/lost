@@ -132,11 +132,7 @@ _array_structures:
         bg_image_path:
         vimeo_id:
         buy_button_text: enroll now
-        button:
-        - class:
-          postition:
-          link_url:
-          text:
+        button: false
     - label: Module section
       icon: video
       value:
@@ -209,6 +205,7 @@ _array_structures:
     - label: Text Block
       icon: ballot
       value:
+        bg-image:
         bg-class:
         _id: text-block
         text_html:
