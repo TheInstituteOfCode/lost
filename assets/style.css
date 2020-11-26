@@ -33,7 +33,7 @@ light grey - rgb(150,150,155)
     color: rgb(75,75,80);
   }
 
-  .shopify-buy-frame--product{display: inline!important;}
+  .shopify-buy-frame--product{display: inline-block!important}
 
   .grecaptcha-badge { visibility: hidden; }
 
