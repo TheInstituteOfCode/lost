@@ -14,22 +14,15 @@
     <div class="color-{{forloop.index}} rel">
       {{block.text_html}}
     </div>
-    {% for button in block.button %}
-    {% if button.button_postition == before %}
-      <a class="button centered {{button.class}}" href="{{button.link_url}}">{{block.button.text}}</a>
-    {% endif %}
-    {% endfor %}
-  </div>
   <div>
     <iframe src="https://player.vimeo.com/video/{{block.vimeo_id}}" width="100%" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
     <div class="centered">
 
-      {% for button in block.button %}
-      {% if button.buy_button == after %}
+      <div class="center rel">
 
-        <a class="button centered {{button.class}}" href="{{button.link_url}}">{{button.text}}</a>
-      {% endif %}
-      {% endfor %}
+        {% assign buttons_used = buttons_used | plus: 1 %}
+        <div id="button-{{buttons_used}}"></div>
+      </div>
     </div>
   </div>
 </section>

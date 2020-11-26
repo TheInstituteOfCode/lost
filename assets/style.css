@@ -33,6 +33,8 @@ light grey - rgb(150,150,155)
     color: rgb(75,75,80);
   }
 
+  .shopify-buy-frame--product{display: inline!important;}
+
   .grecaptcha-badge { visibility: hidden; }
 
    /* this overrides the default padding and margin on gridlex elements */
