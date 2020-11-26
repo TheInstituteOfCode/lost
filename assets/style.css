@@ -145,7 +145,7 @@ light grey - rgb(150,150,155)
   .product-shot-bg{
      background-image:url("/img/Counter-LCA-Device.jpg");
      background-size: 100vw!important;
-     height: 66vw;
+     height: 65vw;
    }
    .marbeled-bg{
      background-image: linear-gradient(180deg, #d5d5d5, #fff);
