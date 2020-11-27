@@ -1500,6 +1500,17 @@ right:4px;
   .alert-banner h2 {
     font-size: 6.5vw;
   }
+  
+  .prev{
+  left:0rem;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0rem;
+  border-radius: 3px 0 0 3px;
+}
+
 }
 
 @media (min-width:1400px ) {
