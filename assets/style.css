@@ -255,6 +255,9 @@ light grey - rgb(150,150,155)
   .WHAT-INSIDE-override.padded{
     padding-top:1rem;
   }
+  .WHAT-INSIDE-override div:first-child  div:first-child img {
+    object-position: 91% 50%;
+  }
 
   .spaced-h2 h2{
     margin-bottom: 1.1rem;
