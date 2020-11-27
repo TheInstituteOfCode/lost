@@ -1,0 +1,104 @@
+---
+layout: default
+title: enrollnow
+video_id: 0fhi
+video_embed_code: none
+video_time_triger: none
+page_blocks:
+  - bg-class: light-bg padded centered
+    _id: text-block
+    text_html: >-
+      <div><iframe src="https://player.vimeo.com/video/421333680" width="100%"
+      height="480" frameborder="0" allow="autoplay; fullscreen"
+      allowfullscreen=""></iframe></div><h2 class="centered"><br />Join Today
+      &amp; Save 15%</h2><div id="button-1">&nbsp;</div><div class="center"><a class="payment-plan-link" href="https://partial.ly/checkout?offer=f85121a8-a76c-4e44-8219-76c338309950&amount=799&returnUrl=https%3A%2F%2Flostleblanc.myshopify.com%2Fcart&meta[source]=shopify&meta[items][0][id]=%7B%7Bproduct.id%7D%7D&meta[items][0][product_id]=%7B%7Bproduct.id%7D%7D&meta[items][0][variant_id]=31458128298041&meta[items][0][name]=Lost%20Creator%20Academy&meta[items][0][quantity]=1&meta[items][0][price]=799&meta[items][0][total]=799&meta[items][0][sku]=&meta[items][0][image]=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F1639%2F2777%2Fproducts%2FLCA_nail_medium.jpg%3Fv%3D1583069885">Payment Plan</a></div>
+  - _id: review
+    text_html: >-
+      <h2 class="centered">Will this work for me?</h2><h3>Hear it directly from
+      current LCA members...</h3>
+    bg-class:
+    img_path: /uploads/AFTER VOLCANO.jpg
+    overlay_rgba: 'rgba(22, 22, 24, 0.89)'
+    vimeo_id: '417462146'
+    next_section_heading:
+  - _id: icon_section
+    heading: 'FILMMAKERS, PHOTOGRAPHERS & CREATORS'
+    bg-class:
+    sub_heading: THE BEST INVESTMENT FOR
+    text_html: >-
+      <p class="center">Stop the guesswork. Get a proven plan that REALLY
+      works.</p>
+    img_path: /uploads/Volcano.jpg
+    overlay_rgba: 'rgba(255, 255, 255, 0.6)'
+    text_rgba: 'rgb(43, 43, 43)'
+    icon_block:
+      - img_path: /uploads/noun-video-tutorial.png
+        img_alt: Video Tutorial by Vectors Point from the Noun Project
+        heading: 100+ VIDEO LESSONS
+        text_html: >-
+          <p>With over 40 hours of information packed videos, LCA gives you ALL
+          the insider tips, tricks and secrets to becoming a successful content
+          creator. Become a pro in your business, and master your creative
+          craft!</p>
+      - img_path: /uploads/noun-community.png
+        img_alt: Community by Fahmi from the Noun Project
+        heading: ALWAYS UP TO DATE
+        text_html: >-
+          <p>Unlike courses that become outdated after a year or even months,
+          LCA is an expanding academy meaning the content will always stay
+          current!</p>
+      - img_path: /uploads/noun-social-media-555679.png
+        img_alt: Social Media by MRFA from the Noun Project
+        heading: DIRECT MENTORSHIP FROM ME
+        text_html: >-
+          <p>LCA gives you direct access to ME and I will personally help you
+          overcome the many challenges you are bound to face along the
+          way.&nbsp;</p>
+      - img_path: /uploads/noun-community-1071933.png
+        img_alt: Community by Aneeque Ahmed from the Noun Project
+        heading: PRIVATE CREATOR COMMUNITY
+        text_html: >-
+          <p>Share your journey with other like minded creators who will be
+          there to support you through the highs and lows of your journey.</p>
+      - img_path: /uploads/noun-computer-infinity-949783.png
+        img_alt: Computer Infinity by Andrejs Kirma from the Noun Project
+        heading: LIFETIME ACCESS!
+        text_html: >-
+          <p>Buy once and get access for life (even when we raise the academy
+          price).</p>
+      - img_path: /uploads/noun-refund-2396759.png
+        img_alt: Refund by Ikipoh from the Noun Project
+        heading: 30 DAY MONEY-BACK GUARANTEE
+        text_html: >-
+          <p>I&rsquo;m so confident you will LOVE LCA that I am proud to offer a
+          30 day money back guarantee as long as you haven&rsquo;t watched 50%
+          or more of the academy.</p>
+  - _id: banner-two-col
+    text_html: <h2>JOIN TODAY<br />&amp; SAVE 15%</h2><div id="button-2">&nbsp;</div>
+    bg-class: not-fixed light-text sales-footer-banner
+    img_path: /uploads/lca-device-left-sided-wide.jpg
+    img_description:
+    overlay_rgba:
+    text_rgba:
+    col_2_image_path:
+    col_2_image_description:
+---
+
+{% include site-header.html %}
+
+  <!-- end needed for button for loops -->
+  {% for block in page.page_blocks %}
+
+      <div class="rel">
+          <a href="cloudcannon:#page_blocks[{{ forloop.index0 }}]" class="editor-link" data-cms-editor-link-style="modal">
+            Edit Section
+          </a>
+
+       {% include blocks/{{block._id}}.html block=block %}
+
+    </div>
+  {% endfor %}
+
+  <script src="/assets/buy.js" defer></script>
+  <script src="/assets/buy_button-p3.js" defer></script>
+  <script src="/assets/buy_button-p3-b2.js" defer></script>
