@@ -1322,7 +1322,7 @@ right:4px;
     padding: 0.5rem 2rem;
 }
 
-.bf-banner h2{
+.bf-banner.alert-banner h2{
     margin-bottom: 0;
     font-size:Max(1.4rem, 3.6vw);
 }
