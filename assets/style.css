@@ -262,6 +262,11 @@ light grey - rgb(150,150,155)
     transform: scale(.8);
   }
 
+  .bf-banner .full-width-buttons{
+    padding-top:2.5vw;
+    padding-bottom:2.5vw;
+  }
+
 
   /* Icons */
 
