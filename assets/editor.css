@@ -9,6 +9,10 @@ h2.h2-light-text {
   color: #efecd4;
 }
 
+h2.h2-green {
+  color: #aec2b7;
+}
+
 p.p-light-text {
   color: #efecd4;
 }
@@ -16,6 +20,8 @@ p.p-light-text {
 h2.smaller-h2 {
   font-size: 1.8rem;
 }
+
+
 
 
 /* Image Styles */
