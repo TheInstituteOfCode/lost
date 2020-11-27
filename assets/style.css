@@ -253,6 +253,7 @@ light grey - rgb(150,150,155)
   .bf-banner .button{
     padding:1.5rem 4rem;
     cursor: pointer;
+
   }
 
   .WHAT-INSIDE-override.padded{
@@ -324,6 +325,7 @@ light grey - rgb(150,150,155)
     margin: 0.5rem auto;
     letter-spacing: 1px;
     font-size: 1rem;
+    cursor: pointer;
   }
 
   .button-subtle {
