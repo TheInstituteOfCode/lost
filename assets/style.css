@@ -1326,11 +1326,13 @@ right:4px;
     margin-bottom: 0;
     font-size:Max(1.4rem, 3.6vw);
 }
+.bf-banner h3 strong{
+  font-size: Max(1.2rem, 2.0vw) !important ;
 
+}
 .bf-banner h3{
     margin-bottom: 0;
     font-size:1.6rem;
-    font-size: Max(1.2rem, 2.0vw) !important ;
     color: #4b4b50;
     letter-spacing: 0;
 }
