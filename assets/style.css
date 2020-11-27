@@ -1324,8 +1324,9 @@ right:4px;
 
 .bf-banner h2{
     margin-bottom: 0;
-    font-size:1.8rem;
+    font-size:Max(1.5rem, 4vw);
 }
+
 .bf-banner h3{
     margin-bottom: 0;
     font-size:1.6rem;
