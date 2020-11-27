@@ -1297,6 +1297,9 @@ right:4px;
     color: #4b4b50;
     letter-spacing: 0;
 }
+.bf-banner iframe{
+    height: min(44vw, 480px);
+}
 
 /* slider section  */
 
