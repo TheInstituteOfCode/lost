@@ -582,7 +582,7 @@ light grey - rgb(150,150,155)
 @media all and (max-width: 768px){
 
     h1,h2{
-      font-size: 2rem
+      font-size: 1.8rem
     }
     .small-img{
       max-width: 33%;
