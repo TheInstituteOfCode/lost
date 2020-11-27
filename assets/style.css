@@ -22,7 +22,7 @@ light grey - rgb(150,150,155)
   html {
     scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
   }
-  
+
   html, body { max-width: 100%; overflow-x: hidden; }
 
   img,video {
@@ -252,6 +252,7 @@ light grey - rgb(150,150,155)
 
   .bf-banner .button{
     padding:1.5rem 4rem;
+    cursor: pointer;
   }
 
   .WHAT-INSIDE-override.padded{
@@ -1500,7 +1501,7 @@ right:4px;
   .alert-banner h2 {
     font-size: 6.5vw;
   }
-  
+
   .prev{
   left:0rem;
 }
