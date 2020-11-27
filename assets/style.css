@@ -76,6 +76,15 @@ light grey - rgb(150,150,155)
   .overflow-hidden{overflow:
   }
 
+  .flex-coloum{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .order-last{
+    order:99999
+  }
+
   .left     {  text-align: left;     }
   .right    {  text-align: right;    }
   .centered {  text-align: center;   }
