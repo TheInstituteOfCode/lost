@@ -87,6 +87,9 @@ block_height:
   - large
   - full-height
   - oversize
+button_postition:
+  - before
+  - after
 
 page_blocks: []
 _array_structures:
@@ -119,6 +122,17 @@ _array_structures:
           link_url:
           text:
           id:
+    - label: Vimeo section new version
+      icon: video
+      value:
+        _id: vimeo2_0
+        text_html:
+        text_rgba: #fff
+        bg-class:
+        bg_image_path:
+        vimeo_id:
+        buy_button_text: enroll now
+        button: false
     - label: Module section
       icon: video
       value:
@@ -191,6 +205,7 @@ _array_structures:
     - label: Text Block
       icon: ballot
       value:
+        bg-image:
         bg-class:
         _id: text-block
         text_html:

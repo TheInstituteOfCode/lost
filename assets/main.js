@@ -38,7 +38,7 @@ $(document).ready(function() {
 
 	    $(this).filter('.open').removeClass('open').addClass('closing')
 	    $('.accordion > dt > a').removeClass('open');
-	  $(this).not(".closing").addClass('open').parent().next().slideDown();
+	  	$(this).not(".closing").addClass('open').parent().next().slideDown();
 	    $('.accordion > dt > a').removeClass('closing');
 
 	    return false;

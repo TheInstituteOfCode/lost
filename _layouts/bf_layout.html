@@ -1,0 +1,145 @@
+---
+layout: default
+---
+
+<!-- <div class="alert-banner bf-banner fixed-banner centered padded featured-bg  mob-padded-light-top">
+  <h2 class="uppercase centered">Masive black friday sale</h2>
+  <h3 class="uppercase centered">Save $250, enter to win a camera +1 on 1 creator getaway with me and more</h3>
+  <div id="countdown">
+    <ul>
+      <li>
+        <h2 id="days"></h2>
+        <p>days</p>
+      </li>
+        /
+      <li>
+        <h2 id="hours"></h2>
+        <p>Hours</p>
+      </li>
+       /
+      <li>
+        <h2 id="minutes"></h2>
+        <p>Minutes</p>
+      </li>
+       /
+      <li>
+        <h2 id="seconds"></h2>
+        <p>Seconds</p>
+      </li>
+    </ul>
+  </div>
+</div> -->
+<div class="alert-banner bf-banner centered padded featured-bg mob-padded-light-top">
+  <h2 class="uppercase centered editable">
+    Massive black friday sale
+  </h2>
+  <h3 class="uppercase centered editable">
+    <strong>Save $250, enter to win a Camera &amp; 1 on 1 creator getaway with me + more!</strong>
+  </h3>
+  <div id="countdown">
+    <ul>
+      <li>
+        <h2 id="days"></h2>
+        <p>days</p>
+      </li>
+        /
+      <li>
+        <h2 id="hours"></h2>
+        <p>Hours</p>
+      </li>
+       /
+      <li>
+        <h2 id="minutes"></h2>
+        <p>Minutes</p>
+      </li>
+      /
+      <li>
+        <h2 id="seconds"></h2>
+        <p>seconds</p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="hidden content">
+
+   {{content}}
+
+</div>
+
+<!-- needed for button if loops -->
+{% assign buttons_used = 0 %}
+<!-- end needed for button for loops -->
+
+{% for block in page.page_blocks %}
+
+    <div class="rel">
+        <a href="cloudcannon:#page_blocks[{{ forloop.index0 }}]" class="editor-link" data-cms-editor-link-style="modal">
+          Edit Section
+        </a>
+
+     {% include blocks/{{block._id}}.html block=block %}
+
+
+
+  </div>
+{% endfor %}
+
+
+
+<script type="text/javascript">
+  (function () {
+    const second = 1000,
+          minute = second * 60,
+          hour = minute * 60,
+          day = hour * 24;
+
+    let birthday = "Dec 1, 2020 00:8:00",
+        countDown = new Date(birthday).getTime(),
+        x = setInterval(function() {
+
+          let now = new Date().getTime(),
+              distance = countDown - now;
+
+          document.getElementById("days").innerText = Math.floor(distance / (day)),
+            document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+            document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+            document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+          //do something later when date is reached
+          if (distance < 0) {
+            countdown.style.display = "none";
+          }
+          //seconds
+        }, 0)
+    }());
+    </script>
+
+    <script>
+    (function () {
+      const second = 1000,
+            minute = second * 60,
+            hour = minute * 60,
+            day = hour * 24;
+
+      let birthday = "Dec 1, 2020 00:8:00",
+          countDown = new Date(birthday).getTime(),
+          x = setInterval(function() {
+
+            let now = new Date().getTime(),
+                distance = countDown - now;
+
+            document.getElementById("days-2").innerText = Math.floor(distance / (day)),
+              document.getElementById("hours-2").innerText = Math.floor((distance % (day)) / (hour)),
+              document.getElementById("minutes-2").innerText = Math.floor((distance % (hour)) / (minute));
+            //do something later when date is reached
+            if (distance < 0) {
+              countdown.style.display = "none";
+            }
+            //seconds
+          }, 0)
+      }());
+</script>
+
+{{page.body-scripts}}
