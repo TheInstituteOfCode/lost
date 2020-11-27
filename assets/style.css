@@ -245,6 +245,8 @@ light grey - rgb(150,150,155)
     padding-bottom: 1rem!important;
   }
 
+  /* bf specifics */
+
   .WHAT-INSIDE-override.padded{
     padding-top:1rem;
   }
@@ -255,6 +257,11 @@ light grey - rgb(150,150,155)
   .spaced-h2 strong{
     font-size: 1.3em
   }
+
+  .FEATURED-ON img:first-of-type{
+    transform: scale(.8);
+  }
+
 
   /* Icons */
 
