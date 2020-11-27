@@ -242,11 +242,15 @@ light grey - rgb(150,150,155)
     font-size: 1.4rem;
   }
 
+
+  /* bf specifics */
   .bf-banner .padded.full-width-buttons{
     padding-bottom: 1rem!important;
   }
 
-  /* bf specifics */
+  .bf-banner .button{
+    padding:1.5rem 4rem;
+  }
 
   .WHAT-INSIDE-override.padded{
     padding-top:1rem;
