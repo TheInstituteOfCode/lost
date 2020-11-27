@@ -113,7 +113,7 @@ light grey - rgb(150,150,155)
   .padded-b-2   {  padding-bottom: 2vw;  }
   .padded-b-3   {  padding-bottom: 3vw}
   .padded-t-1   {  padding-top: 1rem;}
-  .padded-t-2   {  padding-top: 2rem;}
+  .padded-t-2   {  padding-top: 2vw;}
   .padded-top   {  padding-top: 5vw;}
   .padded-t-0   {  padding-top: 0; }
   .margin-a     {  margin:auto;}
