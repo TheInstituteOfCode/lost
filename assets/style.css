@@ -243,7 +243,7 @@ light grey - rgb(150,150,155)
 
   .not-bold   { font-weight: normal; } /* add this class to make headings not bold */
   .no-bullets { list-style:none; } /* Used to remove dot-points from a list */
-
+  .very-bold   {font-weight: 900}
   .big-bold {
     font-size: 3rem;
     font-weight: 700;
@@ -1324,13 +1324,13 @@ right:4px;
 
 .bf-banner h2{
     margin-bottom: 0;
-    font-size:Max(1.5rem, 4vw);
+    font-size:Max(1.4rem, 3.6vw);
 }
 
 .bf-banner h3{
     margin-bottom: 0;
     font-size:1.6rem;
-    font-size: Max(1.3rem, 2.2vw) !important ;
+    font-size: Max(1.2rem, 2.0vw) !important ;
     color: #4b4b50;
     letter-spacing: 0;
 }
