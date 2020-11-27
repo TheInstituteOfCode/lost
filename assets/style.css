@@ -1289,7 +1289,7 @@ right:4px;
 .bf-banner h3{
     margin-bottom: 0;
     font-size:1.6rem;
-    font-size: Max(1.3rem, 2.3vw) !important ;
+    font-size: Max(1.3rem, 2.2vw) !important ;
     color: #4b4b50;
     letter-spacing: 0;
 }
