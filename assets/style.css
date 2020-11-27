@@ -858,6 +858,7 @@ display: none;
     font-size: 1rem;
     vertical-align: top;
     -webkit-appearance: none;
+    font-family: inherit;
   }
 
   input::placeholder,
