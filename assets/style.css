@@ -1073,6 +1073,10 @@ display: none;
   }
 }
 
+.mob-show{
+  display:none;
+}
+
 /* This media query kicks into action at the gridlex sm breakpoint */
 @media(max-width:768px) {
 
@@ -1082,6 +1086,9 @@ display: none;
 
   .mob-hide {
     display: none;
+  }
+  .mob-show{
+    display: block;
   }
   .hamburger{
     display: block;
