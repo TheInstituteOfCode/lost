@@ -103,7 +103,7 @@ light grey - rgb(150,150,155)
   .padded-light {  padding: 2vw;}
   .padded-extra-light{padding:1vw;}
   .padded-1     {  padding: 1rem;  }
-  .padded-2     {  padding: 2rem;  }
+  .padded-2     {  padding: 2vw;  }
   .padded-r     {  padding-right: 5vw;  }
   .padded-r-1   {  padding-right: 1rem;  }
   .padded-r-2   {  padding-right: 2rem;  }
