@@ -220,6 +220,26 @@ _array_structures:
         has_socials: false
         layer:
           - image_path:
+            image-alt:
+            img-fill: true
+            sub_heading:
+            heading:
+            text_html:
+            socials:
+              - name:
+                social_path:
+                number-of-followers:
+    - label: Image and text grid with the image added in the block on mobile
+      icon: ballot
+      value:
+        _id: image-text-grid-with-img-insert-on-mobile
+        bg-class:
+        first-pic-flip: false
+        has_links: false
+        has_socials: false
+        layer:
+          - image_path:
+            image-alt:
             img-fill: true
             sub_heading:
             heading:
